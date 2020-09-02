@@ -4,7 +4,7 @@
 
 #### 1、grafana介绍
 
-Grafana其实就是一个可视化面板（Dashboard），有着非常漂亮的图表和布局展示，功能齐全的度量仪表盘和图形编辑器，经常被用作基础设施的时间序列数据和应用程序分析的可视化，
+Grafana其实就是一个可视化面板（Dashboard），有着非常漂亮的图表和布局展示，功能齐全的度量仪表盘和图形编辑器，经常被用作基础设施的时间序列数据和应用程序分析的可视化
 
 #### 2、部署grafana
 
@@ -90,14 +90,9 @@ service grafana-server status
 ##### 2）下载安装包
 
 - 访问https://grafana.com/grafana/plugins
-
 - 找到想要下载的插件，下载.zip包，把.zip包发到虚拟机上/var/lib/grafana/plugins
-
 - 解压.zip包
-
 - 重启grafana服务，并刷新web页面，即可在web页面找到安装好的插件
-
-  ![image](Picture/grafana_pictures/8.png)
 
 #### 3、利用插件添加 zabbix源
 
@@ -149,6 +144,10 @@ allow_loading_unsigned_plugins = alexanderzobnin-zabbix-datasource
 | Username | 输入zabbix的用户名，Admin                                    |
 | Password | 输入zabbix用户的密码，zabbix                                 |
 
+##### 5）测试数据源是否可以正常使用
+
+填完数据源信息后，按![image](Picture/grafana_pictures/15.png)按钮，如果弹出绿色小窗口则添加成功
+
 ### 三、Grafana仪表盘
 
 ------
@@ -196,9 +195,15 @@ allow_loading_unsigned_plugins = alexanderzobnin-zabbix-datasource
 
 ### 四、Grafana变量
 
+------
+
+
+
 #### 1、Grafana变量介绍
 
 使用变量将允许我们创建出交互式的动态仪表盘，与在度量查询中以硬编码（例如写死主机名）方式不同，使用变量我们可以更轻松地切换仪表盘不同变量值（主机）的数据
+
+#### 2、创建变量的参数
 
 ![image](Picture/grafana_pictures/3.png)
 
@@ -224,9 +229,9 @@ allow_loading_unsigned_plugins = alexanderzobnin-zabbix-datasource
 
 - **Refresh**：刷新方式，有以下三种刷新方式：
 
-  - Never：从不
-  - On Dashboard Load：面板加载的时候，刷新一次
-  - On time range changed：时间范围发生变化，通常会选择On Dashboard Load
+  - `Never`：从不
+  - `On Dashboard Load`：面板加载的时候，刷新一次
+  - `On time range changed`：时间范围发生变化，通常会选择On Dashboard Load
 
 - **Query**：定义变量值的来源
 
@@ -243,11 +248,11 @@ allow_loading_unsigned_plugins = alexanderzobnin-zabbix-datasource
 
 - **Include All option**：Grafana 在变量下拉列表中添加一个 All 选项，如果选择此选项，则选择所有变量选项
 
-#### 2、为仪表盘引入变量
+#### 3、为仪表盘引入变量
 
 ##### 1）创建变量
 
-> setting —> New
+> setting —> Add variable
 
 ![image](Picture/grafana_pictures/1.png)
 
