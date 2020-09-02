@@ -187,8 +187,6 @@ allow_loading_unsigned_plugins = alexanderzobnin-zabbix-datasource
 
 创建效果如下：
 
-![image](Picture/grafana_pictures/17.png)
-
 ![image](Picture/grafana_pictures/14.png)
 
 ![image](Picture/grafana_pictures/14-1.png)
