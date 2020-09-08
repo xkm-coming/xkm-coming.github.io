@@ -16,7 +16,7 @@
 
 - **Master/Minion（ZeroMQ）**：master和所有minion直连，minion接收来自于master的指令，完成命令的执行或者配置管理
 
-  ![image](Picture/saltstack_pictures)
+  ![image](Picture/saltstack_pictures/1.png)
 
 - **Masterless：minion**：本地运行，可以直接管理本地，不用调用salt-master而影响其他satl-minion
 
@@ -24,7 +24,7 @@
 
 - **用syndic方式扩展salt的管理架构**：通过syndic对minion进行管理和设置，syndic接受来自master的任务，然后将任务下发给所有由syndic管理的minion机器，最后将所有minion执行的结果返回给syndic，syndic再将结果发回给master
 
-  ![image](Picture/saltstack_pictures)
+  ![image](Picture/saltstack_pictures/2.png)
 
 #### 4、Master/Minion架构的具体说明
 
