@@ -728,5 +728,5 @@ nginx:
 5）执行远程操作命令
 
 ```
-salt ’minion‘ state.sls nginx
+salt 'minion' state.sls nginx
 ```
