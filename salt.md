@@ -472,9 +472,9 @@ salt -S '172.16.23.197' test.ping
 
 `salt-key -A`：接受所有的key
 
-`salt-key -r salt-minion`：解决id为salt-minion的key
+`salt-key -r salt-minion`：拒绝id为salt-minion的key
 
-`salt-key -R`：解决所有的key
+`salt-key -R`：拒绝所有的key
 
 `salt-key -d salt-minion`：删除id为salt-minion的key
 
