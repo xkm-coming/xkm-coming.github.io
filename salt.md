@@ -6,7 +6,7 @@
 
 - SaltStack 具备配置管理、远程执行、监控等功能，一般可以理解为是简化版的 Puppet 和加强版的 Func
 
-- SaltStack 本身是基于 Python 语言开发实现，结合了轻量级的消息队列软件 ZeroMQ 与 Python 第三方模块（Pyzmq、PyCrypto、Pyjinjia2、python-msgpack 和 PyYAML 等）构建。
+- SaltStack 本身是基于 Python 语言开发实现，结合了轻量级的消息队列软件 ZeroMQ 与 Python 第三方模块（Pyzmq、PyCrypto、Pyjinjia2、python-msgpack 和 PyYAML 等）构建
 
 #### 2、saltstack的开发语言
 
@@ -18,7 +18,7 @@
 
   ![image](Picture/saltstack_pictures/1.png)
 
-- **Masterless：minion**：本地运行，可以直接管理本地，不用调用salt-master而影响其他satl-minion
+- **Masterless**：minion本地运行，可以直接管理本地，不用调用salt-master而影响其他satl-minion
 
 - **Salt-SSH（0.17+）**：利用salt-ssh管理远程主机，可以独立运行的，不需要minion端，功能类似expect的密码推送脚本
 
