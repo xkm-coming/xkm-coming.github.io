@@ -404,7 +404,7 @@ salt -E 'virtmach[0-9]' test.ping
 4）使用IP/子网段匹配
 
 ```
-salt -S ‘’172.16.23.197‘ test.ping
+salt -S '172.16.23.197' test.ping
 ```
 
 5）使用列表
