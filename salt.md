@@ -459,7 +459,9 @@ salt -S ‘’172.16.23.197‘ test.ping
 - ##### 常用命令：
 
 `salt-cp '*' [ options ] SOURCE DEST`：使用glob匹配minion id，从master复制文件到minion
+
 `salt-cp -E '.' [ options ] SOURCE DEST`：使用正则匹配minion id，从master复制文件到minion
+
 `salt-cp -G 'os:CentOS*' [ options ] SOURCE DEST`：使用Grains系统进行过滤，从master复制文件到minion
 
 #### 3、salt-key常用命令
