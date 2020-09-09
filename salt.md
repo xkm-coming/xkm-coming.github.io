@@ -293,8 +293,6 @@ log_level：warning
 #### 3、master配置文件中的timeout概念
 
 > timeout定义的参数在网络状况差时派上用场
->
-> 下面是发送信息的两种状况：1）正常情况，2）网络状况差的时候
 
 1）发送命令给master，master通过pub传送命令到minion的sub，命令下发完后就结束进程
 
