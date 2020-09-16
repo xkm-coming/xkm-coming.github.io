@@ -120,9 +120,9 @@
 
 2-3）填写VPN信息
 
-![image](Picture/ailiyun_pictures/17.png)
+![image](Picture/aliyun_pictures/16.png)
 
-![image](Picture/ailiyun_pictures/18.png)
+![image](Picture/aliyun_pictures/16.png)
 
 2-4）点击确认
 
