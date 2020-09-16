@@ -1,4 +1,4 @@
-### 一、熟悉阿里云产品
+## 一、熟悉阿里云产品
 
 ------
 
@@ -26,33 +26,33 @@
 
 - 网络：分为专有网络和经典网络
 
-  ![image](Pictures/aliyun_pictures/42.png)
+  ![image](Picture/aliyun_pictures/42.png)
 
 ##### 3）创建ECS实例的操作
 
 3-1）前往实例创建页
 
-![image](Pictures/aliyun_pictures/40.png)
+![image](Picture/aliyun_pictures/40.png)
 
-![image](Pictures/aliyun_pictures/41.png)
+![image](Picture/aliyun_pictures/41.png)
 
 3-2）完成基础配置
 
-![image](Pictures/aliyun_pictures/43.png)
+![image](Picture/aliyun_pictures/43.png)
 
-![image](Pictures/aliyun_pictures/44.png)
+![image](Picture/aliyun_pictures/44.png)
 
-![image](Pictures/aliyun_pictures/45.png)
+![image](Picture/aliyun_pictures/45.png)
 
 3-3）完成网络和安全组设置
 
-![image](Pictures/aliyun_pictures/46.png)
+![image](Picture/aliyun_pictures/46.png)
 
 3-4）完成系统配置
 
-![image](Pictures/aliyun_pictures/47.png)
+![image](Picture/aliyun_pictures/47.png)
 
-![image](Pictures/aliyun_pictures/48.png)
+![image](Picture/aliyun_pictures/48.png)
 
 3-5）完成分组设置
 
@@ -60,9 +60,9 @@
 
 3-7）查看ECS实例信息
 
-![image](Pictures/aliyun_pictures/49.png)
+![image](Picture/aliyun_pictures/49.png)
 
-![image](Pictures/aliyun_pictures/50.png)
+![image](Picture/aliyun_pictures/50.png)
 
 ##### 4）管理ECS实例
 
@@ -81,19 +81,19 @@
   - 加入安全组：一个实例可以加入多个安全组
   - 安全组配置：单击进入本实例安全组配置，也可以在此界面进行“替换安全组”、“加入安全组”操作
 
-  ![image](Pictures/aliyun_pictures/51.png)
+  ![image](Picture/aliyun_pictures/51.png)
 
 ##### 5）ECS连接的两种方式
 
 - 直接在阿里云上进行远程连接
 
-![image](Pictures/aliyun_pictures/56.png)
+![image](Picture/aliyun_pictures/56.png)
 
 - 用远程连接工具连接，例如XShell、SecureCRT 
 
 > 利用公网IP进行远程连接
 
-![image](Pictures/aliyun_pictures/57.png)
+![image](Picture/aliyun_pictures/57.png)
 
 #### 2、专有网络
 
@@ -112,17 +112,17 @@
 
 2-1）登陆专有网络VPN控制台
 
-![image](Pictures/ailiyun_pictures/15.png)
+![image](Picture/ailiyun_pictures/15.png)
 
 2-2）选择区域，创建专有网络
 
-![image](Pictures/ailiyun_pictures/16.png)
+![image](Picture/ailiyun_pictures/16.png)
 
 2-3）填写VPN信息
 
-![image](Pictures/ailiyun_pictures/17.png)
+![image](Picture/ailiyun_pictures/17.png)
 
-![image](Pictures/ailiyun_pictures/18.png)
+![image](Picture/ailiyun_pictures/18.png)
 
 2-4）点击确认
 
@@ -132,16 +132,16 @@
 
 - 一种虚拟防火墙，用于设置实例的网络访问控制，我们可以通过添加安全组规则，允许或禁止安全组内的ECS实例对公网或私网的访问
 
-  ![image](Pictures/aliyun_pictures/55.png)
+  ![image](Picture/aliyun_pictures/55.png)
 
 2）创建安全组的操作
 
-- ![image](Pictures/aliyun_pictures/52.png)
+- ![image](Picture/aliyun_pictures/52.png)
 
 3）创建安全组规则
 
-- ![image](Pictures/aliyun_pictures/53.png)
-- ![image](Pictures/aliyun_pictures/54.png)
+- ![image](Picture/aliyun_pictures/53.png)
+- ![image](Picture/aliyun_pictures/54.png)
 
 #### 4、RDS
 
@@ -161,11 +161,11 @@
 
 2-4）在左侧导航栏中单击**数据库管理**
 
-![image](Pictures/aliyun_pictures/1.png)
+![image](Picture/aliyun_pictures/1.png)
 
 2-5）单击创建**数据库**
 
-![image](Pictures/aliyun_pictures/2.png)
+![image](Picture/aliyun_pictures/2.png)
 
 2-6）设置以下参数
 
@@ -217,15 +217,15 @@
 
 > 创建普通账号需要在创建完数据库的操作之后
 
-![image](Pictures/aliyun_pictures/4.png)
+![image](Picture/aliyun_pictures/4.png)
 
 4-6）设置以下参数
 
-![image](Pictures/aliyun_pictures/5.png)
+![image](Picture/aliyun_pictures/5.png)
 
-![image](Pictures/aliyun_pictures/6.png)
+![image](Picture/aliyun_pictures/6.png)
 
-![image](Pictures/aliyun_pictures/7.png)
+![image](Picture/aliyun_pictures/7.png)
 
 4-7）点击确认
 
@@ -264,15 +264,15 @@
 
   ①在RDS实例的**数据库连接**页面单击**切换为经典网络**
 
-  ![image](Pictures/aliyun_pictures/10.png)
+  ![image](Picture/aliyun_pictures/10.png)
 
   ②查看ECS实例的VPC
 
-  ![image](Pictures/aliyun_pictures/11.png)
+  ![image](Picture/aliyun_pictures/11.png)
 
   ③回到RDS数据库连接界面，切换完成后单击**切换为专有网络**，选择和ECS实例相同的VPC
 
-  ![image](Pictures/aliyun_pictures/10.png)
+  ![image](Picture/aliyun_pictures/10.png)
 
   ④按照**ECS实例和RDS实例在相同专有网络VPC内**情况进行操作
 
@@ -282,11 +282,11 @@
 
   ②填写分组名称和ECS实例的外网IP地址，然后单击**确定**
 
-  ![image](Pictures/aliyun_pictures/12.png)
+  ![image](Picture/aliyun_pictures/12.png)
 
   ③RDS申请外网地址，供专网外的ECS连接
 
-  ![image](Pictures/aliyun_pictures/13.png)
+  ![image](Picture/aliyun_pictures/13.png)
 
   ④ECS实例连接RDS实例
 
@@ -311,13 +311,13 @@
 
 8-4）在左侧导航栏中单击**备份恢复**
 
-![image](Pictures/aliyun_pictures/14.png)
+![image](Picture/aliyun_pictures/14.png)
 
-![image](Pictures/aliyun_pictures/20.png)
+![image](Picture/aliyun_pictures/20.png)
 
 ##### 9）RDS数据恢复的操作
 
-![image](Pictures/aliyun_pictures/19.png)
+![image](Picture/aliyun_pictures/19.png)
 
 #### 5、OSS
 
@@ -350,12 +350,12 @@
 4-1）登录OSS管理控制台
 4-2）单击Bucket列表，之后单击创建Bucket
 
-![image](Pictures/aliyun_pictures/59.png)
+![image](Picture/aliyun_pictures/59.png)
 
 4-3）在创建Bucket页面配置Bucket参数
-![image](Pictures/aliyun_pictures/60.png)
+![image](Picture/aliyun_pictures/60.png)
 
-![image](Pictures/aliyun_pictures/61.png)
+![image](Picture/aliyun_pictures/61.png)
 
 ##### 5）删除存储对象
 
@@ -373,7 +373,7 @@
 
 6-3）单击文件管理 > 上传文件
 
-![image](Pictures/aliyun_pictures/62.png)
+![image](Picture/aliyun_pictures/62.png)
 
 6-4）在上传文件页面，设置上传文件的参数
 
@@ -388,7 +388,7 @@
 
 ##### 7）删除文件
 
-![image](Pictures/aliyun_pictures/63.png)
+![image](Picture/aliyun_pictures/63.png)
 
 #### 6、Redis
 
@@ -416,7 +416,7 @@
 
 3-4）选择参数
 
-![image](Pictures/aliyun_pictures/64.png)
+![image](Picture/aliyun_pictures/64.png)
 
 3-5）确认订单
 
@@ -440,9 +440,9 @@
 
 2-4）配置负载均衡实例
 
-![image](Pictures/aliyun_pictures/66.png)
+![image](Picture/aliyun_pictures/66.png)
 
-![image](Pictures/aliyun_pictures/67.png)
+![image](Picture/aliyun_pictures/67.png)
 
 ##### 3）设置监听端口
 
@@ -450,15 +450,15 @@
 
 3-2）在实例管理页面，单击要配置监听的实例操作列的监听配置向导
 
-![image](Pictures/aliyun_pictures/68.png)
+![image](Picture/aliyun_pictures/68.png)
 
 ##### 4）配置后端服务器
 
-![image](Pictures/aliyun_pictures/69.png)
+![image](Picture/aliyun_pictures/69.png)
 
-![image](Pictures/aliyun_pictures/70.png)
+![image](Picture/aliyun_pictures/70.png)
 
-![image](Pictures/aliyun_pictures/71.png)
+![image](Picture/aliyun_pictures/71.png)
 
 ##### 5）配置健康检查
 
@@ -466,7 +466,7 @@
 
 ##### 6）配置成功
 
-![image](Pictures/aliyun_pictures/72.png)
+![image](Picture/aliyun_pictures/72.png)
 
 ### 二、HTTP
 
@@ -492,7 +492,7 @@
 
 #### 3、客户端请求报头结构
 
-![image](Pictures/aliyun_pictures/73.png)
+![image](Picture/aliyun_pictures/73.png)
 
 #### 4、请求行组成
 
@@ -691,11 +691,11 @@
 
 2）单击域名注册
 
-![image](Pictures/aliyun_pictures/21.png)
+![image](Picture/aliyun_pictures/21.png)
 
 3）输入想要注册的域名
 
-![image](Pictures/aliyun_pictures/22.png)
+![image](Picture/aliyun_pictures/22.png)
 
 4）选择适合的域名进行结账
 
@@ -705,9 +705,9 @@
 
 1）添加域名
 
-![image](Pictures/aliyun_pictures/23.png)
+![image](Picture/aliyun_pictures/23.png)
 
-![image](Pictures/aliyun_pictures/24.png)
+![image](Picture/aliyun_pictures/24.png)
 
 2）添加A记录
 
@@ -732,29 +732,29 @@
 |              | 0              | 0表示关闭该记录的权重，但如果是在已设有权重记录的线路上再设一条权重为0的记录，该记录权重为线路的平均权重 |
 | **TTL**      | 600/3600/60    | 解析记录在 DNS 服务器缓存的生存时间，数值越小则生效越快      |
 
-![image](Pictures/aliyun_pictures/25.png)
+![image](Picture/aliyun_pictures/25.png)
 
-![image](Pictures/aliyun_pictures/26.png)
+![image](Picture/aliyun_pictures/26.png)
 
 3）修改NS记录，使用DNSPOD的域名服务器
 
 3-1）找到DNSPOD域名服务器的地址
 
-![image](Pictures/aliyun_pictures/30.png)
+![image](Picture/aliyun_pictures/30.png)
 
 3-2）修改Godaddy域名服务器的地址
 
-![image](Pictures/aliyun_pictures/27.png)
+![image](Picture/aliyun_pictures/27.png)
 
-![image](Pictures/aliyun_pictures/28.png)
+![image](Picture/aliyun_pictures/28.png)
 
-![image](Pictures/aliyun_pictures/29.png)
+![image](Picture/aliyun_pictures/29.png)
 
 4）刷新等待更新生效
 
 > 可以在虚拟机上ping域名，看解析出来的IP地址正不正确
 
-![image](Pictures/aliyun_pictures/31.png)
+![image](Picture/aliyun_pictures/31.png)
 
 #### 3、阿里云申请https证书
 
@@ -762,19 +762,19 @@
 
 2）选购SSL证书
 
-![image](Pictures/aliyun_pictures/32.png)
+![image](Picture/aliyun_pictures/32.png)
 
-![image](Pictures/aliyun_pictures/33.png)
+![image](Picture/aliyun_pictures/33.png)
 
 3）申请证书
 
-![image](Pictures/aliyun_pictures/34.png)
+![image](Picture/aliyun_pictures/34.png)
 
-![image](Pictures/aliyun_pictures/35.png)
+![image](Picture/aliyun_pictures/35.png)
 
 4）下载证书
 
-![image](Pictures/aliyun_pictures/36.png)
+![image](Picture/aliyun_pictures/36.png)
 
 #### 4、openresty实现http到https的转发
 
@@ -863,9 +863,9 @@ openresty -t
 
 5）修改安全组，配置新规则
 
-![image](Pictures/aliyun_pictures/37.png)
+![image](Picture/aliyun_pictures/37.png)
 
-![image](Pictures/aliyun_pictures/38.png)
+![image](Picture/aliyun_pictures/38.png)
 
 6）重启ECS实例
 
@@ -879,4 +879,4 @@ systemctl start openresty
 
 8）浏览器访问个人域名
 
-![image](Pictures/aliyun_pictures/39.png)
+![image](Picture/aliyun_pictures/39.png)
