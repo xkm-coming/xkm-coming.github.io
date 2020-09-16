@@ -112,11 +112,11 @@
 
 2-1）登陆专有网络VPN控制台
 
-![image](Picture/ailiyun_pictures/15.png)
+![image](Picture/aliyun_pictures/15.png)
 
 2-2）选择区域，创建专有网络
 
-![image](Picture/ailiyun_pictures/16.png)
+![image](Picture/aliyun_pictures/16.png)
 
 2-3）填写VPN信息
 
