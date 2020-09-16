@@ -120,9 +120,9 @@
 
 2-3）填写VPN信息
 
-![image](Picture/aliyun_pictures/16.png)
+![image](Picture/aliyun_pictures/17.png)
 
-![image](Picture/aliyun_pictures/16.png)
+![image](Picture/aliyun_pictures/18.png)
 
 2-4）点击确认
 
@@ -136,12 +136,12 @@
 
 2）创建安全组的操作
 
-- ![image](Picture/aliyun_pictures/52.png)
+  ![image](Picture/aliyun_pictures/52.png)
 
 3）创建安全组规则
 
-- ![image](Picture/aliyun_pictures/53.png)
-- ![image](Picture/aliyun_pictures/54.png)
+  ![image](Picture/aliyun_pictures/53.png)
+  ![image](Picture/aliyun_pictures/54.png)
 
 #### 4、RDS
 
@@ -225,9 +225,9 @@
 
 ![image](Picture/aliyun_pictures/6.png)
 
-![image](Picture/aliyun_pictures/7.png)
-
 4-7）点击确认
+
+![image](Picture/aliyun_pictures/7.png)
 
 ##### 5）认识RDS白名单
 
