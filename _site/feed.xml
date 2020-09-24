@@ -1,0 +1,1814 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://172.16.22.174:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://172.16.22.174:4000/" rel="alternate" type="text/html" /><updated>2020-09-24T16:15:12+08:00</updated><id>http://172.16.22.174:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://172.16.22.174:4000/jekyll/update/2020/09/24/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2020-09-24T15:19:22+08:00</published><updated>2020-09-24T15:19:22+08:00</updated><id>http://172.16.22.174:4000/jekyll/update/2020/09/24/welcome-to-jekyll</id><content type="html" xml:base="http://172.16.22.174:4000/jekyll/update/2020/09/24/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;Jekyll requires blog post files to be named according to the following format:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR-MONTH-DAY-title.MARKUP&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Where &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR&lt;/code&gt; is a four-digit number, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MONTH&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DAY&lt;/code&gt; are both two-digit numbers, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MARKUP&lt;/code&gt; is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">Xkm</title><link href="http://172.16.22.174:4000/2020/09/24/xkm.html" rel="alternate" type="text/html" title="Xkm" /><published>2020-09-24T00:00:00+08:00</published><updated>2020-09-24T00:00:00+08:00</updated><id>http://172.16.22.174:4000/2020/09/24/xkm</id><content type="html" xml:base="http://172.16.22.174:4000/2020/09/24/xkm.html">&lt;p&gt;文本处理工具&lt;/p&gt;
+
+&lt;p&gt;1、grep&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;grep是行过滤工具，用于根据关键字进行过滤&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;语法和选项：&lt;/p&gt;
+
+&lt;p&gt;语法：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;grep [选项] ‘关键字’ 文件名
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;常见选项：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;option：
+
+	-i：不区分大小写
+
+	-v：查找不包含指定内容的行，反向选择
+
+	-w：按单词搜索
+
+	-o：打印匹配关键字
+
+	-c：统计匹配到的次数
+
+	-n：统计匹配到的行数
+
+	-r：逐层遍历目录查找
+
+	-A：显示匹配行及后面多少行
+
+	-B：显示匹配行及前面多少行
+
+	-C：显示匹配行前后多少行    #查看日志时，只匹配”error“看不出哪里出错，需要看上下文
+
+	-l：只列出匹配的文件名
+
+	-L：只列出不匹配的文件名
+
+	-e：使用正则匹配
+
+	-E：使用扩展正则匹配
+
+	--color=auto：可以将找到的关键字部分加上颜色的显示
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;2、cut&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;cut是列截取工具，用于列的截取&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;语法和选项：&lt;/p&gt;
+
+&lt;p&gt;语法：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cut [选项] 文件名
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;常见选项：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;option：
+
+	-c：以字符为单位进行分割
+
+	-d：自定义分隔符，默认为制表符\t
+
+	-f：与-d一起使用，指定截取哪个区域
+	#-f1，7：显示第一字段和第七字段
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;3、sort&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;sort工具用于排序，它将文件中的每一行作为一个单位，从首字符向后，依次按ASCII码进行比较，最后将他们按升序输出&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;语法和选项：&lt;/p&gt;
+
+&lt;p&gt;语法：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sort [OPTION]... [FILE]... 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;选项：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;option：
+
+	-u：去除重复行
+
+	-r：降序排列，默认是升序	
+
+	-o：将排序结果输出到文件中，类似重定向符号&amp;gt;
+
+	-n：以数字排序，默认是按字符排序
+
+	-t：分隔符
+
+	-k：第N列
+
+	-b：忽略前导空格
+
+	-R：随机排序，每次运行的结果均不同
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;4、uniq&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;uniq用于去除连续的重复行&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;语法与选项：&lt;/p&gt;
+
+&lt;p&gt;语法：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;uniq [OPTION]... [INPUT [OUTPUT]]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;常见选项：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;option：
+
+	-i：忽略大小写
+
+	-c：统计重复行次数
+
+	-d：只显示重复行
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;5、tee&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;table&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;tee工具从标准输入读取并写入到标准输出和文件，即：双向覆盖重定向（屏幕输出&lt;/td&gt;
+        &lt;td&gt;文本输入）&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;选项：&lt;/p&gt;
+
+&lt;p&gt;options：&lt;/p&gt;
+
+&lt;p&gt;​	-a：双向追加重定向&lt;/p&gt;
+
+&lt;p&gt;6、diff&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;diff工具用于逐行比较文件的不同&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;注：diff描述两个文件不同方式是告诉我们怎样改变第一个文件之后与第二个文件匹配&lt;/p&gt;
+
+&lt;p&gt;语法与选项：&lt;/p&gt;
+
+&lt;p&gt;语法：&lt;/p&gt;
+
+&lt;p&gt;diff [选项] 文件1 文件2&lt;/p&gt;
+
+&lt;p&gt;常用选项：&lt;/p&gt;
+
+&lt;p&gt;options：&lt;/p&gt;
+
+&lt;p&gt;​	-b：不检查空格&lt;/p&gt;
+
+&lt;p&gt;​	-B：不检查空白行&lt;/p&gt;
+
+&lt;p&gt;​	-i：不检查大小写&lt;/p&gt;
+
+&lt;p&gt;​	-W：忽略所有的空格&lt;/p&gt;
+
+&lt;p&gt;​	–normal：正常格式显示&lt;/p&gt;
+
+&lt;p&gt;​	-c：上下文格式显示&lt;/p&gt;
+
+&lt;p&gt;​	-u：合并格式显示&lt;/p&gt;
+
+&lt;p&gt;1）正常显示&lt;/p&gt;
+
+&lt;p&gt;2）上下文显示&lt;/p&gt;
+
+&lt;p&gt;3）合并格式&lt;/p&gt;
+
+&lt;p&gt;其他小技巧：&lt;/p&gt;
+
+&lt;p&gt;有时候我们需要以一个文化为标准，去修改其他文件，并且修改的地方较多，我们可以通过打补丁的方式完成&lt;/p&gt;
+
+&lt;p&gt;1）先找出文件的不同，然后输出到一个文件&lt;/p&gt;
+
+&lt;p&gt;diff -uN file1 file2 &amp;gt; file.patch&lt;/p&gt;
+
+&lt;p&gt;#-u：上下文模式&lt;/p&gt;
+
+&lt;p&gt;#-N：将不存在的文件当作空文件&lt;/p&gt;
+
+&lt;p&gt;2）将不同的内容打补丁到文件&lt;/p&gt;
+
+&lt;p&gt;patch file1 file.patch&lt;/p&gt;
+
+&lt;p&gt;3）测试验证&lt;/p&gt;
+
+&lt;p&gt;7、paste&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;paste工具用于合并文件行&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;常用选项：&lt;/p&gt;
+
+&lt;p&gt;options：&lt;/p&gt;
+
+&lt;p&gt;​	-d：自定义间隔符，默认是tab&lt;/p&gt;
+
+&lt;p&gt;​	-s：串行处理，并非行&lt;/p&gt;
+
+&lt;p&gt;8、tr&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;tr用户字符转换、替换和删除，主要用于删除文件中控制字符或进行字符转换&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;语法和选项：&lt;/p&gt;
+
+&lt;p&gt;语法：&lt;/p&gt;
+
+&lt;p&gt;1）命令的执行结果交给tr处理，其中string1用于查询，strng2用于转换处理&lt;/p&gt;
+
+&lt;p&gt;2）tr处理的内容来自文件，记住要使用‘&amp;lt;’标准输入&lt;/p&gt;
+
+&lt;p&gt;3）匹配string进行相应操作，如删除操作&lt;/p&gt;
+
+&lt;p&gt;常匹配字符串：&lt;/p&gt;
+
+&lt;p&gt;字符串&lt;/p&gt;
+
+&lt;p&gt;1、命令和文件的自动补全&lt;/p&gt;
+
+&lt;p&gt;tab键只能不全命令和文件&lt;/p&gt;
+
+&lt;p&gt;2、常见的快捷键&lt;/p&gt;
+
+&lt;p&gt;ctrl+c：终止前台运行的程序&lt;/p&gt;
+
+&lt;p&gt;ctrl+z：把前台运行的程序挂到后台&lt;/p&gt;
+
+&lt;p&gt;ctrl+d：退出，等价于exit&lt;/p&gt;
+
+&lt;p&gt;ctrl+l：清屏&lt;/p&gt;
+
+&lt;p&gt;ctrl+a：将光标移到命令行最前端&lt;/p&gt;
+
+&lt;p&gt;ctrl+e：光标移到命令行最后端&lt;/p&gt;
+
+&lt;p&gt;ctrl+u：删光光标前所有字符&lt;/p&gt;
+
+&lt;p&gt;ctrl+k：删除光标后所有字符&lt;/p&gt;
+
+&lt;p&gt;ctrl+r：搜索历史命令&lt;/p&gt;
+
+&lt;p&gt;3、常用通配符&lt;/p&gt;
+
+&lt;p&gt;*：匹配0或多个任意字符&lt;/p&gt;
+
+&lt;p&gt;?：匹配任意单个字符&lt;/p&gt;
+
+&lt;p&gt;[ ]：匹配[list]中的任意单个字符&lt;/p&gt;
+
+&lt;p&gt;[^ ]：匹配除list中的任意单个字符&lt;/p&gt;
+
+&lt;p&gt;[- ]：匹配中括号中任意一个字符，- 代表一个范围。例如，[a-z] 代表匹配一个小写字母&lt;/p&gt;
+
+&lt;p&gt;{string1,string2,string3…}：匹配string1，string2，string3或更多字符串&lt;/p&gt;
+
+&lt;p&gt;eg：ls -l file{1..13}.jpg&lt;/p&gt;
+
+&lt;p&gt;#匹配数字：1-13&lt;/p&gt;
+
+&lt;p&gt;eg：ls -l file[1-13].jpg&lt;/p&gt;
+
+&lt;p&gt;#匹配数字：1-1和3&lt;/p&gt;
+
+&lt;p&gt;#出现的结果只有：file1.jpg，file3.jpg&lt;/p&gt;
+
+&lt;p&gt;4、bash中的引号&lt;/p&gt;
+
+&lt;p&gt;“”：双引号，会把引号的内容当作整体来看待，允许通过$符号引用其他变量值&lt;/p&gt;
+
+&lt;p&gt;‘’：单引号，会把引号的内容当成整体来看待，禁止引用其他变量值，shell中特殊符号都被设为普通字符&lt;/p&gt;
+
+&lt;p&gt;``:反撇号和$()一样，引号或者括号里的命令会优先执行，如果存在嵌套，反撇号不能用&lt;/p&gt;
+
+&lt;p&gt;shell介绍：&lt;/p&gt;
+
+&lt;p&gt;1、前言：&lt;/p&gt;
+
+&lt;p&gt;计算机只能识别机器语言（0和1），但是程序员不难直接去写0和1这样的代码，所以要想将程序员开发的代码在计算机上运行，就需要编译器或解释器来将代码翻译成计算机语言&lt;/p&gt;
+
+&lt;p&gt;2、编程语言分类:&lt;/p&gt;
+
+&lt;p&gt;编译型语言：&lt;/p&gt;
+
+&lt;p&gt;在程序执行之前需要一个专用的编译过程，把程序编译成为机器语言文件，运行时不需要重新翻译，直接使用编译的结果就行，程序执行效率高，依赖编译器，跨平台性差&lt;/p&gt;
+
+&lt;p&gt;解释性语言：&lt;/p&gt;
+
+&lt;p&gt;程序不需要编译，程序在运行时由解释器翻译成机器语言，每执行一次都要翻译一次，因此效率比较低&lt;/p&gt;
+
+&lt;p&gt;3、shell的种类：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[root@aliyun ~]# cat /etc/shells
+
+/bin/sh          #是bash的一个快捷方式
+
+/bin/bash        #bash是大多数linux默认的shell，包含的功能几乎可以涵盖shell所有的功能
+
+/sbin/nologin    #表示非交互，不能登陆操作系统
+
+/bin/dash        #小巧，高效，功能相对少一些
+
+/usr/bin/sh      
+
+/usr/bin/bash
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;4、shell脚本&lt;/p&gt;
+
+&lt;p&gt;简单来说，就是将需要执行的命令保存到文本中，按照顺序执行，它是解释型的，意味着不需要编译&lt;/p&gt;
+
+&lt;p&gt;准确概括：&lt;/p&gt;
+
+&lt;p&gt;若干命令+脚本的基本格式+脚本特定语法+思想=shell脚本&lt;/p&gt;
+
+&lt;p&gt;5、shell脚本的作用&lt;/p&gt;
+
+&lt;p&gt;1）自动化软件部署&lt;/p&gt;
+
+&lt;p&gt;2）自动化管理：系统初始化脚本、批量更改主机密码、推送公钥&lt;/p&gt;
+
+&lt;p&gt;3）自动分析：统计网站访问量&lt;/p&gt;
+
+&lt;p&gt;4）自动化备份：数据库备份、日志转储&lt;/p&gt;
+
+&lt;p&gt;5）自动化监控脚本&lt;/p&gt;
+
+&lt;p&gt;6、shell脚本的基本语法&lt;/p&gt;
+
+&lt;p&gt;1）脚本第一行，‘#！’指定解释器&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#!/bin/bash&lt;/code&gt;：表示一下内容使用bash解释器解析&lt;/p&gt;
+
+&lt;p&gt;注：如果直接将解释器路径写死在脚本中，可能在某些系统就会存在找不到解释器的兼容性问题，所以可以使用：&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#!/bin/env 解释器&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;#env是个Linux命令，它会按照当前环境变量设置（主要是PATH变量），查找名为python的可执行文件&lt;/p&gt;
+
+&lt;p&gt;2）脚本的第二部分，‘#’后面的内容是对脚本的基本信息进行描述&lt;/p&gt;
+
+&lt;p&gt;7、shell脚本的执行方法&lt;/p&gt;
+
+&lt;p&gt;标准脚本执行方法&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chmod +x xxx.sh
+
+/xxx/xxx/xxx.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;8、非标准&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bash xxx.sh
+
+bash +x xxx.sh     #一般用于排错，查看脚本的执行过程
+
+bash +n xxx.sh     #查看脚本是否有语法错误
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;二、变量&lt;/p&gt;
+
+&lt;p&gt;1、什么是变量&lt;/p&gt;
+
+&lt;p&gt;变量是用来临时保存数据，该数据是可以变化的数据&lt;/p&gt;
+
+&lt;p&gt;2、定义变量&lt;/p&gt;
+
+&lt;p&gt;1）变量名=变量值&lt;/p&gt;
+
+&lt;p&gt;#取消变量：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;unset 变量名&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;2）命令的执行结果赋值给变量&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;A=`hostname`
+
+A=$（echo hello_word）
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;3）交互式定义变量（read）&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#用户自己定义变量
+
+read [选项] 变量名
+
+#变量来自于文件
+
+read [选项] 变量名 &amp;lt; filename
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;常见选项：&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;选项&lt;/th&gt;
+      &lt;th&gt;释义&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-p&lt;/td&gt;
+      &lt;td&gt;定义提示用户的信息&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-n&lt;/td&gt;
+      &lt;td&gt;定义字符数&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-s&lt;/td&gt;
+      &lt;td&gt;不显示&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-t&lt;/td&gt;
+      &lt;td&gt;定义超过时间，默认单位为秒&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;4）定义有类型的变量（declare）&lt;/p&gt;
+
+&lt;p&gt;目的：给一些变量做一些限制，固定变量的类型，比如：整型、只读&lt;/p&gt;
+
+&lt;p&gt;用法：&lt;/p&gt;
+
+&lt;p&gt;declare [选项] 变量名=变量值&lt;/p&gt;
+
+&lt;p&gt;常见选项：&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;选项&lt;/th&gt;
+      &lt;th&gt;释义&lt;/th&gt;
+      &lt;th&gt;举例&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-i&lt;/td&gt;
+      &lt;td&gt;将变量看成整数&lt;/td&gt;
+      &lt;td&gt;declare -i A=123&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-r&lt;/td&gt;
+      &lt;td&gt;定义只读变量&lt;/td&gt;
+      &lt;td&gt;declare -r B=hello&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-a&lt;/td&gt;
+      &lt;td&gt;定义普通数组，查看普通数组&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-A&lt;/td&gt;
+      &lt;td&gt;定义关联数组，查看关联数组&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-x&lt;/td&gt;
+      &lt;td&gt;将变量通过环境导出&lt;/td&gt;
+      &lt;td&gt;delare -x AAA=123456&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;3、变量规则&lt;/p&gt;
+
+&lt;p&gt;1）变量区分大小写&lt;/p&gt;
+
+&lt;p&gt;2）变量名不能有特殊符号，变量不能有空格&lt;/p&gt;
+
+&lt;p&gt;3）变量名不能以数字开头&lt;/p&gt;
+
+&lt;p&gt;4）等号两边不能有空格&lt;/p&gt;
+
+&lt;p&gt;5）变量名尽量做到见名知意&lt;/p&gt;
+
+&lt;p&gt;4、变量的分类：&lt;/p&gt;
+
+&lt;p&gt;1）本地变量&lt;/p&gt;
+
+&lt;p&gt;当前用户自定义的变量，当前进程中有效，其他进程及当前进程的子进程无效&lt;/p&gt;
+
+&lt;p&gt;2）环境变量&lt;/p&gt;
+
+&lt;p&gt;当前进程有效，并且能够被子进程调用&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;env：查看当前用户的环境变量&lt;/li&gt;
+  &lt;li&gt;set：查询当前用户的所有变量（临时变量和环境变量）&lt;/li&gt;
+  &lt;li&gt;export：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;变量名=变量值&lt;/code&gt;，或者&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;变量名=变量值；export&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#临时将一个本地变量变成环境变量
+
+export A=hello
+
+#永久生效
+
+vim /etc/profile 
+
+vim ~/bashrc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;3）全局变量&lt;/p&gt;
+
+&lt;p&gt;全局所有的用户和程序都都能调用，且继承，新建的用户也默认能调用&lt;/p&gt;
+
+&lt;p&gt;解读相关配置文件&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;以上文件修改后，都需要重新source让其生效或者退出重新登陆&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;文件名&lt;/th&gt;
+      &lt;th&gt;说明&lt;/th&gt;
+      &lt;th&gt;备注&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;~/.bashrc&lt;/td&gt;
+      &lt;td&gt;当前用户的bash信息，用于登陆时读取&lt;/td&gt;
+      &lt;td&gt;定义别名、umask、函数等&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;~/.bash_profile&lt;/td&gt;
+      &lt;td&gt;当前用户的环境变量&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;~/.bash_logout&lt;/td&gt;
+      &lt;td&gt;当前用户退出当前shell时最后读取&lt;/td&gt;
+      &lt;td&gt;定义用户退出时执行的程序等&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;/etc/bashrc&lt;/td&gt;
+      &lt;td&gt;全局的bash信息，所有用户都生效&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;/etc/profile&lt;/td&gt;
+      &lt;td&gt;全局环境变量信息&lt;/td&gt;
+      &lt;td&gt;系统和所有用户都生效&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;用户登陆系统读取相关文件的顺序：&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/profile&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.bash_profile&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.bashrc&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/bashrc&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/.bash_logout&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;4）系统变量&lt;/p&gt;
+
+&lt;p&gt;内置bash中变量：shell本身已经固定好它的名字和作用&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;内置变量&lt;/th&gt;
+      &lt;th&gt;含义&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;$?&lt;/td&gt;
+      &lt;td&gt;上一条命令执行后返回的状态，0：执行正常，非0：执行异常或错误&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;$0&lt;/td&gt;
+      &lt;td&gt;当前执行的程序或脚本名&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;$#&lt;/td&gt;
+      &lt;td&gt;脚本后面接的参数的个数&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;$*&lt;/td&gt;
+      &lt;td&gt;脚本后面所有参数，参数当作一个整体输出，每一个变量参数之间以空格隔开&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;$@&lt;/td&gt;
+      &lt;td&gt;脚本后面所有参数，参数是独立的，也是全部输出&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;$1-$9&lt;/td&gt;
+      &lt;td&gt;脚本后面的位置参数，$1表示第一个位置参数&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;${10}-${n}&lt;/td&gt;
+      &lt;td&gt;扩展位置参数，第10个位置变量必须用{}括起来（2位数以上括起来）&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;$$&lt;/td&gt;
+      &lt;td&gt;当前所在进程的进程号，如echo $$&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;$!&lt;/td&gt;
+      &lt;td&gt;后台运行的最后一个进程号（当前终端）&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;!$&lt;/td&gt;
+      &lt;td&gt;调用最后一条命令历史中的参数&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;三、简单四则运算符号&lt;/p&gt;
+
+&lt;p&gt;算术运算：默认情况下，shell就只能支持简单的整数运算&lt;/p&gt;
+
+&lt;p&gt;运算内容：加（+）、减（-）、乘（*）、除（/）、求余数（%）&lt;/p&gt;
+
+&lt;p&gt;四则运算符号：&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;表达式&lt;/th&gt;
+      &lt;th&gt;举例&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;$(( ))&lt;/td&gt;
+      &lt;td&gt;echo $((1+1))&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;$[ ]&lt;/td&gt;
+      &lt;td&gt;echo $[10-5]&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;expr&lt;/td&gt;
+      &lt;td&gt;expr 10 / 5&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;let&lt;/td&gt;
+      &lt;td&gt;n-1;let n+=1&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;四、条件判断语法结构&lt;/p&gt;
+
+&lt;p&gt;1、条件判断语法格式：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;格式1：test 条件表达式&lt;/li&gt;
+  &lt;li&gt;格式2：[ 条件表达式 ]&lt;/li&gt;
+  &lt;li&gt;格式3：[[ 条件表达式 ]]，支持正则&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;2、test&lt;/p&gt;
+
+&lt;p&gt;判断文件类型：&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;判断参数&lt;/th&gt;
+      &lt;th&gt;含义&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-e&lt;/td&gt;
+      &lt;td&gt;判断文件是否存在&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-f&lt;/td&gt;
+      &lt;td&gt;判断文件是否存在并且是一个普通文件&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-d&lt;/td&gt;
+      &lt;td&gt;判断文件是否存在并且是一个目录&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-b&lt;/td&gt;
+      &lt;td&gt;判断文件是否存在并且是一个块设备&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-L&lt;/td&gt;
+      &lt;td&gt;判断文件是否存在并且是一个软链接文件&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-S&lt;/td&gt;
+      &lt;td&gt;判断文件是否存在并且是一个套接字设备&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-c&lt;/td&gt;
+      &lt;td&gt;判断文件是否存在并且是一个字符设备文件&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-p&lt;/td&gt;
+      &lt;td&gt;判断文件是否存在并且是一个命名管道文件&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-s&lt;/td&gt;
+      &lt;td&gt;判断文件是否存在并且是一个非空文件（有内容）&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;判断文件权限&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;判断参数&lt;/th&gt;
+      &lt;th&gt;含义&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-r&lt;/td&gt;
+      &lt;td&gt;当前用户是否可读&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-w&lt;/td&gt;
+      &lt;td&gt;当前用户是否可写&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-x&lt;/td&gt;
+      &lt;td&gt;当前用户是否可执行&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-u&lt;/td&gt;
+      &lt;td&gt;是否有suid&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-g&lt;/td&gt;
+      &lt;td&gt;是否有sgid&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-k&lt;/td&gt;
+      &lt;td&gt;是否有t位&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;判断整数&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;判断参数&lt;/th&gt;
+      &lt;th&gt;含义&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-eq&lt;/td&gt;
+      &lt;td&gt;相等&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-ne&lt;/td&gt;
+      &lt;td&gt;不相等&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-gt&lt;/td&gt;
+      &lt;td&gt;大于&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-ge&lt;/td&gt;
+      &lt;td&gt;大于等于&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-lt&lt;/td&gt;
+      &lt;td&gt;小于&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-le&lt;/td&gt;
+      &lt;td&gt;小于等于&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;判断字符串&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;判断参数&lt;/th&gt;
+      &lt;th&gt;含义&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-z&lt;/td&gt;
+      &lt;td&gt;判断是否为空字符，字符长度为0成立&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-n&lt;/td&gt;
+      &lt;td&gt;判断是否为非空字符，字符长度不为0则成立&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;string1 = string2&lt;/td&gt;
+      &lt;td&gt;判断字符串是否相等&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;string1 !=string2&lt;/td&gt;
+      &lt;td&gt;判断字符串是否不相等&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;多重条件判断&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;判断符号&lt;/th&gt;
+      &lt;th&gt;含义&lt;/th&gt;
+      &lt;th&gt;举例&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-a和&amp;amp;&amp;amp;&lt;/td&gt;
+      &lt;td&gt;逻辑与&lt;/td&gt;
+      &lt;td&gt;[ 1 -eq 1 -a 1 -ne 0 ]或[ 1 -eq 1 ]&amp;amp;&amp;amp;[ 0 -ne 1 ]&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-o和||&lt;/td&gt;
+      &lt;td&gt;逻辑或&lt;/td&gt;
+      &lt;td&gt;[ 1 -eq 1 -o 0 -ne 1 ]或[ 1 -eq 1 ]||[ 0 -ne 1 ]&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;注：&lt;/p&gt;
+
+&lt;p&gt;&amp;amp;&amp;amp;：前面的表达式为真，才会执行后面的代码&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;：前面的表达式为假，才会执行后面的代码&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;；：只用于分割命令或表达式&lt;/p&gt;
+
+&lt;p&gt;类c风格的数值比较：&lt;/p&gt;
+
+&lt;p&gt;注：在(( ))中，=表示赋值，==表示判断&lt;/p&gt;
+
+&lt;p&gt;eg：&lt;/p&gt;
+
+&lt;p&gt;(( 1==2 ))；echo $?&lt;/p&gt;
+
+&lt;p&gt;字符串判断：&lt;/p&gt;
+
+&lt;p&gt;注：&lt;/p&gt;
+
+&lt;p&gt;双括号引起来，看作是一个整体；=、==都表示判断&lt;/p&gt;
+
+&lt;p&gt;eg：&lt;/p&gt;
+
+&lt;p&gt;a=‘hello’;b=’word’;[ “$a” = “&amp;amp;b” ];echo $?&lt;/p&gt;
+
+&lt;p&gt;[ “$a” != “&amp;amp;b” ];echo $?&lt;/p&gt;
+
+&lt;p&gt;二、流程控制语句&lt;/p&gt;
+
+&lt;p&gt;基本语法结构&lt;/p&gt;
+
+&lt;p&gt;if：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;if [ condition ];then
+
+	command
+
+	command
+
+fi
+
+[ condition ] &amp;amp;&amp;amp; command
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;if……else：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;if [ condition ];then
+
+		command1
+
+	else
+
+		command2
+
+fi
+
+--------------------------------------------------------------------------------------
+
+[ condition ] &amp;amp;&amp;amp; command1 || command2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;if……elif……else：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;if [ condition1 ];then
+
+		command1
+
+	elif [ condition2 ];then
+
+		command2
+
+	else
+
+		command3
+
+fi
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;for循环语句：&lt;/p&gt;
+
+&lt;p&gt;基本语法结构：&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;列表for循环：用于将一组命令执行已知的次数&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;带列表：&lt;/p&gt;
+
+&lt;p&gt;基本语法格式：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;for variable in {list}
+
+	do
+
+		command
+
+		command
+
+	done
+
+------------------------------
+
+for variable in a b c
+
+	do
+
+		command
+
+		command
+
+	done
+	
+for variable in $(seq 5)
+
+	do
+
+		command
+
+		command
+
+	done
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;注意：&lt;/p&gt;
+
+&lt;p&gt;seq 10&lt;/p&gt;
+
+&lt;p&gt;seq 10 -1 1&lt;/p&gt;
+
+&lt;p&gt;{1..10..2}&lt;/p&gt;
+
+&lt;p&gt;{1..10}&lt;/p&gt;
+
+&lt;p&gt;{10..1}&lt;/p&gt;
+
+&lt;p&gt;不带列表：&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;不带列表的for循环执行时由用户指定参数和参数个数&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;基本语法格式：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;for variable
+
+	do
+
+		command
+
+		command
+
+	done
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#!/bin/bash
+
+#文件名为for_test.sh
+
+for i
+	do
+		echo &quot;hello&quot;
+	done
+
+[root@aliyun ~]# bash -x for_test.sh a 
++ for i in '&quot;$@&quot;'
++echo hello
+hello
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;类c风格的for循环：&lt;/p&gt;
+
+&lt;p&gt;基本语法结构：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#expr1:定义变量并赋初值
+
+#expr2:决定是否进行循环（条件）
+
+#expr3:决定循环变量如何改变，决定循环什么时候退出
+
+for(( expr1;expr2;expr3 ))
+
+	do
+
+		command
+
+		command
+
+	done
+
+eg：
+
+for (( i=1;i&amp;lt;=5;i++ ))
+
+	do
+
+		echo $i
+
+	done
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;循环控制语句：&lt;/p&gt;
+
+&lt;p&gt;循环体：==do……done==之间的内容&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;continue：继续，表示循环体内下面的代码不执行，重新开始下一次循环&lt;/li&gt;
+  &lt;li&gt;break：打断；马上停止执行本次循环，执行循环体后面的代码&lt;/li&gt;
+  &lt;li&gt;exit：表示直接跳出程序&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;二、while循环语句&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;条件为真就进入循环，条件为假就退出循环&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;while 表达式
+
+ 	do
+
+		command
+
+	done
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;三、until&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;条件为假就进入循环，条件为真就退出循环&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;1、until语法结构&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;until 表达式
+
+	do
+
+		command
+
+		command
+
+	done
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;四、case&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;1、case语句为多重匹配语句&lt;/p&gt;
+
+  &lt;p&gt;2、如果匹配成功，执行相匹配的命令&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;语法结构：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;case var in
+
+pattern 1)                              #用“|”分割多个模式，相当于or，eg:hello|word)
+
+	command1
+
+	;;                                  #;;两个分号代表命令结束
+
+pattern 2)
+
+	command2
+
+	;;
+
+		*)                        #default，不满足以上模式，默认执行下面的语句
+
+	command4
+
+	;;
+esac                                    #exac表示case语句结束
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;函数：&lt;/p&gt;
+
+&lt;p&gt;1、什么是函数&lt;/p&gt;
+
+&lt;p&gt;shell运行将一组命令集合或语句形成一段可用代码，这些代码块称为shell函数&lt;/p&gt;
+
+&lt;p&gt;给这段代码起个名字（函数名），后续可用直接调用这段代码的功能&lt;/p&gt;
+
+&lt;p&gt;2、如何定义函数&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;方法1：
+
+函数名（）
+{
+	函数体
+}
+
+方法2：
+
+function 函数名（）
+{
+	函数体
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;函数中==return==说明：&lt;/p&gt;
+
+&lt;p&gt;1、return可用==结束一个函数==，类似于循环控制语句break（结束当前循环，执行循环体后面的代码）&lt;/p&gt;
+
+&lt;p&gt;2、return默认返回函数中最后一个命令状态值，也可以给定参数值，范围是0-256之间&lt;/p&gt;
+
+&lt;p&gt;3、如果没有return函数，函数将返回最后一个指令的退出状态值&lt;/p&gt;
+
+&lt;p&gt;函数该如何调用：&lt;/p&gt;
+
+&lt;p&gt;随机数：&lt;/p&gt;
+
+&lt;p&gt;系统变量：==RANDOM==，默认回产生0-32767的随机整数&lt;/p&gt;
+
+&lt;p&gt;查看系统生成的随机数&lt;/p&gt;
+
+&lt;p&gt;echo $RANDOM&lt;/p&gt;
+
+&lt;p&gt;生成0-1的随机数&lt;/p&gt;
+
+&lt;p&gt;echo $[$RANDOM%2]&lt;/p&gt;
+
+&lt;p&gt;生成0-2的随机数&lt;/p&gt;
+
+&lt;p&gt;echo $[$RANDOM%3]&lt;/p&gt;
+
+&lt;p&gt;生成0-3的随机数&lt;/p&gt;
+
+&lt;p&gt;echo $[$RANDOM%4]&lt;/p&gt;
+
+&lt;p&gt;生成0-9的随机数&lt;/p&gt;
+
+&lt;p&gt;echo $[$RANDOM%10]&lt;/p&gt;
+
+&lt;p&gt;生成0-100的随机数&lt;/p&gt;
+
+&lt;p&gt;echo $[$RANDOM%101]&lt;/p&gt;
+
+&lt;p&gt;生成50-100的随机数&lt;/p&gt;
+
+&lt;p&gt;echo $[$RANDOM%51+50]&lt;/p&gt;
+
+&lt;p&gt;四、扩展补充&lt;/p&gt;
+
+&lt;p&gt;1、数组定义&lt;/p&gt;
+
+&lt;p&gt;1）数组分类&lt;/p&gt;
+
+&lt;p&gt;普通分类：只能使用整数作为数组索引（元素的下标）&lt;/p&gt;
+
+&lt;p&gt;关联数组：只能使用字符串作为数组索引（元素的下标）&lt;/p&gt;
+
+&lt;p&gt;2、普通数组定义&lt;/p&gt;
+
+&lt;p&gt;一次只能赋予一个值&lt;/p&gt;
+
+&lt;p&gt;数组名[索引下标]=值&lt;/p&gt;
+
+&lt;p&gt;array[0]=v1&lt;/p&gt;
+
+&lt;p&gt;array[1]=v2&lt;/p&gt;
+
+&lt;p&gt;一次赋予多个值&lt;/p&gt;
+
+&lt;p&gt;数组名=（值1 值2 值3 ……）&lt;/p&gt;
+
+&lt;p&gt;array=（var1 var2 var3）&lt;/p&gt;
+
+&lt;p&gt;#将文件中每一行赋值给array1数组&lt;/p&gt;
+
+&lt;p&gt;array=(‘cat /etc/passwd’)&lt;/p&gt;
+
+&lt;p&gt;3、数组的读取&lt;/p&gt;
+
+&lt;p&gt;${数组名[元素下标]}&lt;/p&gt;
+
+&lt;p&gt;#获取数组里的第一个元素&lt;/p&gt;
+
+&lt;p&gt;echo ${array[0]}&lt;/p&gt;
+
+&lt;p&gt;#获取数组里的所有元素&lt;/p&gt;
+
+&lt;p&gt;echo ${array[*]} / echo ${array[@]}&lt;/p&gt;
+
+&lt;p&gt;#获取数组里所有元素个数&lt;/p&gt;
+
+&lt;p&gt;echo ${#array[*]}&lt;/p&gt;
+
+&lt;p&gt;#获取数组的索引下标&lt;/p&gt;
+
+&lt;p&gt;echo ${!array[@]}&lt;/p&gt;
+
+&lt;p&gt;#查看多个数组&lt;/p&gt;
+
+&lt;p&gt;echo ${name[*]:1:3}&lt;/p&gt;
+
+&lt;p&gt;#查看所有普通数组&lt;/p&gt;
+
+&lt;p&gt;declare -a&lt;/p&gt;
+
+&lt;p&gt;关联数组定义：&lt;/p&gt;
+
+&lt;p&gt;首先声明关联数组&lt;/p&gt;
+
+&lt;p&gt;declare -A asso_array1&lt;/p&gt;
+
+&lt;p&gt;数组赋值：&lt;/p&gt;
+
+&lt;p&gt;一次赋一个值&lt;/p&gt;
+
+&lt;p&gt;数组名[索引or下标]=变量值&lt;/p&gt;
+
+&lt;p&gt;asso_array1[linux]=one&lt;/p&gt;
+
+&lt;p&gt;一次赋多个值&lt;/p&gt;
+
+&lt;p&gt;asso_array2=（[name1]=harry [name2]=jack [name3]=amy）&lt;/p&gt;
+
+&lt;p&gt;查看关联数组：&lt;/p&gt;
+
+&lt;p&gt;declare -A&lt;/p&gt;
+
+&lt;p&gt;四、正则表达式&lt;/p&gt;
+
+&lt;p&gt;正则表达式是什么：&lt;/p&gt;
+
+&lt;p&gt;Regular Expression、regex、regexp，常规表示法，是一种字符模式，用于在查找过程中==匹配指定的字符==&lt;/p&gt;
+
+&lt;p&gt;正则当中名词解释：&lt;/p&gt;
+
+&lt;p&gt;元字符&lt;/p&gt;
+
+&lt;p&gt;指那些在正则表达式中具有特殊意义的专用字符，如点（.），星（*），问号（？）等&lt;/p&gt;
+
+&lt;p&gt;前导字符&lt;/p&gt;
+
+&lt;p&gt;位于元字符前面的字符，ab==c==*&lt;/p&gt;
+
+&lt;p&gt;第一类正则表达式：&lt;/p&gt;
+
+&lt;p&gt;正则中普通常用的元字符：&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;元字符&lt;/th&gt;
+      &lt;th&gt;功能&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;.&lt;/td&gt;
+      &lt;td&gt;匹配除了换行符以外的任意单个字符&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;*&lt;/td&gt;
+      &lt;td&gt;前导字符出现0次或连续多次&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;.*&lt;/td&gt;
+      &lt;td&gt;任意长度字符&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;^&lt;/td&gt;
+      &lt;td&gt;行首以……开头&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;$&lt;/td&gt;
+      &lt;td&gt;行尾以……结尾&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;^$&lt;/td&gt;
+      &lt;td&gt;空行&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;[ ]&lt;/td&gt;
+      &lt;td&gt;匹配括号里任意单个字符或一组单个字符&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;[^ ]&lt;/td&gt;
+      &lt;td&gt;匹配不包含括号里任一单个字符或一组字符&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;^[ ]&lt;/td&gt;
+      &lt;td&gt;匹配以括号里任意单个字符或一组单个字符开头&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;^[^]&lt;/td&gt;
+      &lt;td&gt;匹配不以括号里任意单个字符或一组单个字符开头&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;正则中其他常用元字符：&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;元字符&lt;/th&gt;
+      &lt;th&gt;功能&lt;/th&gt;
+      &lt;th&gt;举例&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;\ &amp;lt;&lt;/td&gt;
+      &lt;td&gt;取单词的头(\和&amp;lt;不空格)&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;\ &amp;gt;&lt;/td&gt;
+      &lt;td&gt;取单词的尾(\和&amp;gt;不空行格)&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;\ &amp;lt; \ &amp;gt;&lt;/td&gt;
+      &lt;td&gt;精确匹配&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;\ {n\ }&lt;/td&gt;
+      &lt;td&gt;匹配前导字符连续出现n次&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;\ {n,m\ }&lt;/td&gt;
+      &lt;td&gt;匹配前导字符出现n次与m次之间&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;\ ( \ )&lt;/td&gt;
+      &lt;td&gt;保存被匹配的字符&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;\d&lt;/td&gt;
+      &lt;td&gt;匹配数字（eg：grep -P ‘\d’ 1.txt）&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;\w&lt;/td&gt;
+      &lt;td&gt;匹配字母数字下划线（grep -P）&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;\s&lt;/td&gt;
+      &lt;td&gt;匹配空行、制表符、换页符（grep -P）&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;扩展类正则常用元字符：&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;grep -E或者是egrep才能接扩展类正则常用元字符&lt;/p&gt;
+
+  &lt;p&gt;sed -r才能接扩展类正则常用元字符&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;扩展元字符&lt;/th&gt;
+      &lt;th&gt;功能&lt;/th&gt;
+      &lt;th&gt;举例&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;+&lt;/td&gt;
+      &lt;td&gt;匹配一个或多个前导字符&lt;/td&gt;
+      &lt;td&gt;bo+：匹配boo、bo&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;？&lt;/td&gt;
+      &lt;td&gt;匹配零个或一个前导字符&lt;/td&gt;
+      &lt;td&gt;bo?：匹配b、bo&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;|&lt;/td&gt;
+      &lt;td&gt;或&lt;/td&gt;
+      &lt;td&gt;a|b：匹配a或b&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;()&lt;/td&gt;
+      &lt;td&gt;组字符，看成整体&lt;/td&gt;
+      &lt;td&gt;(my|your)self：myself或yourself&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;{n}&lt;/td&gt;
+      &lt;td&gt;前导字符重复n次&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;{n,}&lt;/td&gt;
+      &lt;td&gt;前导字符重复至少n次&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;{n,m}&lt;/td&gt;
+      &lt;td&gt;前导字符重复n到m次&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;第二类正则&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;表达式&lt;/th&gt;
+      &lt;th&gt;功能&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;[:alnum:]&lt;/td&gt;
+      &lt;td&gt;字母与数字&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;[:alpha:]&lt;/td&gt;
+      &lt;td&gt;大小写字母&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;[:blank:]&lt;/td&gt;
+      &lt;td&gt;空格和制表符&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;[:digit:]&lt;/td&gt;
+      &lt;td&gt;数字&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;[:lower:]&lt;/td&gt;
+      &lt;td&gt;小写字母&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;[:upper:]&lt;/td&gt;
+      &lt;td&gt;大写字母&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;[:punct:]&lt;/td&gt;
+      &lt;td&gt;标点符号&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;[:space:]&lt;/td&gt;
+      &lt;td&gt;换行符、回车等在内的所有空白&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;一、sed&lt;/p&gt;
+
+&lt;p&gt;1、sed概念&lt;/p&gt;
+
+&lt;p&gt;sed是stream Editior（流编辑器）的缩写，简称流编辑器；用来处理文件&lt;/p&gt;
+
+&lt;p&gt;2、sed如何处理文件&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;文本文件 ——&amp;gt; sed的模式空间（缓冲区）——–&amp;gt; sed输出到屏幕&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;sed是==一行一行==读取文件内容并按照要求进行处理，把处理后的结果输出到屏幕&lt;/p&gt;
+
+&lt;p&gt;具体流程：&lt;/p&gt;
+
+&lt;p&gt;1）首先sed读取文件中的一行内容，把其保存在一个临时缓存区（sed对缓冲区的副本进行操作，不会直接修改原文件）&lt;/p&gt;
+
+&lt;p&gt;2）然后根据需求处理临时缓冲区中的行，完成后把该行发送到屏幕上&lt;/p&gt;
+
+&lt;p&gt;3、sed使用方法介绍&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;sed常见的语法格式有两种：一种叫命令行，一种叫脚本模式&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;语法格式：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sed [options] '处理动作' 文件名
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;常用选项：&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;选项&lt;/th&gt;
+      &lt;th&gt;说明&lt;/th&gt;
+      &lt;th&gt;备注&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-e&lt;/td&gt;
+      &lt;td&gt;进行多项（多次）编辑&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-n&lt;/td&gt;
+      &lt;td&gt;取消默认输出&lt;/td&gt;
+      &lt;td&gt;不自动打印模式空间&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-r&lt;/td&gt;
+      &lt;td&gt;使用扩展正则表达式&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-i&lt;/td&gt;
+      &lt;td&gt;原地编辑（修改源文件）&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-f&lt;/td&gt;
+      &lt;td&gt;指定sed脚本的文件名&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;常见动作：&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;动作&lt;/th&gt;
+      &lt;th&gt;说明&lt;/th&gt;
+      &lt;th&gt;备注&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;‘p’&lt;/td&gt;
+      &lt;td&gt;打印&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;‘i’&lt;/td&gt;
+      &lt;td&gt;在指定行之前插入内容&lt;/td&gt;
+      &lt;td&gt;类似vim里的大写O&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;‘a’&lt;/td&gt;
+      &lt;td&gt;在指定行之后插入内容&lt;/td&gt;
+      &lt;td&gt;类似vim里的小写o&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;‘c’&lt;/td&gt;
+      &lt;td&gt;替换指定行所有内容&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;‘d’&lt;/td&gt;
+      &lt;td&gt;删除指定行&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;举例：&lt;/p&gt;
+
+&lt;p&gt;增删改查：&lt;/p&gt;
+
+&lt;p&gt;打印文章内容：&lt;/p&gt;
+
+&lt;p&gt;#打印文件第一行，取消默认输出&lt;/p&gt;
+
+&lt;p&gt;sed -n ‘p’ 1.txt&lt;/p&gt;
+
+&lt;p&gt;#打印文件第二行，取消默认输出&lt;/p&gt;
+
+&lt;p&gt;sed -n ‘2p’ 1.txt&lt;/p&gt;
+
+&lt;p&gt;#打印文件最后一行，取消默认输出&lt;/p&gt;
+
+&lt;p&gt;sed -n ‘$p’ 1.txt&lt;/p&gt;
+
+&lt;p&gt;#打印文件1-5行，取消默认输出&lt;/p&gt;
+
+&lt;p&gt;sed -n ‘1,5p’ 1.txt&lt;/p&gt;
+
+&lt;p&gt;#打印文件第1行和第5行，取消默认输出&lt;/p&gt;
+
+&lt;p&gt;sed -ne ‘1P’ -ne ‘5p’ 1.txt&lt;/p&gt;
+
+&lt;p&gt;sed -ne ‘1p;5p’ 1.txt&lt;/p&gt;
+
+&lt;p&gt;增加文章内容：&lt;/p&gt;
+
+&lt;p&gt;#在最后一行加入99999&lt;/p&gt;
+
+&lt;p&gt;sed ‘$a99999’ 1.txt&lt;/p&gt;
+
+&lt;p&gt;修改文件内容&lt;/p&gt;
+
+&lt;p&gt;#替换文件第5行内容&lt;/p&gt;
+
+&lt;p&gt;sed ‘5chelloword’ 1.txt&lt;/p&gt;
+
+&lt;p&gt;#替换文件所有内容&lt;/p&gt;
+
+&lt;p&gt;sed ‘chelloword’ 1.txt&lt;/p&gt;
+
+&lt;p&gt;#替换以user01开头的行&lt;/p&gt;
+
+&lt;p&gt;sed ‘/^user01/c88888’&lt;/p&gt;
+
+&lt;p&gt;删除文件内容&lt;/p&gt;
+
+&lt;p&gt;#删除文件第1行&lt;/p&gt;
+
+&lt;p&gt;sed ‘1d’ sed&lt;/p&gt;
+
+&lt;p&gt;对文件进行搜索替换操作&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;语法：sed [option] ‘s/搜索的内容/替换的内容/动作’ 需要处理的文件&lt;/p&gt;
+
+  &lt;p&gt;其中：动作：打印-p；全局替换-g&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;#打印&lt;/p&gt;
+
+&lt;p&gt;sed -n ‘s/ROOT/root/p’ 1.txt&lt;/p&gt;
+
+&lt;p&gt;#注释掉1-5行&lt;/p&gt;
+
+&lt;p&gt;sed -n ‘1,5s/^/#/p’ 1.txt&lt;/p&gt;
+
+&lt;p&gt;其他命令&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;命令&lt;/th&gt;
+      &lt;th&gt;解释&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;r&lt;/td&gt;
+      &lt;td&gt;从另外文件读取内容&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;w&lt;/td&gt;
+      &lt;td&gt;内容另存为&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;x&lt;/td&gt;
+      &lt;td&gt;保存查找串以便在替换串中引用&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;=&lt;/td&gt;
+      &lt;td&gt;打印行号&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;!&lt;/td&gt;
+      &lt;td&gt;对所选行以外的所有行应用命令，放在行数之后&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;q&lt;/td&gt;
+      &lt;td&gt;退出&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;sed ‘$r /etc/hosts’ 1.txt&lt;/p&gt;
+
+&lt;p&gt;sed ‘1,5w 11.txt’ 1.txt&lt;/p&gt;
+
+&lt;p&gt;过滤：&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;grep -Ev ‘^#&lt;/td&gt;
+      &lt;td&gt;^$’ 1.txt&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;sed -e ‘/^#/d’ -e ‘/^$/d’ 1.txt&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;sed -r ‘/^#&lt;/td&gt;
+      &lt;td&gt;/^$/d’ 1.txt&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;sed脚本&lt;/p&gt;
+
+&lt;p&gt;用法：&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sed -f scripts.sh file
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#!/bin/sed -f
+
+1,5d
+
+s/root/hello/g
+
+3i777
+
+5i888
+
+
+p
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;1）脚本文件是命令清单&lt;/p&gt;
+
+&lt;p&gt;2）在每行的末尾不能有任何空格、制表符或其他文本&lt;/p&gt;
+
+&lt;p&gt;3）如果需要在一行中有多个命令，应该使用分号分隔&lt;/p&gt;
+
+&lt;p&gt;4）不需要且不可用引号保护命令&lt;/p&gt;
+
+&lt;p&gt;5）#号开头的行为是注释&lt;/p&gt;</content><author><name></name></author><summary type="html">文本处理工具 1、grep grep是行过滤工具，用于根据关键字进行过滤 语法和选项： 语法： grep [选项] ‘关键字’ 文件名 常见选项： option： -i：不区分大小写 -v：查找不包含指定内容的行，反向选择 -w：按单词搜索 -o：打印匹配关键字 -c：统计匹配到的次数 -n：统计匹配到的行数 -r：逐层遍历目录查找 -A：显示匹配行及后面多少行 -B：显示匹配行及前面多少行 -C：显示匹配行前后多少行 #查看日志时，只匹配”error“看不出哪里出错，需要看上下文 -l：只列出匹配的文件名 -L：只列出不匹配的文件名 -e：使用正则匹配 -E：使用扩展正则匹配 --color=auto：可以将找到的关键字部分加上颜色的显示 2、cut cut是列截取工具，用于列的截取 语法和选项： 语法： cut [选项] 文件名 常见选项： option： -c：以字符为单位进行分割 -d：自定义分隔符，默认为制表符\t -f：与-d一起使用，指定截取哪个区域 #-f1，7：显示第一字段和第七字段 3、sort sort工具用于排序，它将文件中的每一行作为一个单位，从首字符向后，依次按ASCII码进行比较，最后将他们按升序输出 语法和选项： 语法： sort [OPTION]... [FILE]... 选项： option： -u：去除重复行 -r：降序排列，默认是升序 -o：将排序结果输出到文件中，类似重定向符号&amp;gt; -n：以数字排序，默认是按字符排序 -t：分隔符 -k：第N列 -b：忽略前导空格 -R：随机排序，每次运行的结果均不同 4、uniq uniq用于去除连续的重复行 语法与选项： 语法： uniq [OPTION]... [INPUT [OUTPUT]] 常见选项： option： -i：忽略大小写 -c：统计重复行次数 -d：只显示重复行 5、tee tee工具从标准输入读取并写入到标准输出和文件，即：双向覆盖重定向（屏幕输出 文本输入） 选项： options： ​ -a：双向追加重定向 6、diff diff工具用于逐行比较文件的不同 注：diff描述两个文件不同方式是告诉我们怎样改变第一个文件之后与第二个文件匹配 语法与选项： 语法： diff [选项] 文件1 文件2 常用选项： options： ​ -b：不检查空格 ​ -B：不检查空白行 ​ -i：不检查大小写 ​ -W：忽略所有的空格 ​ –normal：正常格式显示 ​ -c：上下文格式显示 ​ -u：合并格式显示 1）正常显示 2）上下文显示 3）合并格式 其他小技巧： 有时候我们需要以一个文化为标准，去修改其他文件，并且修改的地方较多，我们可以通过打补丁的方式完成 1）先找出文件的不同，然后输出到一个文件 diff -uN file1 file2 &amp;gt; file.patch #-u：上下文模式 #-N：将不存在的文件当作空文件 2）将不同的内容打补丁到文件 patch file1 file.patch 3）测试验证 7、paste paste工具用于合并文件行 常用选项： options： ​ -d：自定义间隔符，默认是tab ​ -s：串行处理，并非行 8、tr tr用户字符转换、替换和删除，主要用于删除文件中控制字符或进行字符转换 语法和选项： 语法： 1）命令的执行结果交给tr处理，其中string1用于查询，strng2用于转换处理 2）tr处理的内容来自文件，记住要使用‘&amp;lt;’标准输入 3）匹配string进行相应操作，如删除操作 常匹配字符串： 字符串 1、命令和文件的自动补全 tab键只能不全命令和文件 2、常见的快捷键 ctrl+c：终止前台运行的程序 ctrl+z：把前台运行的程序挂到后台 ctrl+d：退出，等价于exit ctrl+l：清屏 ctrl+a：将光标移到命令行最前端 ctrl+e：光标移到命令行最后端 ctrl+u：删光光标前所有字符 ctrl+k：删除光标后所有字符 ctrl+r：搜索历史命令 3、常用通配符 *：匹配0或多个任意字符 ?：匹配任意单个字符 [ ]：匹配[list]中的任意单个字符 [^ ]：匹配除list中的任意单个字符 [- ]：匹配中括号中任意一个字符，- 代表一个范围。例如，[a-z] 代表匹配一个小写字母 {string1,string2,string3…}：匹配string1，string2，string3或更多字符串 eg：ls -l file{1..13}.jpg #匹配数字：1-13 eg：ls -l file[1-13].jpg #匹配数字：1-1和3 #出现的结果只有：file1.jpg，file3.jpg 4、bash中的引号 “”：双引号，会把引号的内容当作整体来看待，允许通过$符号引用其他变量值 ‘’：单引号，会把引号的内容当成整体来看待，禁止引用其他变量值，shell中特殊符号都被设为普通字符 ``:反撇号和$()一样，引号或者括号里的命令会优先执行，如果存在嵌套，反撇号不能用 shell介绍： 1、前言： 计算机只能识别机器语言（0和1），但是程序员不难直接去写0和1这样的代码，所以要想将程序员开发的代码在计算机上运行，就需要编译器或解释器来将代码翻译成计算机语言 2、编程语言分类: 编译型语言： 在程序执行之前需要一个专用的编译过程，把程序编译成为机器语言文件，运行时不需要重新翻译，直接使用编译的结果就行，程序执行效率高，依赖编译器，跨平台性差 解释性语言： 程序不需要编译，程序在运行时由解释器翻译成机器语言，每执行一次都要翻译一次，因此效率比较低 3、shell的种类： [root@aliyun ~]# cat /etc/shells /bin/sh #是bash的一个快捷方式 /bin/bash #bash是大多数linux默认的shell，包含的功能几乎可以涵盖shell所有的功能 /sbin/nologin #表示非交互，不能登陆操作系统 /bin/dash #小巧，高效，功能相对少一些 /usr/bin/sh /usr/bin/bash 4、shell脚本 简单来说，就是将需要执行的命令保存到文本中，按照顺序执行，它是解释型的，意味着不需要编译 准确概括： 若干命令+脚本的基本格式+脚本特定语法+思想=shell脚本 5、shell脚本的作用 1）自动化软件部署 2）自动化管理：系统初始化脚本、批量更改主机密码、推送公钥 3）自动分析：统计网站访问量 4）自动化备份：数据库备份、日志转储 5）自动化监控脚本 6、shell脚本的基本语法 1）脚本第一行，‘#！’指定解释器 #!/bin/bash：表示一下内容使用bash解释器解析 注：如果直接将解释器路径写死在脚本中，可能在某些系统就会存在找不到解释器的兼容性问题，所以可以使用： #!/bin/env 解释器 #env是个Linux命令，它会按照当前环境变量设置（主要是PATH变量），查找名为python的可执行文件 2）脚本的第二部分，‘#’后面的内容是对脚本的基本信息进行描述 7、shell脚本的执行方法 标准脚本执行方法 chmod +x xxx.sh /xxx/xxx/xxx.sh 8、非标准 bash xxx.sh bash +x xxx.sh #一般用于排错，查看脚本的执行过程 bash +n xxx.sh #查看脚本是否有语法错误 二、变量 1、什么是变量 变量是用来临时保存数据，该数据是可以变化的数据 2、定义变量 1）变量名=变量值 #取消变量：unset 变量名 2）命令的执行结果赋值给变量 A=`hostname` A=$（echo hello_word） 3）交互式定义变量（read） #用户自己定义变量 read [选项] 变量名 #变量来自于文件 read [选项] 变量名 &amp;lt; filename 常见选项： 选项 释义 -p 定义提示用户的信息 -n 定义字符数 -s 不显示 -t 定义超过时间，默认单位为秒 4）定义有类型的变量（declare） 目的：给一些变量做一些限制，固定变量的类型，比如：整型、只读 用法： declare [选项] 变量名=变量值 常见选项： 选项 释义 举例 -i 将变量看成整数 declare -i A=123 -r 定义只读变量 declare -r B=hello -a 定义普通数组，查看普通数组   -A 定义关联数组，查看关联数组   -x 将变量通过环境导出 delare -x AAA=123456 3、变量规则 1）变量区分大小写 2）变量名不能有特殊符号，变量不能有空格 3）变量名不能以数字开头 4）等号两边不能有空格 5）变量名尽量做到见名知意 4、变量的分类： 1）本地变量 当前用户自定义的变量，当前进程中有效，其他进程及当前进程的子进程无效 2）环境变量 当前进程有效，并且能够被子进程调用 env：查看当前用户的环境变量 set：查询当前用户的所有变量（临时变量和环境变量） export：变量名=变量值，或者变量名=变量值；export #临时将一个本地变量变成环境变量 export A=hello #永久生效 vim /etc/profile vim ~/bashrc 3）全局变量 全局所有的用户和程序都都能调用，且继承，新建的用户也默认能调用 解读相关配置文件 以上文件修改后，都需要重新source让其生效或者退出重新登陆 文件名 说明 备注 ~/.bashrc 当前用户的bash信息，用于登陆时读取 定义别名、umask、函数等 ~/.bash_profile 当前用户的环境变量   ~/.bash_logout 当前用户退出当前shell时最后读取 定义用户退出时执行的程序等 /etc/bashrc 全局的bash信息，所有用户都生效   /etc/profile 全局环境变量信息 系统和所有用户都生效 用户登陆系统读取相关文件的顺序： /etc/profile ~/.bash_profile ~/.bashrc /etc/bashrc ~/.bash_logout 4）系统变量 内置bash中变量：shell本身已经固定好它的名字和作用 内置变量 含义 $? 上一条命令执行后返回的状态，0：执行正常，非0：执行异常或错误 $0 当前执行的程序或脚本名 $# 脚本后面接的参数的个数 $* 脚本后面所有参数，参数当作一个整体输出，每一个变量参数之间以空格隔开 $@ 脚本后面所有参数，参数是独立的，也是全部输出 $1-$9 脚本后面的位置参数，$1表示第一个位置参数 ${10}-${n} 扩展位置参数，第10个位置变量必须用{}括起来（2位数以上括起来） $$ 当前所在进程的进程号，如echo $$ $! 后台运行的最后一个进程号（当前终端） !$ 调用最后一条命令历史中的参数 三、简单四则运算符号 算术运算：默认情况下，shell就只能支持简单的整数运算 运算内容：加（+）、减（-）、乘（*）、除（/）、求余数（%） 四则运算符号： 表达式 举例 $(( )) echo $((1+1)) $[ ] echo $[10-5] expr expr 10 / 5 let n-1;let n+=1 四、条件判断语法结构 1、条件判断语法格式： 格式1：test 条件表达式 格式2：[ 条件表达式 ] 格式3：[[ 条件表达式 ]]，支持正则 2、test 判断文件类型： 判断参数 含义 -e 判断文件是否存在 -f 判断文件是否存在并且是一个普通文件 -d 判断文件是否存在并且是一个目录 -b 判断文件是否存在并且是一个块设备 -L 判断文件是否存在并且是一个软链接文件 -S 判断文件是否存在并且是一个套接字设备 -c 判断文件是否存在并且是一个字符设备文件 -p 判断文件是否存在并且是一个命名管道文件 -s 判断文件是否存在并且是一个非空文件（有内容） 判断文件权限 判断参数 含义 -r 当前用户是否可读 -w 当前用户是否可写 -x 当前用户是否可执行 -u 是否有suid -g 是否有sgid -k 是否有t位 判断整数 判断参数 含义 -eq 相等 -ne 不相等 -gt 大于 -ge 大于等于 -lt 小于 -le 小于等于 判断字符串 判断参数 含义 -z 判断是否为空字符，字符长度为0成立 -n 判断是否为非空字符，字符长度不为0则成立 string1 = string2 判断字符串是否相等 string1 !=string2 判断字符串是否不相等 多重条件判断 判断符号 含义 举例 -a和&amp;amp;&amp;amp; 逻辑与 [ 1 -eq 1 -a 1 -ne 0 ]或[ 1 -eq 1 ]&amp;amp;&amp;amp;[ 0 -ne 1 ] -o和|| 逻辑或 [ 1 -eq 1 -o 0 -ne 1 ]或[ 1 -eq 1 ]||[ 0 -ne 1 ] 注： &amp;amp;&amp;amp;：前面的表达式为真，才会执行后面的代码   ：前面的表达式为假，才会执行后面的代码 ；：只用于分割命令或表达式 类c风格的数值比较： 注：在(( ))中，=表示赋值，==表示判断 eg： (( 1==2 ))；echo $? 字符串判断： 注： 双括号引起来，看作是一个整体；=、==都表示判断 eg： a=‘hello’;b=’word’;[ “$a” = “&amp;amp;b” ];echo $? [ “$a” != “&amp;amp;b” ];echo $? 二、流程控制语句 基本语法结构 if： if [ condition ];then command command fi [ condition ] &amp;amp;&amp;amp; command if……else： if [ condition ];then command1 else command2 fi -------------------------------------------------------------------------------------- [ condition ] &amp;amp;&amp;amp; command1 || command2 if……elif……else： if [ condition1 ];then command1 elif [ condition2 ];then command2 else command3 fi for循环语句： 基本语法结构： 列表for循环：用于将一组命令执行已知的次数 带列表： 基本语法格式： for variable in {list} do command command done ------------------------------ for variable in a b c do command command done for variable in $(seq 5) do command command done 注意： seq 10 seq 10 -1 1 {1..10..2} {1..10} {10..1} 不带列表： 不带列表的for循环执行时由用户指定参数和参数个数 基本语法格式： for variable do command command done #!/bin/bash #文件名为for_test.sh for i do echo &quot;hello&quot; done [root@aliyun ~]# bash -x for_test.sh a + for i in '&quot;$@&quot;' +echo hello hello 类c风格的for循环： 基本语法结构： #expr1:定义变量并赋初值 #expr2:决定是否进行循环（条件） #expr3:决定循环变量如何改变，决定循环什么时候退出 for(( expr1;expr2;expr3 )) do command command done eg： for (( i=1;i&amp;lt;=5;i++ )) do echo $i done 循环控制语句： 循环体：==do……done==之间的内容 continue：继续，表示循环体内下面的代码不执行，重新开始下一次循环 break：打断；马上停止执行本次循环，执行循环体后面的代码 exit：表示直接跳出程序 二、while循环语句 条件为真就进入循环，条件为假就退出循环 while 表达式 do command done 三、until 条件为假就进入循环，条件为真就退出循环 1、until语法结构 until 表达式 do command command done 四、case 1、case语句为多重匹配语句 2、如果匹配成功，执行相匹配的命令 语法结构： case var in pattern 1) #用“|”分割多个模式，相当于or，eg:hello|word) command1 ;; #;;两个分号代表命令结束 pattern 2) command2 ;; *) #default，不满足以上模式，默认执行下面的语句 command4 ;; esac #exac表示case语句结束 函数： 1、什么是函数 shell运行将一组命令集合或语句形成一段可用代码，这些代码块称为shell函数 给这段代码起个名字（函数名），后续可用直接调用这段代码的功能 2、如何定义函数 方法1： 函数名（） { 函数体 } 方法2： function 函数名（） { 函数体 } 函数中==return==说明： 1、return可用==结束一个函数==，类似于循环控制语句break（结束当前循环，执行循环体后面的代码） 2、return默认返回函数中最后一个命令状态值，也可以给定参数值，范围是0-256之间 3、如果没有return函数，函数将返回最后一个指令的退出状态值 函数该如何调用： 随机数： 系统变量：==RANDOM==，默认回产生0-32767的随机整数 查看系统生成的随机数 echo $RANDOM 生成0-1的随机数 echo $[$RANDOM%2] 生成0-2的随机数 echo $[$RANDOM%3] 生成0-3的随机数 echo $[$RANDOM%4] 生成0-9的随机数 echo $[$RANDOM%10] 生成0-100的随机数 echo $[$RANDOM%101] 生成50-100的随机数 echo $[$RANDOM%51+50] 四、扩展补充 1、数组定义 1）数组分类 普通分类：只能使用整数作为数组索引（元素的下标） 关联数组：只能使用字符串作为数组索引（元素的下标） 2、普通数组定义 一次只能赋予一个值 数组名[索引下标]=值 array[0]=v1 array[1]=v2 一次赋予多个值 数组名=（值1 值2 值3 ……） array=（var1 var2 var3） #将文件中每一行赋值给array1数组 array=(‘cat /etc/passwd’) 3、数组的读取 ${数组名[元素下标]} #获取数组里的第一个元素 echo ${array[0]} #获取数组里的所有元素 echo ${array[*]} / echo ${array[@]} #获取数组里所有元素个数 echo ${#array[*]} #获取数组的索引下标 echo ${!array[@]} #查看多个数组 echo ${name[*]:1:3} #查看所有普通数组 declare -a 关联数组定义： 首先声明关联数组 declare -A asso_array1 数组赋值： 一次赋一个值 数组名[索引or下标]=变量值 asso_array1[linux]=one 一次赋多个值 asso_array2=（[name1]=harry [name2]=jack [name3]=amy） 查看关联数组： declare -A 四、正则表达式 正则表达式是什么： Regular Expression、regex、regexp，常规表示法，是一种字符模式，用于在查找过程中==匹配指定的字符== 正则当中名词解释： 元字符 指那些在正则表达式中具有特殊意义的专用字符，如点（.），星（*），问号（？）等 前导字符 位于元字符前面的字符，ab==c==* 第一类正则表达式： 正则中普通常用的元字符： 元字符 功能 . 匹配除了换行符以外的任意单个字符 * 前导字符出现0次或连续多次 .* 任意长度字符 ^ 行首以……开头 $ 行尾以……结尾 ^$ 空行 [ ] 匹配括号里任意单个字符或一组单个字符 [^ ] 匹配不包含括号里任一单个字符或一组字符 ^[ ] 匹配以括号里任意单个字符或一组单个字符开头 ^[^] 匹配不以括号里任意单个字符或一组单个字符开头 正则中其他常用元字符： 元字符 功能 举例 \ &amp;lt; 取单词的头(\和&amp;lt;不空格)   \ &amp;gt; 取单词的尾(\和&amp;gt;不空行格)   \ &amp;lt; \ &amp;gt; 精确匹配   \ {n\ } 匹配前导字符连续出现n次   \ {n,m\ } 匹配前导字符出现n次与m次之间   \ ( \ ) 保存被匹配的字符   \d 匹配数字（eg：grep -P ‘\d’ 1.txt）   \w 匹配字母数字下划线（grep -P）   \s 匹配空行、制表符、换页符（grep -P）   扩展类正则常用元字符： grep -E或者是egrep才能接扩展类正则常用元字符 sed -r才能接扩展类正则常用元字符 扩展元字符 功能 举例 + 匹配一个或多个前导字符 bo+：匹配boo、bo ？ 匹配零个或一个前导字符 bo?：匹配b、bo | 或 a|b：匹配a或b () 组字符，看成整体 (my|your)self：myself或yourself {n} 前导字符重复n次   {n,} 前导字符重复至少n次   {n,m} 前导字符重复n到m次   第二类正则 表达式 功能 [:alnum:] 字母与数字 [:alpha:] 大小写字母 [:blank:] 空格和制表符 [:digit:] 数字 [:lower:] 小写字母 [:upper:] 大写字母 [:punct:] 标点符号 [:space:] 换行符、回车等在内的所有空白 一、sed 1、sed概念 sed是stream Editior（流编辑器）的缩写，简称流编辑器；用来处理文件 2、sed如何处理文件 文本文件 ——&amp;gt; sed的模式空间（缓冲区）——–&amp;gt; sed输出到屏幕 sed是==一行一行==读取文件内容并按照要求进行处理，把处理后的结果输出到屏幕 具体流程： 1）首先sed读取文件中的一行内容，把其保存在一个临时缓存区（sed对缓冲区的副本进行操作，不会直接修改原文件） 2）然后根据需求处理临时缓冲区中的行，完成后把该行发送到屏幕上 3、sed使用方法介绍 sed常见的语法格式有两种：一种叫命令行，一种叫脚本模式 语法格式： sed [options] '处理动作' 文件名 常用选项： 选项 说明 备注 -e 进行多项（多次）编辑   -n 取消默认输出 不自动打印模式空间 -r 使用扩展正则表达式   -i 原地编辑（修改源文件）   -f 指定sed脚本的文件名   常见动作： 动作 说明 备注 ‘p’ 打印   ‘i’ 在指定行之前插入内容 类似vim里的大写O ‘a’ 在指定行之后插入内容 类似vim里的小写o ‘c’ 替换指定行所有内容   ‘d’ 删除指定行   举例： 增删改查： 打印文章内容： #打印文件第一行，取消默认输出 sed -n ‘p’ 1.txt #打印文件第二行，取消默认输出 sed -n ‘2p’ 1.txt #打印文件最后一行，取消默认输出 sed -n ‘$p’ 1.txt #打印文件1-5行，取消默认输出 sed -n ‘1,5p’ 1.txt #打印文件第1行和第5行，取消默认输出 sed -ne ‘1P’ -ne ‘5p’ 1.txt sed -ne ‘1p;5p’ 1.txt 增加文章内容： #在最后一行加入99999 sed ‘$a99999’ 1.txt 修改文件内容 #替换文件第5行内容 sed ‘5chelloword’ 1.txt #替换文件所有内容 sed ‘chelloword’ 1.txt #替换以user01开头的行 sed ‘/^user01/c88888’ 删除文件内容 #删除文件第1行 sed ‘1d’ sed 对文件进行搜索替换操作 语法：sed [option] ‘s/搜索的内容/替换的内容/动作’ 需要处理的文件 其中：动作：打印-p；全局替换-g #打印 sed -n ‘s/ROOT/root/p’ 1.txt #注释掉1-5行 sed -n ‘1,5s/^/#/p’ 1.txt 其他命令 命令 解释 r 从另外文件读取内容 w 内容另存为 x 保存查找串以便在替换串中引用 = 打印行号 ! 对所选行以外的所有行应用命令，放在行数之后 q 退出 sed ‘$r /etc/hosts’ 1.txt sed ‘1,5w 11.txt’ 1.txt 过滤： grep -Ev ‘^# ^$’ 1.txt sed -e ‘/^#/d’ -e ‘/^$/d’ 1.txt sed -r ‘/^# /^$/d’ 1.txt sed脚本 用法： sed -f scripts.sh file #!/bin/sed -f 1,5d s/root/hello/g 3i777 5i888 p 1）脚本文件是命令清单 2）在每行的末尾不能有任何空格、制表符或其他文本 3）如果需要在一行中有多个命令，应该使用分号分隔 4）不需要且不可用引号保护命令 5）#号开头的行为是注释</summary></entry></feed>

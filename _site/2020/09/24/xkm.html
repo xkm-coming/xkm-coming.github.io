@@ -1,0 +1,1799 @@
+<p>文本处理工具</p>
+
+<p>1、grep</p>
+
+<blockquote>
+  <p>grep是行过滤工具，用于根据关键字进行过滤</p>
+</blockquote>
+
+<p>语法和选项：</p>
+
+<p>语法：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>grep [选项] ‘关键字’ 文件名
+</code></pre></div></div>
+
+<p>常见选项：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>option：
+
+	-i：不区分大小写
+
+	-v：查找不包含指定内容的行，反向选择
+
+	-w：按单词搜索
+
+	-o：打印匹配关键字
+
+	-c：统计匹配到的次数
+
+	-n：统计匹配到的行数
+
+	-r：逐层遍历目录查找
+
+	-A：显示匹配行及后面多少行
+
+	-B：显示匹配行及前面多少行
+
+	-C：显示匹配行前后多少行    #查看日志时，只匹配”error“看不出哪里出错，需要看上下文
+
+	-l：只列出匹配的文件名
+
+	-L：只列出不匹配的文件名
+
+	-e：使用正则匹配
+
+	-E：使用扩展正则匹配
+
+	--color=auto：可以将找到的关键字部分加上颜色的显示
+</code></pre></div></div>
+
+<p>2、cut</p>
+
+<blockquote>
+  <p>cut是列截取工具，用于列的截取</p>
+</blockquote>
+
+<p>语法和选项：</p>
+
+<p>语法：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cut [选项] 文件名
+</code></pre></div></div>
+
+<p>常见选项：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>option：
+
+	-c：以字符为单位进行分割
+
+	-d：自定义分隔符，默认为制表符\t
+
+	-f：与-d一起使用，指定截取哪个区域
+	#-f1，7：显示第一字段和第七字段
+</code></pre></div></div>
+
+<p>3、sort</p>
+
+<blockquote>
+  <p>sort工具用于排序，它将文件中的每一行作为一个单位，从首字符向后，依次按ASCII码进行比较，最后将他们按升序输出</p>
+</blockquote>
+
+<p>语法和选项：</p>
+
+<p>语法：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sort [OPTION]... [FILE]... 
+</code></pre></div></div>
+
+<p>选项：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>option：
+
+	-u：去除重复行
+
+	-r：降序排列，默认是升序	
+
+	-o：将排序结果输出到文件中，类似重定向符号&gt;
+
+	-n：以数字排序，默认是按字符排序
+
+	-t：分隔符
+
+	-k：第N列
+
+	-b：忽略前导空格
+
+	-R：随机排序，每次运行的结果均不同
+</code></pre></div></div>
+
+<p>4、uniq</p>
+
+<blockquote>
+  <p>uniq用于去除连续的重复行</p>
+</blockquote>
+
+<p>语法与选项：</p>
+
+<p>语法：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>uniq [OPTION]... [INPUT [OUTPUT]]
+</code></pre></div></div>
+
+<p>常见选项：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>option：
+
+	-i：忽略大小写
+
+	-c：统计重复行次数
+
+	-d：只显示重复行
+</code></pre></div></div>
+
+<p>5、tee</p>
+
+<blockquote>
+  <table>
+    <tbody>
+      <tr>
+        <td>tee工具从标准输入读取并写入到标准输出和文件，即：双向覆盖重定向（屏幕输出</td>
+        <td>文本输入）</td>
+      </tr>
+    </tbody>
+  </table>
+</blockquote>
+
+<p>选项：</p>
+
+<p>options：</p>
+
+<p>​	-a：双向追加重定向</p>
+
+<p>6、diff</p>
+
+<blockquote>
+  <p>diff工具用于逐行比较文件的不同</p>
+</blockquote>
+
+<p>注：diff描述两个文件不同方式是告诉我们怎样改变第一个文件之后与第二个文件匹配</p>
+
+<p>语法与选项：</p>
+
+<p>语法：</p>
+
+<p>diff [选项] 文件1 文件2</p>
+
+<p>常用选项：</p>
+
+<p>options：</p>
+
+<p>​	-b：不检查空格</p>
+
+<p>​	-B：不检查空白行</p>
+
+<p>​	-i：不检查大小写</p>
+
+<p>​	-W：忽略所有的空格</p>
+
+<p>​	–normal：正常格式显示</p>
+
+<p>​	-c：上下文格式显示</p>
+
+<p>​	-u：合并格式显示</p>
+
+<p>1）正常显示</p>
+
+<p>2）上下文显示</p>
+
+<p>3）合并格式</p>
+
+<p>其他小技巧：</p>
+
+<p>有时候我们需要以一个文化为标准，去修改其他文件，并且修改的地方较多，我们可以通过打补丁的方式完成</p>
+
+<p>1）先找出文件的不同，然后输出到一个文件</p>
+
+<p>diff -uN file1 file2 &gt; file.patch</p>
+
+<p>#-u：上下文模式</p>
+
+<p>#-N：将不存在的文件当作空文件</p>
+
+<p>2）将不同的内容打补丁到文件</p>
+
+<p>patch file1 file.patch</p>
+
+<p>3）测试验证</p>
+
+<p>7、paste</p>
+
+<blockquote>
+  <p>paste工具用于合并文件行</p>
+</blockquote>
+
+<p>常用选项：</p>
+
+<p>options：</p>
+
+<p>​	-d：自定义间隔符，默认是tab</p>
+
+<p>​	-s：串行处理，并非行</p>
+
+<p>8、tr</p>
+
+<blockquote>
+  <p>tr用户字符转换、替换和删除，主要用于删除文件中控制字符或进行字符转换</p>
+</blockquote>
+
+<p>语法和选项：</p>
+
+<p>语法：</p>
+
+<p>1）命令的执行结果交给tr处理，其中string1用于查询，strng2用于转换处理</p>
+
+<p>2）tr处理的内容来自文件，记住要使用‘&lt;’标准输入</p>
+
+<p>3）匹配string进行相应操作，如删除操作</p>
+
+<p>常匹配字符串：</p>
+
+<p>字符串</p>
+
+<p>1、命令和文件的自动补全</p>
+
+<p>tab键只能不全命令和文件</p>
+
+<p>2、常见的快捷键</p>
+
+<p>ctrl+c：终止前台运行的程序</p>
+
+<p>ctrl+z：把前台运行的程序挂到后台</p>
+
+<p>ctrl+d：退出，等价于exit</p>
+
+<p>ctrl+l：清屏</p>
+
+<p>ctrl+a：将光标移到命令行最前端</p>
+
+<p>ctrl+e：光标移到命令行最后端</p>
+
+<p>ctrl+u：删光光标前所有字符</p>
+
+<p>ctrl+k：删除光标后所有字符</p>
+
+<p>ctrl+r：搜索历史命令</p>
+
+<p>3、常用通配符</p>
+
+<p>*：匹配0或多个任意字符</p>
+
+<p>?：匹配任意单个字符</p>
+
+<p>[ ]：匹配[list]中的任意单个字符</p>
+
+<p>[^ ]：匹配除list中的任意单个字符</p>
+
+<p>[- ]：匹配中括号中任意一个字符，- 代表一个范围。例如，[a-z] 代表匹配一个小写字母</p>
+
+<p>{string1,string2,string3…}：匹配string1，string2，string3或更多字符串</p>
+
+<p>eg：ls -l file{1..13}.jpg</p>
+
+<p>#匹配数字：1-13</p>
+
+<p>eg：ls -l file[1-13].jpg</p>
+
+<p>#匹配数字：1-1和3</p>
+
+<p>#出现的结果只有：file1.jpg，file3.jpg</p>
+
+<p>4、bash中的引号</p>
+
+<p>“”：双引号，会把引号的内容当作整体来看待，允许通过$符号引用其他变量值</p>
+
+<p>‘’：单引号，会把引号的内容当成整体来看待，禁止引用其他变量值，shell中特殊符号都被设为普通字符</p>
+
+<p>``:反撇号和$()一样，引号或者括号里的命令会优先执行，如果存在嵌套，反撇号不能用</p>
+
+<p>shell介绍：</p>
+
+<p>1、前言：</p>
+
+<p>计算机只能识别机器语言（0和1），但是程序员不难直接去写0和1这样的代码，所以要想将程序员开发的代码在计算机上运行，就需要编译器或解释器来将代码翻译成计算机语言</p>
+
+<p>2、编程语言分类:</p>
+
+<p>编译型语言：</p>
+
+<p>在程序执行之前需要一个专用的编译过程，把程序编译成为机器语言文件，运行时不需要重新翻译，直接使用编译的结果就行，程序执行效率高，依赖编译器，跨平台性差</p>
+
+<p>解释性语言：</p>
+
+<p>程序不需要编译，程序在运行时由解释器翻译成机器语言，每执行一次都要翻译一次，因此效率比较低</p>
+
+<p>3、shell的种类：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[root@aliyun ~]# cat /etc/shells
+
+/bin/sh          #是bash的一个快捷方式
+
+/bin/bash        #bash是大多数linux默认的shell，包含的功能几乎可以涵盖shell所有的功能
+
+/sbin/nologin    #表示非交互，不能登陆操作系统
+
+/bin/dash        #小巧，高效，功能相对少一些
+
+/usr/bin/sh      
+
+/usr/bin/bash
+</code></pre></div></div>
+
+<p>4、shell脚本</p>
+
+<p>简单来说，就是将需要执行的命令保存到文本中，按照顺序执行，它是解释型的，意味着不需要编译</p>
+
+<p>准确概括：</p>
+
+<p>若干命令+脚本的基本格式+脚本特定语法+思想=shell脚本</p>
+
+<p>5、shell脚本的作用</p>
+
+<p>1）自动化软件部署</p>
+
+<p>2）自动化管理：系统初始化脚本、批量更改主机密码、推送公钥</p>
+
+<p>3）自动分析：统计网站访问量</p>
+
+<p>4）自动化备份：数据库备份、日志转储</p>
+
+<p>5）自动化监控脚本</p>
+
+<p>6、shell脚本的基本语法</p>
+
+<p>1）脚本第一行，‘#！’指定解释器</p>
+
+<p><code class="language-plaintext highlighter-rouge">#!/bin/bash</code>：表示一下内容使用bash解释器解析</p>
+
+<p>注：如果直接将解释器路径写死在脚本中，可能在某些系统就会存在找不到解释器的兼容性问题，所以可以使用：</p>
+
+<p><code class="language-plaintext highlighter-rouge">#!/bin/env 解释器</code></p>
+
+<p>#env是个Linux命令，它会按照当前环境变量设置（主要是PATH变量），查找名为python的可执行文件</p>
+
+<p>2）脚本的第二部分，‘#’后面的内容是对脚本的基本信息进行描述</p>
+
+<p>7、shell脚本的执行方法</p>
+
+<p>标准脚本执行方法</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chmod +x xxx.sh
+
+/xxx/xxx/xxx.sh
+</code></pre></div></div>
+
+<p>8、非标准</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bash xxx.sh
+
+bash +x xxx.sh     #一般用于排错，查看脚本的执行过程
+
+bash +n xxx.sh     #查看脚本是否有语法错误
+</code></pre></div></div>
+
+<p>二、变量</p>
+
+<p>1、什么是变量</p>
+
+<p>变量是用来临时保存数据，该数据是可以变化的数据</p>
+
+<p>2、定义变量</p>
+
+<p>1）变量名=变量值</p>
+
+<p>#取消变量：<code class="language-plaintext highlighter-rouge">unset 变量名</code></p>
+
+<p>2）命令的执行结果赋值给变量</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A=`hostname`
+
+A=$（echo hello_word）
+</code></pre></div></div>
+
+<p>3）交互式定义变量（read）</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#用户自己定义变量
+
+read [选项] 变量名
+
+#变量来自于文件
+
+read [选项] 变量名 &lt; filename
+</code></pre></div></div>
+
+<p>常见选项：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>选项</th>
+      <th>释义</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>-p</td>
+      <td>定义提示用户的信息</td>
+    </tr>
+    <tr>
+      <td>-n</td>
+      <td>定义字符数</td>
+    </tr>
+    <tr>
+      <td>-s</td>
+      <td>不显示</td>
+    </tr>
+    <tr>
+      <td>-t</td>
+      <td>定义超过时间，默认单位为秒</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>4）定义有类型的变量（declare）</p>
+
+<p>目的：给一些变量做一些限制，固定变量的类型，比如：整型、只读</p>
+
+<p>用法：</p>
+
+<p>declare [选项] 变量名=变量值</p>
+
+<p>常见选项：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>选项</th>
+      <th>释义</th>
+      <th>举例</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>-i</td>
+      <td>将变量看成整数</td>
+      <td>declare -i A=123</td>
+    </tr>
+    <tr>
+      <td>-r</td>
+      <td>定义只读变量</td>
+      <td>declare -r B=hello</td>
+    </tr>
+    <tr>
+      <td>-a</td>
+      <td>定义普通数组，查看普通数组</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>-A</td>
+      <td>定义关联数组，查看关联数组</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>-x</td>
+      <td>将变量通过环境导出</td>
+      <td>delare -x AAA=123456</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>3、变量规则</p>
+
+<p>1）变量区分大小写</p>
+
+<p>2）变量名不能有特殊符号，变量不能有空格</p>
+
+<p>3）变量名不能以数字开头</p>
+
+<p>4）等号两边不能有空格</p>
+
+<p>5）变量名尽量做到见名知意</p>
+
+<p>4、变量的分类：</p>
+
+<p>1）本地变量</p>
+
+<p>当前用户自定义的变量，当前进程中有效，其他进程及当前进程的子进程无效</p>
+
+<p>2）环境变量</p>
+
+<p>当前进程有效，并且能够被子进程调用</p>
+
+<ul>
+  <li>env：查看当前用户的环境变量</li>
+  <li>set：查询当前用户的所有变量（临时变量和环境变量）</li>
+  <li>export：<code class="language-plaintext highlighter-rouge">变量名=变量值</code>，或者<code class="language-plaintext highlighter-rouge">变量名=变量值；export</code></li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#临时将一个本地变量变成环境变量
+
+export A=hello
+
+#永久生效
+
+vim /etc/profile 
+
+vim ~/bashrc
+</code></pre></div></div>
+
+<p>3）全局变量</p>
+
+<p>全局所有的用户和程序都都能调用，且继承，新建的用户也默认能调用</p>
+
+<p>解读相关配置文件</p>
+
+<blockquote>
+  <p>以上文件修改后，都需要重新source让其生效或者退出重新登陆</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>文件名</th>
+      <th>说明</th>
+      <th>备注</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>~/.bashrc</td>
+      <td>当前用户的bash信息，用于登陆时读取</td>
+      <td>定义别名、umask、函数等</td>
+    </tr>
+    <tr>
+      <td>~/.bash_profile</td>
+      <td>当前用户的环境变量</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>~/.bash_logout</td>
+      <td>当前用户退出当前shell时最后读取</td>
+      <td>定义用户退出时执行的程序等</td>
+    </tr>
+    <tr>
+      <td>/etc/bashrc</td>
+      <td>全局的bash信息，所有用户都生效</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>/etc/profile</td>
+      <td>全局环境变量信息</td>
+      <td>系统和所有用户都生效</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>用户登陆系统读取相关文件的顺序：</p>
+
+<p><code class="language-plaintext highlighter-rouge">/etc/profile</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">~/.bash_profile</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">~/.bashrc</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">/etc/bashrc</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">~/.bash_logout</code></p>
+
+<p>4）系统变量</p>
+
+<p>内置bash中变量：shell本身已经固定好它的名字和作用</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>内置变量</th>
+      <th>含义</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>$?</td>
+      <td>上一条命令执行后返回的状态，0：执行正常，非0：执行异常或错误</td>
+    </tr>
+    <tr>
+      <td>$0</td>
+      <td>当前执行的程序或脚本名</td>
+    </tr>
+    <tr>
+      <td>$#</td>
+      <td>脚本后面接的参数的个数</td>
+    </tr>
+    <tr>
+      <td>$*</td>
+      <td>脚本后面所有参数，参数当作一个整体输出，每一个变量参数之间以空格隔开</td>
+    </tr>
+    <tr>
+      <td>$@</td>
+      <td>脚本后面所有参数，参数是独立的，也是全部输出</td>
+    </tr>
+    <tr>
+      <td>$1-$9</td>
+      <td>脚本后面的位置参数，$1表示第一个位置参数</td>
+    </tr>
+    <tr>
+      <td>${10}-${n}</td>
+      <td>扩展位置参数，第10个位置变量必须用{}括起来（2位数以上括起来）</td>
+    </tr>
+    <tr>
+      <td>$$</td>
+      <td>当前所在进程的进程号，如echo $$</td>
+    </tr>
+    <tr>
+      <td>$!</td>
+      <td>后台运行的最后一个进程号（当前终端）</td>
+    </tr>
+    <tr>
+      <td>!$</td>
+      <td>调用最后一条命令历史中的参数</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>三、简单四则运算符号</p>
+
+<p>算术运算：默认情况下，shell就只能支持简单的整数运算</p>
+
+<p>运算内容：加（+）、减（-）、乘（*）、除（/）、求余数（%）</p>
+
+<p>四则运算符号：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>表达式</th>
+      <th>举例</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>$(( ))</td>
+      <td>echo $((1+1))</td>
+    </tr>
+    <tr>
+      <td>$[ ]</td>
+      <td>echo $[10-5]</td>
+    </tr>
+    <tr>
+      <td>expr</td>
+      <td>expr 10 / 5</td>
+    </tr>
+    <tr>
+      <td>let</td>
+      <td>n-1;let n+=1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>四、条件判断语法结构</p>
+
+<p>1、条件判断语法格式：</p>
+
+<ul>
+  <li>格式1：test 条件表达式</li>
+  <li>格式2：[ 条件表达式 ]</li>
+  <li>格式3：[[ 条件表达式 ]]，支持正则</li>
+</ul>
+
+<p>2、test</p>
+
+<p>判断文件类型：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>判断参数</th>
+      <th>含义</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>-e</td>
+      <td>判断文件是否存在</td>
+    </tr>
+    <tr>
+      <td>-f</td>
+      <td>判断文件是否存在并且是一个普通文件</td>
+    </tr>
+    <tr>
+      <td>-d</td>
+      <td>判断文件是否存在并且是一个目录</td>
+    </tr>
+    <tr>
+      <td>-b</td>
+      <td>判断文件是否存在并且是一个块设备</td>
+    </tr>
+    <tr>
+      <td>-L</td>
+      <td>判断文件是否存在并且是一个软链接文件</td>
+    </tr>
+    <tr>
+      <td>-S</td>
+      <td>判断文件是否存在并且是一个套接字设备</td>
+    </tr>
+    <tr>
+      <td>-c</td>
+      <td>判断文件是否存在并且是一个字符设备文件</td>
+    </tr>
+    <tr>
+      <td>-p</td>
+      <td>判断文件是否存在并且是一个命名管道文件</td>
+    </tr>
+    <tr>
+      <td>-s</td>
+      <td>判断文件是否存在并且是一个非空文件（有内容）</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>判断文件权限</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>判断参数</th>
+      <th>含义</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>-r</td>
+      <td>当前用户是否可读</td>
+    </tr>
+    <tr>
+      <td>-w</td>
+      <td>当前用户是否可写</td>
+    </tr>
+    <tr>
+      <td>-x</td>
+      <td>当前用户是否可执行</td>
+    </tr>
+    <tr>
+      <td>-u</td>
+      <td>是否有suid</td>
+    </tr>
+    <tr>
+      <td>-g</td>
+      <td>是否有sgid</td>
+    </tr>
+    <tr>
+      <td>-k</td>
+      <td>是否有t位</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>判断整数</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>判断参数</th>
+      <th>含义</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>-eq</td>
+      <td>相等</td>
+    </tr>
+    <tr>
+      <td>-ne</td>
+      <td>不相等</td>
+    </tr>
+    <tr>
+      <td>-gt</td>
+      <td>大于</td>
+    </tr>
+    <tr>
+      <td>-ge</td>
+      <td>大于等于</td>
+    </tr>
+    <tr>
+      <td>-lt</td>
+      <td>小于</td>
+    </tr>
+    <tr>
+      <td>-le</td>
+      <td>小于等于</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>判断字符串</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>判断参数</th>
+      <th>含义</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>-z</td>
+      <td>判断是否为空字符，字符长度为0成立</td>
+    </tr>
+    <tr>
+      <td>-n</td>
+      <td>判断是否为非空字符，字符长度不为0则成立</td>
+    </tr>
+    <tr>
+      <td>string1 = string2</td>
+      <td>判断字符串是否相等</td>
+    </tr>
+    <tr>
+      <td>string1 !=string2</td>
+      <td>判断字符串是否不相等</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>多重条件判断</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>判断符号</th>
+      <th>含义</th>
+      <th>举例</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>-a和&amp;&amp;</td>
+      <td>逻辑与</td>
+      <td>[ 1 -eq 1 -a 1 -ne 0 ]或[ 1 -eq 1 ]&amp;&amp;[ 0 -ne 1 ]</td>
+    </tr>
+    <tr>
+      <td>-o和||</td>
+      <td>逻辑或</td>
+      <td>[ 1 -eq 1 -o 0 -ne 1 ]或[ 1 -eq 1 ]||[ 0 -ne 1 ]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>注：</p>
+
+<p>&amp;&amp;：前面的表达式为真，才会执行后面的代码</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td> </td>
+      <td>：前面的表达式为假，才会执行后面的代码</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>；：只用于分割命令或表达式</p>
+
+<p>类c风格的数值比较：</p>
+
+<p>注：在(( ))中，=表示赋值，==表示判断</p>
+
+<p>eg：</p>
+
+<p>(( 1==2 ))；echo $?</p>
+
+<p>字符串判断：</p>
+
+<p>注：</p>
+
+<p>双括号引起来，看作是一个整体；=、==都表示判断</p>
+
+<p>eg：</p>
+
+<p>a=‘hello’;b=’word’;[ “$a” = “&amp;b” ];echo $?</p>
+
+<p>[ “$a” != “&amp;b” ];echo $?</p>
+
+<p>二、流程控制语句</p>
+
+<p>基本语法结构</p>
+
+<p>if：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if [ condition ];then
+
+	command
+
+	command
+
+fi
+
+[ condition ] &amp;&amp; command
+</code></pre></div></div>
+
+<p>if……else：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if [ condition ];then
+
+		command1
+
+	else
+
+		command2
+
+fi
+
+--------------------------------------------------------------------------------------
+
+[ condition ] &amp;&amp; command1 || command2
+</code></pre></div></div>
+
+<p>if……elif……else：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if [ condition1 ];then
+
+		command1
+
+	elif [ condition2 ];then
+
+		command2
+
+	else
+
+		command3
+
+fi
+</code></pre></div></div>
+
+<p>for循环语句：</p>
+
+<p>基本语法结构：</p>
+
+<blockquote>
+  <p>列表for循环：用于将一组命令执行已知的次数</p>
+</blockquote>
+
+<p>带列表：</p>
+
+<p>基本语法格式：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>for variable in {list}
+
+	do
+
+		command
+
+		command
+
+	done
+
+------------------------------
+
+for variable in a b c
+
+	do
+
+		command
+
+		command
+
+	done
+	
+for variable in $(seq 5)
+
+	do
+
+		command
+
+		command
+
+	done
+</code></pre></div></div>
+
+<p>注意：</p>
+
+<p>seq 10</p>
+
+<p>seq 10 -1 1</p>
+
+<p>{1..10..2}</p>
+
+<p>{1..10}</p>
+
+<p>{10..1}</p>
+
+<p>不带列表：</p>
+
+<blockquote>
+  <p>不带列表的for循环执行时由用户指定参数和参数个数</p>
+</blockquote>
+
+<p>基本语法格式：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>for variable
+
+	do
+
+		command
+
+		command
+
+	done
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/bin/bash
+
+#文件名为for_test.sh
+
+for i
+	do
+		echo "hello"
+	done
+
+[root@aliyun ~]# bash -x for_test.sh a 
++ for i in '"$@"'
++echo hello
+hello
+</code></pre></div></div>
+
+<p>类c风格的for循环：</p>
+
+<p>基本语法结构：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#expr1:定义变量并赋初值
+
+#expr2:决定是否进行循环（条件）
+
+#expr3:决定循环变量如何改变，决定循环什么时候退出
+
+for(( expr1;expr2;expr3 ))
+
+	do
+
+		command
+
+		command
+
+	done
+
+eg：
+
+for (( i=1;i&lt;=5;i++ ))
+
+	do
+
+		echo $i
+
+	done
+</code></pre></div></div>
+
+<p>循环控制语句：</p>
+
+<p>循环体：==do……done==之间的内容</p>
+
+<ul>
+  <li>continue：继续，表示循环体内下面的代码不执行，重新开始下一次循环</li>
+  <li>break：打断；马上停止执行本次循环，执行循环体后面的代码</li>
+  <li>exit：表示直接跳出程序</li>
+</ul>
+
+<p>二、while循环语句</p>
+
+<blockquote>
+  <p>条件为真就进入循环，条件为假就退出循环</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>while 表达式
+
+ 	do
+
+		command
+
+	done
+</code></pre></div></div>
+
+<p>三、until</p>
+
+<blockquote>
+  <p>条件为假就进入循环，条件为真就退出循环</p>
+</blockquote>
+
+<p>1、until语法结构</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>until 表达式
+
+	do
+
+		command
+
+		command
+
+	done
+</code></pre></div></div>
+
+<p>四、case</p>
+
+<blockquote>
+  <p>1、case语句为多重匹配语句</p>
+
+  <p>2、如果匹配成功，执行相匹配的命令</p>
+</blockquote>
+
+<p>语法结构：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>case var in
+
+pattern 1)                              #用“|”分割多个模式，相当于or，eg:hello|word)
+
+	command1
+
+	;;                                  #;;两个分号代表命令结束
+
+pattern 2)
+
+	command2
+
+	;;
+
+		*)                        #default，不满足以上模式，默认执行下面的语句
+
+	command4
+
+	;;
+esac                                    #exac表示case语句结束
+</code></pre></div></div>
+
+<p>函数：</p>
+
+<p>1、什么是函数</p>
+
+<p>shell运行将一组命令集合或语句形成一段可用代码，这些代码块称为shell函数</p>
+
+<p>给这段代码起个名字（函数名），后续可用直接调用这段代码的功能</p>
+
+<p>2、如何定义函数</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>方法1：
+
+函数名（）
+{
+	函数体
+}
+
+方法2：
+
+function 函数名（）
+{
+	函数体
+}
+</code></pre></div></div>
+
+<p>函数中==return==说明：</p>
+
+<p>1、return可用==结束一个函数==，类似于循环控制语句break（结束当前循环，执行循环体后面的代码）</p>
+
+<p>2、return默认返回函数中最后一个命令状态值，也可以给定参数值，范围是0-256之间</p>
+
+<p>3、如果没有return函数，函数将返回最后一个指令的退出状态值</p>
+
+<p>函数该如何调用：</p>
+
+<p>随机数：</p>
+
+<p>系统变量：==RANDOM==，默认回产生0-32767的随机整数</p>
+
+<p>查看系统生成的随机数</p>
+
+<p>echo $RANDOM</p>
+
+<p>生成0-1的随机数</p>
+
+<p>echo $[$RANDOM%2]</p>
+
+<p>生成0-2的随机数</p>
+
+<p>echo $[$RANDOM%3]</p>
+
+<p>生成0-3的随机数</p>
+
+<p>echo $[$RANDOM%4]</p>
+
+<p>生成0-9的随机数</p>
+
+<p>echo $[$RANDOM%10]</p>
+
+<p>生成0-100的随机数</p>
+
+<p>echo $[$RANDOM%101]</p>
+
+<p>生成50-100的随机数</p>
+
+<p>echo $[$RANDOM%51+50]</p>
+
+<p>四、扩展补充</p>
+
+<p>1、数组定义</p>
+
+<p>1）数组分类</p>
+
+<p>普通分类：只能使用整数作为数组索引（元素的下标）</p>
+
+<p>关联数组：只能使用字符串作为数组索引（元素的下标）</p>
+
+<p>2、普通数组定义</p>
+
+<p>一次只能赋予一个值</p>
+
+<p>数组名[索引下标]=值</p>
+
+<p>array[0]=v1</p>
+
+<p>array[1]=v2</p>
+
+<p>一次赋予多个值</p>
+
+<p>数组名=（值1 值2 值3 ……）</p>
+
+<p>array=（var1 var2 var3）</p>
+
+<p>#将文件中每一行赋值给array1数组</p>
+
+<p>array=(‘cat /etc/passwd’)</p>
+
+<p>3、数组的读取</p>
+
+<p>${数组名[元素下标]}</p>
+
+<p>#获取数组里的第一个元素</p>
+
+<p>echo ${array[0]}</p>
+
+<p>#获取数组里的所有元素</p>
+
+<p>echo ${array[*]} / echo ${array[@]}</p>
+
+<p>#获取数组里所有元素个数</p>
+
+<p>echo ${#array[*]}</p>
+
+<p>#获取数组的索引下标</p>
+
+<p>echo ${!array[@]}</p>
+
+<p>#查看多个数组</p>
+
+<p>echo ${name[*]:1:3}</p>
+
+<p>#查看所有普通数组</p>
+
+<p>declare -a</p>
+
+<p>关联数组定义：</p>
+
+<p>首先声明关联数组</p>
+
+<p>declare -A asso_array1</p>
+
+<p>数组赋值：</p>
+
+<p>一次赋一个值</p>
+
+<p>数组名[索引or下标]=变量值</p>
+
+<p>asso_array1[linux]=one</p>
+
+<p>一次赋多个值</p>
+
+<p>asso_array2=（[name1]=harry [name2]=jack [name3]=amy）</p>
+
+<p>查看关联数组：</p>
+
+<p>declare -A</p>
+
+<p>四、正则表达式</p>
+
+<p>正则表达式是什么：</p>
+
+<p>Regular Expression、regex、regexp，常规表示法，是一种字符模式，用于在查找过程中==匹配指定的字符==</p>
+
+<p>正则当中名词解释：</p>
+
+<p>元字符</p>
+
+<p>指那些在正则表达式中具有特殊意义的专用字符，如点（.），星（*），问号（？）等</p>
+
+<p>前导字符</p>
+
+<p>位于元字符前面的字符，ab==c==*</p>
+
+<p>第一类正则表达式：</p>
+
+<p>正则中普通常用的元字符：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>元字符</th>
+      <th>功能</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>.</td>
+      <td>匹配除了换行符以外的任意单个字符</td>
+    </tr>
+    <tr>
+      <td>*</td>
+      <td>前导字符出现0次或连续多次</td>
+    </tr>
+    <tr>
+      <td>.*</td>
+      <td>任意长度字符</td>
+    </tr>
+    <tr>
+      <td>^</td>
+      <td>行首以……开头</td>
+    </tr>
+    <tr>
+      <td>$</td>
+      <td>行尾以……结尾</td>
+    </tr>
+    <tr>
+      <td>^$</td>
+      <td>空行</td>
+    </tr>
+    <tr>
+      <td>[ ]</td>
+      <td>匹配括号里任意单个字符或一组单个字符</td>
+    </tr>
+    <tr>
+      <td>[^ ]</td>
+      <td>匹配不包含括号里任一单个字符或一组字符</td>
+    </tr>
+    <tr>
+      <td>^[ ]</td>
+      <td>匹配以括号里任意单个字符或一组单个字符开头</td>
+    </tr>
+    <tr>
+      <td>^[^]</td>
+      <td>匹配不以括号里任意单个字符或一组单个字符开头</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>正则中其他常用元字符：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>元字符</th>
+      <th>功能</th>
+      <th>举例</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>\ &lt;</td>
+      <td>取单词的头(\和&lt;不空格)</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>\ &gt;</td>
+      <td>取单词的尾(\和&gt;不空行格)</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>\ &lt; \ &gt;</td>
+      <td>精确匹配</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>\ {n\ }</td>
+      <td>匹配前导字符连续出现n次</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>\ {n,m\ }</td>
+      <td>匹配前导字符出现n次与m次之间</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>\ ( \ )</td>
+      <td>保存被匹配的字符</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>\d</td>
+      <td>匹配数字（eg：grep -P ‘\d’ 1.txt）</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>\w</td>
+      <td>匹配字母数字下划线（grep -P）</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>\s</td>
+      <td>匹配空行、制表符、换页符（grep -P）</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>扩展类正则常用元字符：</p>
+
+<blockquote>
+  <p>grep -E或者是egrep才能接扩展类正则常用元字符</p>
+
+  <p>sed -r才能接扩展类正则常用元字符</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th>扩展元字符</th>
+      <th>功能</th>
+      <th>举例</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>+</td>
+      <td>匹配一个或多个前导字符</td>
+      <td>bo+：匹配boo、bo</td>
+    </tr>
+    <tr>
+      <td>？</td>
+      <td>匹配零个或一个前导字符</td>
+      <td>bo?：匹配b、bo</td>
+    </tr>
+    <tr>
+      <td>|</td>
+      <td>或</td>
+      <td>a|b：匹配a或b</td>
+    </tr>
+    <tr>
+      <td>()</td>
+      <td>组字符，看成整体</td>
+      <td>(my|your)self：myself或yourself</td>
+    </tr>
+    <tr>
+      <td>{n}</td>
+      <td>前导字符重复n次</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>{n,}</td>
+      <td>前导字符重复至少n次</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>{n,m}</td>
+      <td>前导字符重复n到m次</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>第二类正则</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>表达式</th>
+      <th>功能</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[:alnum:]</td>
+      <td>字母与数字</td>
+    </tr>
+    <tr>
+      <td>[:alpha:]</td>
+      <td>大小写字母</td>
+    </tr>
+    <tr>
+      <td>[:blank:]</td>
+      <td>空格和制表符</td>
+    </tr>
+    <tr>
+      <td>[:digit:]</td>
+      <td>数字</td>
+    </tr>
+    <tr>
+      <td>[:lower:]</td>
+      <td>小写字母</td>
+    </tr>
+    <tr>
+      <td>[:upper:]</td>
+      <td>大写字母</td>
+    </tr>
+    <tr>
+      <td>[:punct:]</td>
+      <td>标点符号</td>
+    </tr>
+    <tr>
+      <td>[:space:]</td>
+      <td>换行符、回车等在内的所有空白</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>一、sed</p>
+
+<p>1、sed概念</p>
+
+<p>sed是stream Editior（流编辑器）的缩写，简称流编辑器；用来处理文件</p>
+
+<p>2、sed如何处理文件</p>
+
+<blockquote>
+  <p>文本文件 ——&gt; sed的模式空间（缓冲区）——–&gt; sed输出到屏幕</p>
+</blockquote>
+
+<p>sed是==一行一行==读取文件内容并按照要求进行处理，把处理后的结果输出到屏幕</p>
+
+<p>具体流程：</p>
+
+<p>1）首先sed读取文件中的一行内容，把其保存在一个临时缓存区（sed对缓冲区的副本进行操作，不会直接修改原文件）</p>
+
+<p>2）然后根据需求处理临时缓冲区中的行，完成后把该行发送到屏幕上</p>
+
+<p>3、sed使用方法介绍</p>
+
+<blockquote>
+  <p>sed常见的语法格式有两种：一种叫命令行，一种叫脚本模式</p>
+</blockquote>
+
+<p>语法格式：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sed [options] '处理动作' 文件名
+</code></pre></div></div>
+
+<p>常用选项：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>选项</th>
+      <th>说明</th>
+      <th>备注</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>-e</td>
+      <td>进行多项（多次）编辑</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>-n</td>
+      <td>取消默认输出</td>
+      <td>不自动打印模式空间</td>
+    </tr>
+    <tr>
+      <td>-r</td>
+      <td>使用扩展正则表达式</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>-i</td>
+      <td>原地编辑（修改源文件）</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>-f</td>
+      <td>指定sed脚本的文件名</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>常见动作：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>动作</th>
+      <th>说明</th>
+      <th>备注</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>‘p’</td>
+      <td>打印</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>‘i’</td>
+      <td>在指定行之前插入内容</td>
+      <td>类似vim里的大写O</td>
+    </tr>
+    <tr>
+      <td>‘a’</td>
+      <td>在指定行之后插入内容</td>
+      <td>类似vim里的小写o</td>
+    </tr>
+    <tr>
+      <td>‘c’</td>
+      <td>替换指定行所有内容</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>‘d’</td>
+      <td>删除指定行</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>举例：</p>
+
+<p>增删改查：</p>
+
+<p>打印文章内容：</p>
+
+<p>#打印文件第一行，取消默认输出</p>
+
+<p>sed -n ‘p’ 1.txt</p>
+
+<p>#打印文件第二行，取消默认输出</p>
+
+<p>sed -n ‘2p’ 1.txt</p>
+
+<p>#打印文件最后一行，取消默认输出</p>
+
+<p>sed -n ‘$p’ 1.txt</p>
+
+<p>#打印文件1-5行，取消默认输出</p>
+
+<p>sed -n ‘1,5p’ 1.txt</p>
+
+<p>#打印文件第1行和第5行，取消默认输出</p>
+
+<p>sed -ne ‘1P’ -ne ‘5p’ 1.txt</p>
+
+<p>sed -ne ‘1p;5p’ 1.txt</p>
+
+<p>增加文章内容：</p>
+
+<p>#在最后一行加入99999</p>
+
+<p>sed ‘$a99999’ 1.txt</p>
+
+<p>修改文件内容</p>
+
+<p>#替换文件第5行内容</p>
+
+<p>sed ‘5chelloword’ 1.txt</p>
+
+<p>#替换文件所有内容</p>
+
+<p>sed ‘chelloword’ 1.txt</p>
+
+<p>#替换以user01开头的行</p>
+
+<p>sed ‘/^user01/c88888’</p>
+
+<p>删除文件内容</p>
+
+<p>#删除文件第1行</p>
+
+<p>sed ‘1d’ sed</p>
+
+<p>对文件进行搜索替换操作</p>
+
+<blockquote>
+  <p>语法：sed [option] ‘s/搜索的内容/替换的内容/动作’ 需要处理的文件</p>
+
+  <p>其中：动作：打印-p；全局替换-g</p>
+</blockquote>
+
+<p>#打印</p>
+
+<p>sed -n ‘s/ROOT/root/p’ 1.txt</p>
+
+<p>#注释掉1-5行</p>
+
+<p>sed -n ‘1,5s/^/#/p’ 1.txt</p>
+
+<p>其他命令</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>命令</th>
+      <th>解释</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>r</td>
+      <td>从另外文件读取内容</td>
+    </tr>
+    <tr>
+      <td>w</td>
+      <td>内容另存为</td>
+    </tr>
+    <tr>
+      <td>x</td>
+      <td>保存查找串以便在替换串中引用</td>
+    </tr>
+    <tr>
+      <td>=</td>
+      <td>打印行号</td>
+    </tr>
+    <tr>
+      <td>!</td>
+      <td>对所选行以外的所有行应用命令，放在行数之后</td>
+    </tr>
+    <tr>
+      <td>q</td>
+      <td>退出</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>sed ‘$r /etc/hosts’ 1.txt</p>
+
+<p>sed ‘1,5w 11.txt’ 1.txt</p>
+
+<p>过滤：</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>grep -Ev ‘^#</td>
+      <td>^$’ 1.txt</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>sed -e ‘/^#/d’ -e ‘/^$/d’ 1.txt</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>sed -r ‘/^#</td>
+      <td>/^$/d’ 1.txt</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>sed脚本</p>
+
+<p>用法：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sed -f scripts.sh file
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/bin/sed -f
+
+1,5d
+
+s/root/hello/g
+
+3i777
+
+5i888
+
+
+p
+</code></pre></div></div>
+
+<p>1）脚本文件是命令清单</p>
+
+<p>2）在每行的末尾不能有任何空格、制表符或其他文本</p>
+
+<p>3）如果需要在一行中有多个命令，应该使用分号分隔</p>
+
+<p>4）不需要且不可用引号保护命令</p>
+
+<p>5）#号开头的行为是注释</p>
+
