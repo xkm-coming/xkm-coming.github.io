@@ -9,8 +9,8 @@ categories: jekyll update
 
 ------
 
-![image](Picture/apollo_pictures/1.png)
-![image](Picture/apollo_pictures/1-1.png)
+![image](/Picture/apollo_pictures/1.png)
+![image](/Picture/apollo_pictures/1-1.png)
 
 #### 1、portal的部署
 
@@ -90,7 +90,7 @@ select `Id`, `Key`, `Value`, `Comment` from `ApolloPortalDB`.`ServerConfig` limi
 
 > 每个环境下的ApolloConfigDB名称不一样，所以要修改ApolloConfigDB.sql里面的内容，DEV、DEMO、API2、PRO每个环境下都要进行建库操作，下面是以DEV环境修改为例，其他环境修改仿照DEV环境修改
 
-![image](Picture/apollo_pictures/3.png)
+![image](/Picture/apollo_pictures/3.png)
 
 ```
 mysql -uroot -p'askdnC8Djsf!20' -h192.168.216.89 -P3306
@@ -158,7 +158,7 @@ select * from ServerConfig;
 
 > 下载apollo的压缩包，把他们都整合到文件夹里面去
 
-![image](Picture/apollo_pictures/2.png)
+![image](/Picture/apollo_pictures/2.png)
 
 #### 4、apollo-adminserver配置文件的修改
 
@@ -402,11 +402,11 @@ systemctl stop firewalld
 
 #### 1、创建项目
 
-![image](Picture/apollo_pictures/4.png)
+![image](/Picture/apollo_pictures/4.png)
 
-![image](Picture/apollo_pictures/5.png)
+![image](/Picture/apollo_pictures/5.png)
 
-![image](Picture/apollo_pictures/6.png)
+![image](/Picture/apollo_pictures/6.png)
 
 #### 2、用户权限管理
 
@@ -414,7 +414,7 @@ systemctl stop firewalld
 
 （2）发布权：可以发布配置
 
-![image](Picture/apollo_pictures/7.png)
+![image](/Picture/apollo_pictures/7.png)
 
 3、项目管理管理员
 
@@ -424,4 +424,4 @@ systemctl stop firewalld
 -  创建集群 
 -  管理项目、Namespace
 
-![image](Picture/apollo_pictures/8.png)
+![image](/Picture/apollo_pictures/8.png)
