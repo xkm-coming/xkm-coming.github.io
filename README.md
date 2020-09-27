@@ -14,6 +14,5 @@ permalink: /about/
 - 掌握程度：小豆芽
 
 ### 联系方式
-- email:1397081447@qq.com
 - github：https://github.com/xkm-coming
-- blog：https://xkm-coming.github.io/
+- blog：https://xkm-coming.github.io
