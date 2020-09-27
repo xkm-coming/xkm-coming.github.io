@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "jenkins"
-date:   2020-09-24 18:52:18 +0800
+date:   2020-08-18 18:52:18 +0800
 typora-root-url: ..
 categories: jekyll update
 ---

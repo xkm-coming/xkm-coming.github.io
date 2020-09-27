@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "command_summary"
-date:   2020-09-27 09:44:18 +0800
+date:   2020-08-06 09:44:18 +0800
 typora-root-url: ..
 categories: jekyll update
 ---
