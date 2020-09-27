@@ -8,7 +8,6 @@ categories: jekyll update
 
 ### 一、Grafana基础准备
 
-
 #### 1、grafana介绍
 
 - Grafana其实就是一个可视化面板（Dashboard），有着非常漂亮的图表和布局展示，功能齐全的度量仪表盘和图形编辑器，经常被用作基础设施的时间序列数据和应用程序分析的可视化，
