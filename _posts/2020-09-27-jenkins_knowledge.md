@@ -1,3 +1,12 @@
+---
+layout: post
+title:  "jenkins"
+date:   2020-09-24 18:52:18 +0800
+typora-root-url: ..
+categories: jekyll update
+---
+
+
 ### 一、基础知识
 
 ------
@@ -76,7 +85,7 @@ CD 集中依赖于部署流水线，团队通过流水线自动化测试和部�
 
 #### 1、准备镜像源安装
 
-> 访问https://pkg.jenkins.io/redhat-stable/，页面有centos7安装Jenkins的教程
+- 访问https://pkg.jenkins.io/redhat-stable/，页面有centos7安装Jenkins的教程
 
 ```
 #在本地安装yum源
@@ -98,7 +107,7 @@ yum install -y jenkins
 
 #### 3、修改Jenkins端口配置
 
-> 修改端口，避免端口冲突
+- 修改端口，避免端口冲突
 
 ```
 #/etc/sysconfig/jenkins配置文件中有定义端口的变量"JENKINS_PORT"
@@ -112,7 +121,7 @@ JENKINS_PORT="8000"
 
 #### 4、启动Jenkins
 
-> 用systemctl可以管理Jenkins服务
+- 用systemctl可以管理Jenkins服务
 
 ```
 systemctl start jenkins
@@ -139,7 +148,7 @@ systemctl stop firewalld
 
 #### 7、获取密码
 
-> 第一次登陆页面需要输入密码解锁Jenkins，在指定文件中可以获得密码
+- 第一次登陆页面需要输入密码解锁Jenkins，在指定文件中可以获得密码
 
 ```
 cat /var/lib/jenkins/secrets/initialAdminPassword
@@ -147,7 +156,7 @@ cat /var/lib/jenkins/secrets/initialAdminPassword
 
 #### 8、浏览器访问http://172.16.23.194:8000
 
-> 输入密码解锁----->选择自定义安装插件----->创建管理员，设置用户名和密码----->用管理员身份登陆Jenkins
+- 输入密码解锁------选择自定义安装插件------创建管理员，设置用户名和密码------用管理员身份登陆Jenkins
 
 
 
@@ -159,7 +168,7 @@ cat /var/lib/jenkins/secrets/initialAdminPassword
 
 #### 1、jenkins的相关文件
 
-> 用rpm -ql jenkins可以查到jenkins的相关文件
+- 用rpm -ql jenkins可以查到jenkins的相关文件
 
 `/var/log/jenkins`：jenkins的日志文件
 
@@ -191,7 +200,7 @@ cat /var/lib/jenkins/secrets/initialAdminPassword
 
 #### 1、用户权限管理
 
-> Role-based Authorization Strategy插件可以用来管理用户权限
+- Role-based Authorization Strategy插件可以用来管理用户权限
 
 ##### 1-1 角色的分类：
 
@@ -211,51 +220,51 @@ cat /var/lib/jenkins/secrets/initialAdminPassword
 
 ##### 1-2 用户授权实操
 
-> 要求：创建一个job，授权该job给一个用户(dev_user)，这个用户可以自由构建该job并能查看构建日志，但不能修改该job的配置
+- 要求：创建一个job，授权该job给一个用户(dev_user)，这个用户可以自由构建该job并能查看构建日志，但不能修改该job的配置
 
 （1）下载Role-based Authorization Strategy插件
 
 （2）打开功能
 
-> 系统管理----->安全:全局安全配置----->授权策略:Role-Based Strategy 
+- 系统管理------安全:全局安全配置------授权策略:Role-Based Strategy 
 
-![image](Picture/jenkins_pictures/1.png)
+![image](/Picture/jenkins_pictures/1.png)
 
-![image](Picture/jenkins_pictures/1-2.png)
+![image](/Picture/jenkins_pictures/1-2.png)
 
 （3）创建角色,赋予权限
 
-> 系统管理----->未分类:Manage and Assignn Roles----->Manage Roles：
->
-> - Role：role00
-> - Pattern：job
-> - job：build、Discover、ExtendedRead 、Read、Workspace
+- 系统管理------未分类:Manage and Assignn Roles------Manage Roles：
+-
+- - Role：role00
+- - Pattern：job
+- - job：build、Discover、ExtendedRead 、Read、Workspace
 
-![image](Picture/jenkins_pictures/2.png)
+![image](/Picture/jenkins_pictures/2.png)
 
-![image](Picture/jenkins_pictures/2-2.png)
+![image](/Picture/jenkins_pictures/2-2.png)
 
 （4）新建用户：dev_user
 
-> 系统管理------>安全:管理用户----->新建用户
+- 系统管理-------安全:管理用户------新建用户
 
-![image](Picture/jenkins_pictures/3.png)
+![image](/Picture/jenkins_pictures/3.png)
 
-![image](Picture/jenkins_pictures/3-2.png)
+![image](/Picture/jenkins_pictures/3-2.png)
 
 （5）分配角色
 
-> 系统管理------>未分类:Manage and Assign Roles------>Assign Roles：
->
-> Item roles：ADD dev_user----->选择role00角色
+- 系统管理-------未分类:Manage and Assign Roles-------Assign Roles：
+-
+- Item roles：ADD dev_user------选择role00角色
 
-![image](Picture/jenkins_pictures/4.png)
+![image](/Picture/jenkins_pictures/4.png)
 
-![image](Picture/jenkins_pictures/4-2.png)
+![image](/Picture/jenkins_pictures/4-2.png)
 
 #### 2、Job的多参数选择设计
 
-> Extended Choice Parameter plugin插件可以实现多参数选择
+- Extended Choice Parameter plugin插件可以实现多参数选择
 
 ##### 2-1 参数设计
 
@@ -266,61 +275,61 @@ cat /var/lib/jenkins/secrets/initialAdminPassword
 
 ##### 2-2 创建job实操
 
-> 要求：支持参数构建、构建可以选择仓库分支、提供一个变量(version)输入框可以填写软件安装的版本、提供一个下拉菜单变量(action)可以选择(install或remove)，构建执行命令可以类似(yum $action openresty-$version)
+- 要求：支持参数构建、构建可以选择仓库分支、提供一个变量(version)输入框可以填写软件安装的版本、提供一个下拉菜单变量(action)可以选择(install或remove)，构建执行命令可以类似(yum $action openresty-$version)
 
 （1）安装Extended Choice Parameter plugin插件
 
 （2）Jenkins的项目配置：选择General:参数化构建过程
 
-> **#构建变量url**
->
-> name：url
->
-> Parameter Type：Radio Buttons
->
-> Number of Visible Items：2
->
-> Choose Source for Value----->Value：http://1.1.1.1/root/test.git,http://2.2.2.2/root/test/git.http
+- **#构建变量url**
+-
+- name：url
+-
+- Parameter Type：Radio Buttons
+-
+- Number of Visible Items：2
+-
+- Choose Source for Value------Value：http://1.1.1.1/root/test.git,http://2.2.2.2/root/test/git.http
 
-![image](Picture/jenkins_pictures/5.png)
+![image](/Picture/jenkins_pictures/5.png)
 
-> **#构建变量version**
->
-> name：version
->
-> Parameter Type：Radio Buttons
->
-> Number of Visible Items：3
->
-> Choose Source for Value----->Value：1.1,2.2,3.3
+- **#构建变量version**
+-
+- name：version
+-
+- Parameter Type：Radio Buttons
+-
+- Number of Visible Items：3
+-
+- Choose Source for Value------Value：1.1,2.2,3.3
 
-> **#构建变量action**
->
-> name：action
->
-> Parameter Type：Radio Buttons
->
-> Number of Visible Items：2
->
-> Choose Source for Value----->Value：remove,stall
+- **#构建变量action**
+-
+- name：action
+-
+- Parameter Type：Radio Buttons
+-
+- Number of Visible Items：2
+-
+- Choose Source for Value------Value：remove,stall
 
 （3）源码管理配置
 
-> 选择Git------> Repository URL:${url}
+- 选择Git------- Repository URL:${url}
 
-![image](Picture/jenkins_pictures/6.png)
+![image](/Picture/jenkins_pictures/6.png)
 
 （4）构建配置
 
-> 执行shell:yum -y ${action} openresty-${version}
+- 执行shell:yum -y ${action} openresty-${version}
 
-![image](Picture/jenkins_pictures/7.png)
+![image](/Picture/jenkins_pictures/7.png)
 
 
 
 #### 3、jenkins凭证管理
 
-> Credentials Binding插件可以用来管理凭证功能
+- Credentials Binding插件可以用来管理凭证功能
 
 ##### 3-1 凭证的概念
 
@@ -344,19 +353,19 @@ cat /var/lib/jenkins/secrets/initialAdminPassword
 
 （1）在创建项目中配置凭证
 
-> 源码管理:Git----->Credentials:ADD
+- 源码管理:Git------Credentials:ADD
 
-![image](Picture/jenkins_pictures/8.png)
+![image](/Picture/jenkins_pictures/8.png)
 
-![image](Picture/jenkins_pictures/9.png)
+![image](/Picture/jenkins_pictures/9.png)
 
 （2）在Jenkins的页面进行添加
 
-> 系统管理----->安全:Manage Credentials----->域:添加凭证
+- 系统管理------安全:Manage Credentials------域:添加凭证
 
-![image](Picture/jenkins_pictures/10.png)
+![image](/Picture/jenkins_pictures/10.png)
 
-![image](Picture/jenkins_pictures/10-2.png)
+![image](/Picture/jenkins_pictures/10-2.png)
 
 
 
@@ -382,27 +391,27 @@ Webhook有时也被称为反向API，因为它提供了API规则，你需要设�
 
 （2）Jenkins的项目配置：
 
-> 构建:Build when a change is pushed to GitLab. GitLab webhook URL: http://172.16.23.194:8000/project/webhook-test
+- 构建:Build when a change is pushed to GitLab. GitLab webhook URL: http://172.16.23.194:8000/project/webhook-test
 
-![image](Picture/jenkins_pictures/11.png)
-![image](Picture/jenkins_pictures/18.png)
+![image](/Picture/jenkins_pictures/11.png)
+![image](/Picture/jenkins_pictures/18.png)
 
 （3）gitlab的系统配置：
 
-> 行政区(界面上方工具图形)----->setting:network----->Outbound requests:Expand:勾选Allow requests to the local network from web hooks and services
+- 行政区(界面上方工具图形)------setting:network------Outbound requests:Expand:勾选Allow requests to the local network from web hooks and services
 
-![image](Picture/jenkins_pictures/13.png)
+![image](/Picture/jenkins_pictures/13.png)
 
-![image](Picture/jenkins_pictures/14.png)
+![image](/Picture/jenkins_pictures/14.png)
 
 （4）gitlab的项目配置：
 
-> setting:webhooks----->URL:http://172.16.23.194:8000/project/webhook-test ----->ADD webhook----->test:push events
+- setting:webhooks------URL:http://172.16.23.194:8000/project/webhook-test ------ADD webhook------test:push events
 
-![image](Picture/jenkins_pictures/15.png)
+![image](/Picture/jenkins_pictures/15.png)
 
-![image](Picture/jenkins_pictures/16.png)
+![image](/Picture/jenkins_pictures/16.png)
 
-![image](Picture/jenkins_pictures/17.png)
+![image](/Picture/jenkins_pictures/17.png)
 
-![image](Picture/jenkins_pictures/17-2.png)
+![image](/Picture/jenkins_pictures/17-2.png)

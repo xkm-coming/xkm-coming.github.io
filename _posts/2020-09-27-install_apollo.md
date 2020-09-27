@@ -1,3 +1,11 @@
+---
+layout: post
+title:  "install_apollo"
+date:   2020-09-27 10:02:18 +0800
+typora-root-url: ..
+categories: jekyll update
+---
+
 #### 一、对apollo的基础认识
 
 ------
@@ -61,7 +69,7 @@
 
 （1）访问https://dev.mysql.com/downloads/repo/yum/
 
-> 在页面中找到"Red Hat Enterprise Linux 7 / Oracle Linux 7 (Architecture Independent), RPM Package"对应的版本进行下载，下载好后拷贝到虚拟机centos7中
+- 在页面中找到"Red Hat Enterprise Linux 7 / Oracle Linux 7 (Architecture Independent), RPM Package"对应的版本进行下载，下载好后拷贝到虚拟机centos7中
 
 ```
 wget https://dev.mysql.com/downloads/repo/yum/mysql80-community-release-el7-3.noarch.rpm
@@ -81,7 +89,7 @@ systemctl start mysqld
 
 （3）登陆数据库
 
-> mysql初始化的时候会生成一个自定义密码，第一次登陆mysql前要去/var/log/mysqld.log去查找密码用于登陆
+- mysql初始化的时候会生成一个自定义密码，第一次登陆mysql前要去/var/log/mysqld.log去查找密码用于登陆
 
 ```
 [root@docker log]# cat mysqld.log |grep password
@@ -148,7 +156,7 @@ mkdir /usr/local/apollo/sql
 
 （2）导入数据库
 
-> 进入mysql的交互界面进行操作：
+- 进入mysql的交互界面进行操作：
 
 ```
 mysql -u root -p
@@ -168,7 +176,7 @@ select `Id`, `Key`, `Value`, `Comment` from `ApolloConfigDB`.`ServerConfig` limi
 
 （1）指定文件
 
-> 进入 /usr/local/apollo/apollo-adminservice配置文件，进行修改
+- 进入 /usr/local/apollo/apollo-adminservice配置文件，进行修改
 
 ```
 cd  /usr/local/apollo/apollo-adminservice/config
@@ -177,8 +185,6 @@ vim application-github.properties
 ```
 
 （2）进行修改
-
-> 修改内容如下：
 
 ```
 #配置apollo-adminservice的数据库连接信息
@@ -190,7 +196,7 @@ spring.datasource.password = gzjy5525
 
 （3）更改文件名
 
-> 启动脚本中需要的配置文件名为application.properties，所以要进行备份处理
+- 启动脚本中需要的配置文件名为application.properties，所以要进行备份处理
 
 ```
 cp application-github.properties application.properties
@@ -200,7 +206,7 @@ cp application-github.properties application.properties
 
 （1）找到文件
 
-> 进入startup.sh，进行编辑
+- 进入startup.sh，进行编辑
 
 ```
 cd /usr/local/apollo/apollo-adminservice/scritps
@@ -210,19 +216,19 @@ vim startup.sh
 
 （2）进行修改
 
-> 照实际的环境设置一个JVM内存，以下是默认设置
+- 照实际的环境设置一个JVM内存，以下是默认设置
 
 ```
 export JAVA_OPTS="-server -Xms2560m -Xmx2560m -Xss256k -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=384m -XX:NewSize=1024m -XX:MaxNewSize=1024m -XX:SurvivorRatio=22"
 ```
 
-> 在配置文件中：
->
-> （1）JVM参数：scripts/startup.sh的JAVA_OPTS
->
-> （2）日志输出路径：scripts/startup.sh和apollo-configservice.conf中的LOG_DIR
->
-> （3）服务的监听端口：SERVER_PORT
+- 在配置文件中：
+
+ （1）JVM参数：scripts/startup.sh的JAVA_OPTS
+
+ （2）日志输出路径：scripts/startup.sh和apollo-configservice.conf中的LOG_DIR
+
+ （3）服务的监听端口：SERVER_PORT
 
 ##### 5、修改apollo-portal的相关配置文件
 
@@ -230,7 +236,7 @@ export JAVA_OPTS="-server -Xms2560m -Xmx2560m -Xss256k -XX:MetaspaceSize=128m -X
 
 （1）找到文件
 
-> 进入/usr/local/apollo/apollo-portal配置文件进行修改
+- 进入/usr/local/apollo/apollo-portal配置文件进行修改
 
 ```
 cd /usr/local/apollo/apollo-portal/config
@@ -239,8 +245,6 @@ vim plication-github.properties
 ```
 
 （2）进行修改
-
-> 修改内容如下：
 
 ```
 spring.datasource.url = jdbc:mysql://localhosth：3306/useSSL=false&ApolloPortalDB?characterEncoding=utf8
@@ -256,7 +260,7 @@ cp application-github.properties application.properties
 
 - apollo-env.properties：
 
-> Apollo Portal需要在不同的环境访问不同的meta service(apollo-configservice)地址，所以需要在打包时提供这些信息，在apollo-env.properties文件中会有相关的定义
+- Apollo Portal需要在不同的环境访问不同的meta service(apollo-configservice)地址，所以需要在打包时提供这些信息，在apollo-env.properties文件中会有相关的定义
 
 （1）进入修改文件
 
@@ -266,7 +270,7 @@ vi apollo-env.properties
 
 （2）修改内容
 
-> 修改内容如下：
+- 修改内容如下：
 
 ```
 local.meta=http://localhost:8080
@@ -289,7 +293,7 @@ vi startup.sh
 
 （2）进行修改
 
-> 修改内容如下：
+- 修改内容如下：
 
 ```
 export JAVA_OPTS="-server -Xms4096m -Xmx4096m -Xss256k -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=384m -XX:NewSize=1536m -XX:MaxNewSize=1536m -XX:SurvivorRatio=22"
@@ -301,7 +305,7 @@ export JAVA_OPTS="-server -Xms4096m -Xmx4096m -Xss256k -XX:MetaspaceSize=128m -X
 
 （1）找到文件
 
-> 进入/usr/local/apollo/apollo-configservice/config/配置文件，进行修改
+- 进入/usr/local/apollo/apollo-configservice/config/配置文件，进行修改
 
 ```
 cd /usr/local/apollo/apollo-configservice/config
@@ -311,7 +315,7 @@ vim application-github.properties
 
 （2）进行修改
 
-> 修改内容如下：
+- 修改内容如下：
 
 ```
 spring.datasource.url = jdbc:mysql://localhost:3306/ApolloConfigDB?useSSL=false&characterEncoding=utf8
@@ -336,8 +340,6 @@ vim startup.sh
 ```
 
 （2）修改文件
-
-> 修改内容如下：
 
 ```
 export JAVA_OPTS="-server -Xms6144m -Xmx6144m -Xss256k -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=384m -XX:NewSize=4096m -XX:MaxNewSize=4096m -XX:SurvivorRatio=18"
@@ -365,7 +367,7 @@ systemctl stop firewalld
 
 - 存在docker网卡
 
-  > 分别编辑[apollo-configservice/src/main/resources/application.yml](https://github.com/ctripcorp/apollo/blob/master/apollo-configservice/src/main/resources/application.yml)和[apollo-adminservice/src/main/resources/application.yml](https://github.com/ctripcorp/apollo/blob/master/apollo-adminservice/src/main/resources/application.yml)，然后把需要忽略的网卡加进去
+- 分别编辑[apollo-configservice/src/main/resources/application.yml](https://github.com/ctripcorp/apollo/blob/master/apollo-configservice/src/main/resources/application.yml)和[apollo-adminservice/src/main/resources/application.yml](https://github.com/ctripcorp/apollo/blob/master/apollo-adminservice/src/main/resources/application.yml)，然后把需要忽略的网卡加进去
 
   ```
   spring:

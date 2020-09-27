@@ -1,3 +1,11 @@
+---
+layout: post
+title:  "zabbix_knowlege"
+date:   2020-09-24 18:52:18 +0800
+typora-root-url: ..
+categories: jekyll update
+---
+
 ### 一、Zabbix
 
 ------
@@ -6,7 +14,7 @@
 
 #### 1、zabbix架构
 
-![image](Picture/zabbix_pictures/1.png)
+![image](/Picture/zabbix_pictures/1.png)
 
 `zabbix sever`：zabbix server是agent程序报告系统可用性、系统完整性和统计数据得核心组件，所有配置信息，统计信息和操作数据都经过zabbix server存储在数据库中
 
@@ -40,7 +48,7 @@
 
 #### 4、zabbix监控模式
 
-> zabbix监控方式分为被动模式和主动模式
+- zabbix监控方式分为被动模式和主动模式
 
 （1）`被动模式`：
 
@@ -209,7 +217,7 @@ systemctl enable zabbix-server zabbix-agent rh-nginx116-nginx rh-php72-php-fpm
 
 （10）浏览器访问http://172.16.23.197
 
->  按照界面引导安装前端
+-  按照界面引导安装前端
 
 #### 2、安装zabbix agent
 
@@ -256,42 +264,39 @@ systemctl enable zabbix-agent
 
 ### 三、zabbix的常用文档
 
-------
+
+- rpm -ql zabbix-server-mysql可查看zabbix server软件包下载的文件
+
+-  `/etc/zabbix/zabbix_server.conf`：zabbix server的配置文件
+
+-  `/usr/lib/systemd/system/zabbix-server.service`：systemctl管理zabbix server的脚本
+
+-  `/usr/share/doc/zabbix-server-mysql-5.0.2`：存放数据库文档的目录
+
+-  `/usr/share/doc/zabbix-server-mysql-5.0.2/create.sql.gz`：存放zabbix数据库表结构和数据的sql文件
+-  `/var/log/zabbix`：日志目录，存放zabbix_server.log日志文件
 
 
 
-> rpm -ql zabbix-server-mysql可查看zabbix server软件包下载的文件
+- rpm -ql zabbix-agent可查看zabbix agent软件包下载的文件
 
-`/etc/zabbix/zabbix_server.conf`：zabbix server的配置文件
+-  `/etc/zabbix/zabbix_agentd.conf`：zabbix agent的配置文件
 
-`/usr/lib/systemd/system/zabbix-server.service`：systemctl管理zabbix server的脚本
+-  `/usr/lib/systemd/system/zabbix-agent.service`：systemctl管理zabbix agent的脚本
 
-`/usr/share/doc/zabbix-server-mysql-5.0.2`：存放数据库文档的目录
-
-`/usr/share/doc/zabbix-server-mysql-5.0.2/create.sql.gz`：存放zabbix数据库表结构和数据的sql文件
-`/var/log/zabbix`：日志目录，存放zabbix_server.log日志文件
+-  `/var/log/zabbix`：日志目录，存放zabbix_agentd.log日志文件
 
 
 
-> rpm -ql zabbix-agent可查看zabbix agent软件包下载的文件
+- rpm -ql zabbix-nginx-conf-scl可查看nginx关于zabbix的配置文件
 
-`/etc/zabbix/zabbix_agentd.conf`：zabbix agent的配置文件
-
-`/usr/lib/systemd/system/zabbix-agent.service`：systemctl管理zabbix agent的脚本
-
-`/var/log/zabbix`：日志目录，存放zabbix_agentd.log日志文件
+-  `/etc/opt/rh/rh-nginx116/nginx/conf.d/zabbix.conf`：web页面配置
 
 
 
-> rpm -ql zabbix-nginx-conf-scl可查看nginx关于zabbix的配置文件
+- 其他文档
 
-`/etc/opt/rh/rh-nginx116/nginx/conf.d/zabbix.conf`：web页面配置
-
-
-
-> 其他文档
-
-`/etc/opt/rh/rh-php72/php-fpm.d/zabbix.conf`：php的配置文件
+-  `/etc/opt/rh/rh-php72/php-fpm.d/zabbix.conf`：php的配置文件
 
 ### 四、zabbix的使用
 
@@ -305,25 +310,25 @@ systemctl enable zabbix-agent
 
 是一个你想要监控的网络实体（物理的，或者虚拟的），它可以是一台物理服务器，一个网络交换机，一个虚拟机或者一些应用
 
-> 配置（Configuration） →主机（hosts ）→创建主机（create host）
+- 配置（Configuration） →主机（hosts ）→创建主机（create host）
 
-![image](Picture/zabbix_pictures/2.png)
+![image](/Picture/zabbix_pictures/2.png)
 
 #### 3、监控项：
 
 被监控主机的特定数据，一个流量数据
 
-> 主机（hosts） →在主机页面查找到新建的主机 →在新主机行中找到监控项（items） →进入创建item界面 →创建监控项（create item）
+- 主机（hosts） →在主机页面查找到新建的主机 →在新主机行中找到监控项（items） →进入创建item界面 →创建监控项（create item）
 
-![image](Picture/zabbix_pictures/3.png)
+![image](/Picture/zabbix_pictures/3.png)
 
-![image](Picture/zabbix_pictures/4.png)
+![image](/Picture/zabbix_pictures/4.png)
 
 查看数据:
 
-> 前往监控（Monitoring）→ 最新数据（Latest data），然后点击监控项后的'图表（Graph）
+- 前往监控（Monitoring）→ 最新数据（Latest data），然后点击监控项后的'图表（Graph）
 
-![image](Picture/zabbix_pictures/5.png)
+![image](/Picture/zabbix_pictures/5.png)
 
 #### 4、触发器：
 
@@ -386,15 +391,15 @@ systemctl enable zabbix-agent
 
 ##### （5）创建触发器
 
-> 配置（Configuration） → 主机（Hosts），找到新增主机（New host），点击旁边的触发器（Triggers）  →创建触发器（Create trigger）
+- 配置（Configuration） → 主机（Hosts），找到新增主机（New host），点击旁边的触发器（Triggers）  →创建触发器（Create trigger）
 
-![image](Picture/zabbix_pictures/6.png)
+![image](/Picture/zabbix_pictures/6.png)
 
 查看监控：
 
-> 监控（Monitoring） → 问题（Problems）
+- 监控（Monitoring） → 问题（Problems）
 
-![image](Picture/zabbix_pictures/7.png)
+![image](/Picture/zabbix_pictures/7.png)
 
 #### 5、动作：
 
@@ -422,7 +427,7 @@ Zabbix的功能就是用用来进行监控的，当监控的对象出现问题�
 - pie：饼图
 - exploded：分离性饼图
 
-![image](Picture/zabbix_pictures/15.png)
+![image](/Picture/zabbix_pictures/15.png)
 
 #### 9、模板：
 
@@ -436,29 +441,29 @@ Zabbix的功能就是用用来进行监控的，当监控的对象出现问题�
 
 （3）创建模板
 
-> 配置（Configuration） → 模版（Templates） →点击创建模版（Create template）
+- 配置（Configuration） → 模版（Templates） →点击创建模版（Create template）
 
-![image](Picture/zabbix_pictures/8.png)
+![image](/Picture/zabbix_pictures/8.png)
 
-> 关联模板，是一个继承关系，当一个模版链接到一个主机后，主机会继承这个模版中的所有对象
+- 关联模板，是一个继承关系，当一个模版链接到一个主机后，主机会继承这个模版中的所有对象
 
-![image](Picture/zabbix_pictures/8-1.png)
+![image](/Picture/zabbix_pictures/8-1.png)
 
-> 自定义监控项，不限于原有模板的功能
+- 自定义监控项，不限于原有模板的功能
 
-![image](Picture/zabbix_pictures/8-2.png)
+![image](/Picture/zabbix_pictures/8-2.png)
 
-> 自定义触发器
+- 自定义触发器
 
-![image](Picture/zabbix_pictures/8-3.png)
+![image](/Picture/zabbix_pictures/8-3.png)
 
-> 关联主机：配置（Configuration） → 主机（Hosts），点击'新主机（New host）'打开表单，前往模版（Templates）标签页
+- 关联主机：配置（Configuration） → 主机（Hosts），点击'新主机（New host）'打开表单，前往模版（Templates）标签页
 
-![image](Picture/zabbix_pictures/8-4.png)
+![image](/Picture/zabbix_pictures/8-4.png)
 
-> 查看模板：配置（Configuration）→模板（Templates）
+- 查看模板：配置（Configuration）→模板（Templates）
 
-![image](Picture/zabbix_pictures/8-5.png)
+![image](/Picture/zabbix_pictures/8-5.png)
 
 #### 10、web监控：
 
@@ -505,37 +510,37 @@ Zabbix的功能就是用用来进行监控的，当监控的对象出现问题�
 
 - 创建web场景
 
->  配置 (Configuration) –> 主机（hosts）–>找到主机一行的Web –>点击右上角 创建 web 场景
+-  配置 (Configuration) –> 主机（hosts）–>找到主机一行的Web –>点击右上角 创建 web 场景
 
-![image](Picture/zabbix_pictures/9.png)
+![image](/Picture/zabbix_pictures/9.png)
 
 - 创建web step
 
   - 首页检测
 
-    ![image](Picture/zabbix_pictures/9-1.png)
+    ![image](/Picture/zabbix_pictures/9-1.png)
 
-    ![image](Picture/zabbix_pictures/9-2.png)
+    ![image](/Picture/zabbix_pictures/9-2.png)
 
   - 登陆
 
-    ![image](Picture/zabbix_pictures/9-3.png)
+    ![image](/Picture/zabbix_pictures/9-3.png)
 
-    ![image](Picture/zabbix_pictures/9-4.png)
+    ![image](/Picture/zabbix_pictures/9-4.png)
 
   - 登陆检测
 
-    ![image](Picture/zabbix_pictures/9-5.png)
+    ![image](/Picture/zabbix_pictures/9-5.png)
 
-    ![image](Picture/zabbix_pictures/9-6.png)
+    ![image](/Picture/zabbix_pictures/9-6.png)
 
-    ![image](Picture/zabbix_pictures/9-7.png)
+    ![image](/Picture/zabbix_pictures/9-7.png)
 
 - 查看web检测结果
 
-> 监控中 (Monitoring)→host→在主机行中找到web选项点击→点击刚创建的web新监控，可看到结果
+- 监控中 (Monitoring)→host→在主机行中找到web选项点击→点击刚创建的web新监控，可看到结果
 
-![image](Picture/zabbix_pictures/10.png)
+![image](/Picture/zabbix_pictures/10.png)
 
 ### 五、实现zabbix agent自动注册
 
@@ -547,17 +552,17 @@ Zabbix的功能就是用用来进行监控的，当监控的对象出现问题�
 
 #### 2、创建网络发现规则（基于IP）
 
-> 配置（configuration）*→* 发现（discovery）*→* 创建发现规则（create discovery rule）
+- 配置（configuration）*→* 发现（discovery）*→* 创建发现规则（create discovery rule）
 
-![image](Picture/zabbix_pictures/11.png)
+![image](/Picture/zabbix_pictures/11.png)
 
-![image](Picture/zabbix_pictures/12.png)
+![image](/Picture/zabbix_pictures/12.png)
 
 #### 3、创建动作
 
-> 配置（configuration）*→*动作（action），选择Discovery acions*→*创建动作（create cation）
+- 配置（configuration）*→*动作（action），选择Discovery acions*→*创建动作（create cation）
 
-![image](Picture/zabbix_pictures/13.png)
+![image](/Picture/zabbix_pictures/13.png)
 
 #### 3、启动zabbix agent
 
@@ -567,10 +572,10 @@ systemctl start zabbix-agent
 
 #### 4、查看发现
 
-> 监测（Monitoring）*→* 发现（Discovery）可以看到发现规则是否生效
+- 监测（Monitoring）*→* 发现（Discovery）可以看到发现规则是否生效
 
 #### 5、查看自动注册是否正常
 
-> 配置（Configuration）*→*主机群（host group）
+- 配置（Configuration）*→*主机群（host group）
 
-![image](Picture/zabbix_pictures/14.png)
+![image](/Picture/zabbix_pictures/14.png)

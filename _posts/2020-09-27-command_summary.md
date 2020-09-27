@@ -1,3 +1,11 @@
+---
+layout: post
+title:  "command_summary"
+date:   2020-09-27 09:44:18 +0800
+typora-root-url: ..
+categories: jekyll update
+---
+
 ### 常用命令汇总
 
 #### cd    进入目录

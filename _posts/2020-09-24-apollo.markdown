@@ -21,7 +21,7 @@ categories: jekyll update
 
 #### 2、config service和admin service的部署
 
-> Meta Server、Config Service和Admin Service在每个环境都单独部署，使用独立的数据库
+Meta Server、Config Service和Admin Service在每个环境都单独部署，使用独立的数据库
 
 | 环境 | 服务                 | IP:端口             |
 | ---- | -------------------- | ------------------- |
@@ -36,7 +36,7 @@ categories: jekyll update
 
 #### 3、数据库部署
 
-> 数据库部署在主机：192.168.216.89，监听端口：3306
+数据库部署在主机：192.168.216.89，监听端口：3306
 
 | 服务名称                                       | 数据库名称          |
 | ---------------------------------------------- | ------------------- |
@@ -89,7 +89,7 @@ select `Id`, `Key`, `Value`, `Comment` from `ApolloPortalDB`.`ServerConfig` limi
 
 ##### （2）创建ApolloConfigDB
 
-> 每个环境下的ApolloConfigDB名称不一样，所以要修改ApolloConfigDB.sql里面的内容，DEV、DEMO、API2、PRO每个环境下都要进行建库操作，下面是以DEV环境修改为例，其他环境修改仿照DEV环境修改
+- 每个环境下的ApolloConfigDB名称不一样，所以要修改ApolloConfigDB.sql里面的内容，DEV、DEMO、API2、PRO每个环境下都要进行建库操作，下面是以DEV环境修改为例，其他环境修改仿照DEV环境修改
 
 ![image](/Picture/apollo_pictures/3.png)
 
@@ -143,7 +143,7 @@ select * from ServerConfig;
 
 - 调整ApolloConfigDB配置
 
-> 以dev环境为例
+`以dev环境为例`
 
 ```
 use ApolloConfigDB_dev;
@@ -157,17 +157,17 @@ select * from ServerConfig;
 
 #### 3、apollo软件包准备
 
-> 下载apollo的压缩包，把他们都整合到文件夹里面去
+- 下载apollo的压缩包，把他们都整合到文件夹里面去
 
 ![image](/Picture/apollo_pictures/2.png)
 
 #### 4、apollo-adminserver配置文件的修改
 
-> DEV、DEMO、API2、PRO每个环境下adminserver、configserver都要进行修改，下面是以DEV环境修改为例，其他环境修改仿照DEV环境修改
+- DEV、DEMO、API2、PRO每个环境下adminserver、configserver都要进行修改，下面是以DEV环境修改为例，其他环境修改仿照DEV环境修改
 
 - ##### apollo-adminservice.conf文件
 
-> 修改日志输出路径
+- 修改日志输出路径
 
 ```
 cd /usr/local/apollo/dev/admin
@@ -185,7 +185,7 @@ LOG_FOLDER=/opt/logs/dev/admin/
 
 - ##### application-github.properties文件
 
-> 修改数据库的连接信息
+- 修改数据库的连接信息
 
 ```
 cd /usr/local/apollo/dev/admin/config
@@ -209,7 +209,7 @@ spring.datasource.password = askdnC8Djsf!20
 
 - ##### application-github.properties更名
 
-> 修改完application-github.properties文件后，避免文件名出错，进行复制更名
+- 修改完application-github.properties文件后，避免文件名出错，进行复制更名
 
 ```
 cp application-github.properties application.properties
@@ -217,7 +217,7 @@ cp application-github.properties application.properties
 
 - ##### startup.sh文件
 
-> 启动脚本
+- 启动脚本
 
 ```
 cd /usr/local/apollo/dev/admin/scripts
@@ -237,7 +237,7 @@ export JAVA_OPTS="-Xms128m -Xmx128m -Xss256k -XX:MetaspaceSize=128m -XX:MaxMetas
 
 - ##### apollo-configservice.conf文件
 
-> 修改日志输出目录路径
+- 修改日志输出目录路径
 
 ```
 cd /usr/local/apollo/dev/config
@@ -255,7 +255,7 @@ LOG_FOLDER=/opt/logs/dev/config/
 
 - ##### application-github.properties
 
-> 修改数据库连接信息
+- 修改数据库连接信息
 
 ```
 cd /usr/local/apollo/dev/config/config
@@ -273,7 +273,7 @@ spring.datasource.password = askdnC8Djsf!20
 
 - ##### application-github.properties更名
 
-> 修改完application-github.properties文件后，避免文件名出错，进行复制更名
+- 修改完application-github.properties文件后，避免文件名出错，进行复制更名
 
 ```
 cp application-github.properties application.properties
@@ -281,7 +281,7 @@ cp application-github.properties application.properties
 
 - ##### startup.sh
 
-> 启动脚本
+- 启动脚本
 
 ```
 cd /usr/local/apollo/dev/config/scripts
@@ -301,7 +301,7 @@ export JAVA_OPTS="-Xms128m -Xmx128m -Xss256k -XX:MetaspaceSize=128m -XX:MaxMetas
 
 - ##### apollo-portal.conf
 
-> 修改日志输出目录路径
+- 修改日志输出目录路径
 
 ```
 cd /usr/local/apollo/portal
@@ -319,7 +319,7 @@ LOG_FOLDER=/opt/logs/portal/
 
 - ##### application-github.properties
 
-> 修改数据库连接信息
+- 修改数据库连接信息
 
 ```
 cd /usr/local/apollo/portal/config
@@ -343,7 +343,7 @@ spring.datasource.password = askdnC8Djsf!20
 
 - ##### application-github.properties
 
-> 修改完application-github.properties文件后，避免文件名出错，进行复制更名
+- 修改完application-github.properties文件后，避免文件名出错，进行复制更名
 
 ```
 cp application-github.properties application.properties
@@ -351,7 +351,7 @@ cp application-github.properties application.properties
 
 - ##### apollo-env.properties
 
-> 修改apollo-env.properties文件，Apollo Portal需要在不同的环境访问不同的meta service(apollo-configservice)地址，所以我们需要在配置中提供这些信息。默认情况下，meta service和config service是部署在同一个JVM进程，所以meta service的地址就是config service的地址。
+- 修改apollo-env.properties文件，Apollo Portal需要在不同的环境访问不同的meta service(apollo-configservice)地址，所以我们需要在配置中提供这些信息。默认情况下，meta service和config service是部署在同一个JVM进程，所以meta service的地址就是config service的地址。
 
 ```
 cd /usr/local/apollo/portal/config
@@ -371,7 +371,7 @@ pro.meta=http://192.168.216.91:18083
 
 - ##### startup.sh
 
-> 启动脚本
+- 启动脚本
 
 ```
 cd /usr/local/apollo/portal/scripts

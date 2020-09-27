@@ -1,3 +1,11 @@
+---
+layout: post
+title:  "openresty_knowlege"
+date:   2020-09-24 10:22:18 +0800
+typora-root-url: ..
+categories: jekyll update
+---
+
 ### 一、基础知识准备
 
 #### 1、进程：
@@ -215,9 +223,9 @@ openresty的工作方式是多进程，
 
 
 
-#### 三、nginx配置文件：
+### 三、nginx配置文件：
 
-##### 1、变量
+#### 1、变量
 
 - 用户自定义变量
 - Nginx内建变量
@@ -415,7 +423,7 @@ Nginx 变量也可以选择将其值容器用作缓存，这样在多次读取�
 
 （6）父子间请求变量共享
 
-##### 2、location的正则匹配
+#### 2、location的正则匹配
 
 修饰符：
 
@@ -434,7 +442,7 @@ Nginx 变量也可以选择将其值容器用作缓存，这样在多次读取�
 
 （4）如果没有正则匹配则使用步骤（1）中的最长匹配
 
-##### 3、nginx配置文件
+#### 3、nginx配置文件
 
 ```
 #nginx进程数，建议设置为等于CPU总核心数。
@@ -571,7 +579,7 @@ http
 }
 ```
 
-##### 5、nginx反向代理
+#### 5、nginx反向代理
 
 nginx中有两个模块都有proxy_pass的指令
 
@@ -602,9 +610,9 @@ proxy_http_version 1.0|1.1：修改http版本，默认1.0
 
 
 
-#### 四、php-fmp
+### 四、php-fmp
 
-##### 1、CGI、fastcgi、php-fpm、php-cgi
+#### 1、CGI、fastcgi、php-fpm、php-cgi
 
 `CGI`：客户端给nginx服务器发送获取.php文件时，nginx服务器会把请求转发给php解析器帮忙，CGI是规定传回结构和格式的协议
 
@@ -614,13 +622,13 @@ proxy_http_version 1.0|1.1：修改http版本，默认1.0
 
 `php-cgi`：cgi协议的实现
 
-##### 2、php-fpm 的配置文件
+#### 2、php-fpm 的配置文件
 
 /usr/local/php/sbin/php-fpm
 /usr/local/php/etc/php-fpm.conf
 /usr/local/php/etc/php.ini
 
-##### 3、php-fpm命令
+#### 3、php-fpm命令
 
 /usr/local/php/sbin/php-fpm -t：测试
 
@@ -628,7 +636,7 @@ proxy_http_version 1.0|1.1：修改http版本，默认1.0
 
 kill pid：杀死进程
 
-##### 4、/usr/local/php/etc/php-fpm.d/www.conf.default  配置文件
+#### 4、/usr/local/php/etc/php-fpm.d/www.conf.default  配置文件
 
 ```
 pid = run/php-fpm.pid 
@@ -703,22 +711,22 @@ catch_workers_output = yes
 
 
 
-#### 五、跨域
+### 五、跨域
 
-##### 1、跨域的几种情况
+#### 1、跨域的几种情况
 
  `aaa.com => bbb.com`
  `aaa.com:80 =>aaa.com:8080`
  `http://aaa.com => https://bb.com`
  `aaa.com => ccc.aaa.com`
 
-##### 2、解决方法
+#### 2、解决方法
 
 （1）jsonp
 （2）服务器设置跨域CORS
 （3）nginx反向代理
 
-##### 3、Nginx通过添加 Access-Control-Allow-Origin、Access-Control-Allow-Methods、Access-Control-Allow-Headers 等HTTP头信息的方式控制浏览器缓存。
+#### 3、Nginx通过添加 Access-Control-Allow-Origin、Access-Control-Allow-Methods、Access-Control-Allow-Headers 等HTTP头信息的方式控制浏览器缓存。
 
 ```
 "Access-Control-Allow-Origin" 设置允许发起跨域请求的网站
@@ -728,9 +736,9 @@ catch_workers_output = yes
 
 
 
-#### 六、基于openresty+php的环境下搭建wordpress
+### 六、基于openresty+php的环境下搭建wordpress
 
-##### 1.安装openresty：
+#### 1.安装openresty：
 
 安装依赖
 
@@ -809,7 +817,7 @@ server {
 /usr/local/opresty/nginx/sbin/nginx -s reload
 ```
 
-##### 2、安装php：
+#### 2、安装php：
 
 安装依赖
 
@@ -866,7 +874,7 @@ vi /usr/local/php7/etc/php-fpm.conf
 include=/usr/local/php7/etc/php-fpm.d/www.conf.default
 ```
 
-##### 3、安装wordpress
+#### 3、安装wordpress
 
 下载好wordpress-4.8.6.tar.gz软件包，拷贝到虚拟机中，并对压缩包进行解压操作
 
@@ -886,7 +894,7 @@ cp -p ~/wordpress/ /data/xkm
 chown -R nobody：nobody /data/xkm
 ```
 
-##### 4、我之前已经下载好了mysql，登陆mysql即可
+#### 4、我之前已经下载好了mysql，登陆mysql即可
 
 ```
 mysql -u root -p
@@ -904,4 +912,4 @@ grant all on worddb.* to 'rebecca'@'192.168.29.139';
 flush privileges；
 ```
 
-##### 5、访问192.168.29.139/index.php即可访问wordpress
+#### 5、访问192.168.29.139/index.php即可访问wordpress
