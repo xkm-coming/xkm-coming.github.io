@@ -6,13 +6,9 @@ typora-root-url: ..
 categories: jekyll update
 ---
 
-#### 一、对apollo的基础认识
+### 一、对apollo的基础认识
 
-------
-
-
-
-##### 1、传统配置文件和分布式配置中心的对比：
+#### 1、传统配置文件和分布式配置中心的对比：
 
 - 传统配置文件的缺点：
 
@@ -22,7 +18,7 @@ categories: jekyll update
 
   将注册文件注册在配置中心上，可以使用分布式配置中心实时更新配置文件，统一管理，不需要重新打包发布
 
-##### 2、apollo组件：
+#### 2、apollo组件：
 
 - `Config Service`：接口服务对象是Apollo客户端
 
@@ -38,14 +34,14 @@ categories: jekyll update
 
   在部署中，Config Service、Eureka和Meta Server三个逻辑角色会部署在同一个JVM进程中
 
-##### 3、配置发布后的实时推送设计
+#### 3、配置发布后的实时推送设计
 
 - 用户在Portal操作配置发布
 - Portal调用Admin Service的接口操作发布
 - Admin Service发布配置后，发送Release
 - Config Service收到ReleaseMessage后，通知对应的客户端（Config Service有一个线程会每秒扫描一次ReleaseMessage表，看看是否有新的消息记录）
 
-##### 4、Config Service通知客户端的实现方式
+#### 4、Config Service通知客户端的实现方式
 
 - 客户端会发起一个Http请求到Config Service的notifications/v2接口
 
@@ -57,15 +53,12 @@ categories: jekyll update
 
   
 
-#### 二、搭建apollo
-
-------
+### 二、搭建apollo
 
 
+#### 1、环境准备
 
-##### 1、环境准备
-
-**1.1 安装mysql8.0**
+1-1 安装mysql8.0
 
 （1）访问https://dev.mysql.com/downloads/repo/yum/
 
@@ -107,7 +100,7 @@ set global validate_password.length=1;
 ALTER USER "root"@"localhost" IDENTIFIED BY "gzjy5525"; 
 ```
 
-**1.2 安装java1.8**
+1-2 安装java1.8
 
 （1）用yum安装
 
@@ -126,7 +119,7 @@ OpenJDK Runtime Environment (build 1.8.0_262-b10)
 OpenJDK 64-Bit Server VM (build 25.262-b10, mixed mode)
 ```
 
-##### 2、安装apollo
+#### 2、安装apollo
 
 （1）下载apollo的压缩包，把他们都整合到一个文件夹里面去
 
@@ -144,7 +137,7 @@ unzip -o -d /usr/local/apollo/apollo-portal apollo-portal-1.6.2-github.zip
 unzip -o -d /usr/local/apollo/apollo-adminservice/ apollo-adminservice-1.6.2-github.zip
 ```
 
-##### 3、导入ApolloPortalDB和ApolloConfigDB数据库
+#### 3、导入ApolloPortalDB和ApolloConfigDB数据库
 
 （1）创建专门存放数据库sql表的文件
 
@@ -170,9 +163,9 @@ source /usr/local/apollo/sql/apolloconfigdb.sql；  #导入apolloconfigdb数据�
 select `Id`, `Key`, `Value`, `Comment` from `ApolloConfigDB`.`ServerConfig` limit 1;  #导入成功后测试是否成功
 ```
 
-##### 4、修改apollo-adminservice的相关配置文件
+#### 4、修改`apollo-adminservice`的相关配置文件
 
-- **application-github.properties**：属性配置文件（application.properties）
+- `application-github.properties`：属性配置文件（application.properties）
 
 （1）指定文件
 
@@ -202,11 +195,11 @@ spring.datasource.password = gzjy5525
 cp application-github.properties application.properties
 ```
 
-- **startup.sh脚本启动文件**
+- `startup.sh`脚本启动文件
 
 （1）找到文件
 
-- 进入startup.sh，进行编辑
+- 进入`startup.sh`，进行编辑
 
 ```
 cd /usr/local/apollo/apollo-adminservice/scritps
@@ -230,9 +223,9 @@ export JAVA_OPTS="-server -Xms2560m -Xmx2560m -Xss256k -XX:MetaspaceSize=128m -X
 
  （3）服务的监听端口：SERVER_PORT
 
-##### 5、修改apollo-portal的相关配置文件
+#### 5、修改apollo-portal的相关配置文件
 
-- **application-github.properties**
+- `application-github.properties`
 
 （1）找到文件
 
@@ -281,7 +274,7 @@ dev.meta=http://172,16.23.189:8080
 #pro.meta=http://fill-in-pro-meta-server:8080
 ```
 
-- **startup.sh启动脚本文件**
+- `startup.sh`启动脚本文件
 
 （1）找到文件
 
@@ -299,9 +292,9 @@ vi startup.sh
 export JAVA_OPTS="-server -Xms4096m -Xmx4096m -Xss256k -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=384m -XX:NewSize=1536m -XX:MaxNewSize=1536m -XX:SurvivorRatio=22"
 ```
 
-##### 6、修改apollo-configservice的相关配置文件
+#### 6、修改apollo-configservice的相关配置文件
 
-- **application-github.properties** 
+- `application-github.properties`
 
 （1）找到文件
 
@@ -329,7 +322,7 @@ spring.datasource.password = gzjy5525
 cp application-github.properties application.properties
 ```
 
-- **startup.sh启动脚本文件**
+- `startup.sh`启动脚本文件
 
 （1）找到文件
 
@@ -345,7 +338,7 @@ vim startup.sh
 export JAVA_OPTS="-server -Xms6144m -Xmx6144m -Xss256k -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=384m -XX:NewSize=4096m -XX:MaxNewSize=4096m -XX:SurvivorRatio=18"
 ```
 
-##### 7、关闭防火墙
+#### 7、关闭防火墙
 
 ```
 systemctl stop firewalld
@@ -353,13 +346,10 @@ systemctl stop firewalld
 
 
 
-#### 三、可能出现的问题
-
-------
+### 三、可能出现的问题
 
 
-
-##### 1、startup.sh启动失败
+#### 1、startup.sh启动失败
 
 - 解决的办法：
 
@@ -386,5 +376,5 @@ systemctl stop firewalld
 
   ```
   spring.datasource.url = jdbc:mysql://localhost:3306/ApolloConfigDB?useSSL=false&characterEncoding=utf8
-  #增加useSSL=false
+  增加useSSL=false
   ```

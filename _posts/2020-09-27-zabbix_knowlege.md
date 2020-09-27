@@ -6,10 +6,7 @@ typora-root-url: ..
 categories: jekyll update
 ---
 
-### 一、Zabbix
-
-------
-
+### 一、Zabbix基础知识
 
 
 #### 1、zabbix架构
@@ -83,7 +80,6 @@ categories: jekyll update
 
 ### 二、zabbix安装
 
-------
 
 #### 1、安装zabbix server
 
@@ -300,7 +296,6 @@ systemctl enable zabbix-agent
 
 ### 四、zabbix的使用
 
-------
 
 #### 1、主机组：
 
@@ -543,9 +538,6 @@ Zabbix的功能就是用用来进行监控的，当监控的对象出现问题�
 ![image](/Picture/zabbix_pictures/10.png)
 
 ### 五、实现zabbix agent自动注册
-
-------
-
 
 
 #### 1、创建新的主机群

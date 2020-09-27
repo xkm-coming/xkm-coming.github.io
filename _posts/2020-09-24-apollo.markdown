@@ -6,20 +6,19 @@ typora-root-url: ..
 categories: jekyll update
 ---
 
-### 一、apollo多环境部署
+#### 一、apollo多环境部署
 
-------
 
 ![image](/Picture/apollo_pictures/1.png)
 ![image](/Picture/apollo_pictures/1-1.png)
 
-#### 1、portal的部署
+ 1、portal的部署
 
 | 服务          | IP:端口            |
 | ------------- | ------------------ |
 | apollo-portal | 172.16.23.194:8070 |
 
-#### 2、config service和admin service的部署
+ 2、config service和admin service的部署
 
 Meta Server、Config Service和Admin Service在每个环境都单独部署，使用独立的数据库
 
@@ -34,7 +33,7 @@ Meta Server、Config Service和Admin Service在每个环境都单独部署，使
 | PRO  | apollo-adminservice  | 172.16.23.194:18093 |
 |      | apollo-configservice | 172.16.23.194:18083 |
 
-#### 3、数据库部署
+ 3、数据库部署
 
 数据库部署在主机：192.168.216.89，监听端口：3306
 
@@ -46,13 +45,12 @@ Meta Server、Config Service和Admin Service在每个环境都单独部署，使
 | PRO：apollo-adminservice/apollo-configservice  | ApolloConfigDB_PRO  |
 | apollo-portal                                  | ApolloPortalDB      |
 
-### 二、apollo多环境搭建
+#### 二、apollo多环境搭建
 
-------
 
-#### 1、环境准备：安装java-1.8
+1、环境准备：安装java-1.8
 
-##### （1）用yum安装
+（1）用yum安装
 
 ```
 yum search java  #查看java软件包的名字，找到1.8版本
@@ -60,7 +58,7 @@ yum search java  #查看java软件包的名字，找到1.8版本
 yum -y install java-1.8.0-openjdk-devel
 ```
 
-##### （2）查看是否下载成功
+（2）查看是否下载成功
 
 ```
 [root@docker log]# java -version
@@ -69,9 +67,9 @@ OpenJDK Runtime Environment (build 1.8.0_262-b10)
 OpenJDK 64-Bit Server VM (build 25.262-b10, mixed mode)
 ```
 
-#### 2、创建数据库
+2、创建数据库
 
-##### （1）创建ApolloPortalDB
+（1）创建ApolloPortalDB
 
 ```
 mysql -uroot -p'askdnC8Djsf!20' -h192.168.216.89 -P3306
@@ -87,7 +85,7 @@ select `Id`, `Key`, `Value`, `Comment` from `ApolloPortalDB`.`ServerConfig` limi
 #导入后测试是否成功
 ```
 
-##### （2）创建ApolloConfigDB
+（2）创建ApolloConfigDB
 
 - 每个环境下的ApolloConfigDB名称不一样，所以要修改ApolloConfigDB.sql里面的内容，DEV、DEMO、API2、PRO每个环境下都要进行建库操作，下面是以DEV环境修改为例，其他环境修改仿照DEV环境修改
 
@@ -107,7 +105,7 @@ select `Id`, `Key`, `Value`, `Comment` from `ApolloConfigDB`.`ServerConfig` limi
 #导入后测试是否成功
 ```
 
-##### （3）调整服务端配置
+（3）调整服务端配置
 
 - 调整ApolloPortalDB配置
 
@@ -143,7 +141,7 @@ select * from ServerConfig;
 
 - 调整ApolloConfigDB配置
 
-`以dev环境为例`
+- `以dev环境为例`
 
 ```
 use ApolloConfigDB_dev;
@@ -155,17 +153,17 @@ update ApolloConfigDB_dev.ServerConfig set value='http://192.168.216.91:18080/eu
 select * from ServerConfig;
 ```
 
-#### 3、apollo软件包准备
+3、apollo软件包准备
 
 - 下载apollo的压缩包，把他们都整合到文件夹里面去
 
 ![image](/Picture/apollo_pictures/2.png)
 
-#### 4、apollo-adminserver配置文件的修改
+ 4、apollo-adminserver配置文件的修改
 
 - DEV、DEMO、API2、PRO每个环境下adminserver、configserver都要进行修改，下面是以DEV环境修改为例，其他环境修改仿照DEV环境修改
 
-- ##### apollo-adminservice.conf文件
+- apollo-adminservice.conf文件
 
 - 修改日志输出路径
 
@@ -183,7 +181,7 @@ PID_FOLDER=.
 LOG_FOLDER=/opt/logs/dev/admin/
 ```
 
-- ##### application-github.properties文件
+- application-github.properties文件
 
 - 修改数据库的连接信息
 
@@ -207,7 +205,7 @@ spring.datasource.password = askdnC8Djsf!20
 #登陆数据库的密码
 ```
 
-- ##### application-github.properties更名
+- application-github.properties更名
 
 - 修改完application-github.properties文件后，避免文件名出错，进行复制更名
 
@@ -215,7 +213,7 @@ spring.datasource.password = askdnC8Djsf!20
 cp application-github.properties application.properties
 ```
 
-- ##### startup.sh文件
+- startup.sh文件
 
 - 启动脚本
 
@@ -233,9 +231,9 @@ SERVER_PORT=${SERVER_PORT:=18090}
 export JAVA_OPTS="-Xms128m -Xmx128m -Xss256k -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=384m -XX:NewSize=128m -XX:MaxNewSize=128m -XX:SurvivorRatio=8
 ```
 
-#### 5、apollo-configserver配置文件的修改
+5、apollo-configserver配置文件的修改
 
-- ##### apollo-configservice.conf文件
+- apollo-configservice.conf文件
 
 - 修改日志输出目录路径
 
@@ -253,7 +251,7 @@ PID_FOLDER=.
 LOG_FOLDER=/opt/logs/dev/config/
 ```
 
-- ##### application-github.properties
+- application-github.properties
 
 - 修改数据库连接信息
 
@@ -271,7 +269,7 @@ spring.datasource.username = root
 spring.datasource.password = askdnC8Djsf!20
 ```
 
-- ##### application-github.properties更名
+- application-github.properties更名
 
 - 修改完application-github.properties文件后，避免文件名出错，进行复制更名
 
@@ -279,7 +277,7 @@ spring.datasource.password = askdnC8Djsf!20
 cp application-github.properties application.properties
 ```
 
-- ##### startup.sh
+- startup.sh
 
 - 启动脚本
 
@@ -297,9 +295,9 @@ SERVER_PORT=${SERVER_PORT:=18080}
 export JAVA_OPTS="-Xms128m -Xmx128m -Xss256k -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=384m -XX:NewSize=128m -XX:MaxNewSize=128m -XX:SurvivorRatio=8
 ```
 
-#### 6、apollo-portal更改配置
+6、apollo-portal更改配置
 
-- ##### apollo-portal.conf
+- apollo-portal.conf
 
 - 修改日志输出目录路径
 
@@ -317,7 +315,7 @@ PID_FOLDER=.
 LOG_FOLDER=/opt/logs/portal/
 ```
 
-- ##### application-github.properties
+- application-github.properties
 
 - 修改数据库连接信息
 
@@ -341,7 +339,7 @@ spring.datasource.password = askdnC8Djsf!20
 #连接数据库的密码
 ```
 
-- ##### application-github.properties
+- application-github.properties
 
 - 修改完application-github.properties文件后，避免文件名出错，进行复制更名
 
@@ -349,7 +347,7 @@ spring.datasource.password = askdnC8Djsf!20
 cp application-github.properties application.properties
 ```
 
-- ##### apollo-env.properties
+- apollo-env.properties
 
 - 修改apollo-env.properties文件，Apollo Portal需要在不同的环境访问不同的meta service(apollo-configservice)地址，所以我们需要在配置中提供这些信息。默认情况下，meta service和config service是部署在同一个JVM进程，所以meta service的地址就是config service的地址。
 
@@ -369,7 +367,7 @@ api2.meta=http://192.168.216.91:18082
 pro.meta=http://192.168.216.91:18083
 ```
 
-- ##### startup.sh
+- startup.sh
 
 - 启动脚本
 
@@ -397,11 +395,10 @@ systemctl stop firewalld
 
 `./shutdown.sh`：停止服务
 
-### 三、protal的web界面使用
+#### 三、protal的web界面使用
 
-------
 
-#### 1、创建项目
+1、创建项目
 
 ![image](/Picture/apollo_pictures/4.png)
 
@@ -409,7 +406,7 @@ systemctl stop firewalld
 
 ![image](/Picture/apollo_pictures/6.png)
 
-#### 2、用户权限管理
+2、用户权限管理
 
 （1）修改权：可以修改配置
 
@@ -419,7 +416,7 @@ systemctl stop firewalld
 
 3、项目管理管理员
 
-项目管理员权限：
+- 项目管理员权限：
 
 -  创建Namespace 
 -  创建集群 
