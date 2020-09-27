@@ -3,7 +3,7 @@ layout: post
 title:  "zabbix_knowlege"
 date:   2020-08-27 18:52:18 +0800
 typora-root-url: ..
-category: jekyll
+category: monitor
 ---
 
 ### 一、Zabbix基础知识

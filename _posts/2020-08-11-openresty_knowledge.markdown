@@ -3,7 +3,7 @@ layout: post
 title:  "openresty_knowlege"
 date:   2020-08-11 10:22:18 +0800
 typora-root-url: ..
-category: jekyll
+category: openresty
 ---
 
 #### 一、基础知识准备

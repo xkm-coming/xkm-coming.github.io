@@ -3,7 +3,7 @@ layout: post
 title:  "command_summary"
 date:   2020-08-06 09:44:18 +0800
 typora-root-url: ..
-category: jekyll
+category: linux
 ---
 
 ### 常用命令汇总

@@ -3,7 +3,7 @@ layout: post
 title:  "gitlab_knowlege"
 date:   2020-08-13 09:52:18 +0800
 typora-root-url: ..
-category: jekyll
+category: gitlab
 ---
 
 ### 一、在centos7上安装gitlab（在桥接模式下）

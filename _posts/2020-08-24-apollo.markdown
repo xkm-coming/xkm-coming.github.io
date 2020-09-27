@@ -3,7 +3,7 @@ layout: post
 title:  "apollo"
 date:   2020-08-24-apollo 18:52:18 +0800
 typora-root-url: ..
-category: jekyll
+category: apollo
 ---
 
 #### 一、apollo多环境部署

@@ -3,7 +3,7 @@ layout: post
 title:  "install_apollo"
 date:   2020-08-13 10:02:18 +0800
 typora-root-url: ..
-category: jekyll
+category: apollo
 ---
 
 ### 一、对apollo的基础认识
