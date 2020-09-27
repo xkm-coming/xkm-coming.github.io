@@ -2,7 +2,7 @@
 layout: post
 title:  "shell"
 date:   2020-09-24 18:52:18 +0800
-categorie: jekyll
+category: jekyll
 ---
 
 #### 一、文本处理工具
