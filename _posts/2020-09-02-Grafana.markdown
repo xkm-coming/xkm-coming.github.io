@@ -3,7 +3,7 @@ layout: post
 title:  "Grafana"
 date:   2020-09-02 09:52:18 +0800
 typora-root-url: ..
-categories: jekyll update
+category: jekyll
 ---
 
 ### 一、Grafana基础准备
