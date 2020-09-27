@@ -210,17 +210,21 @@ a = 32
 
 跟nginx的命令的使用方式一样
 
-/usr/local/openresty/nginx/sbin/nginx -t：检查配置文件
+- `openresty -t`：检查配置文件
 
-/usr/local/openresty/nginx/sbin/nginx -s stop|reload|restart：暂停|重载|重启
+- `openresty -s stop`：停止
+
+- `openresty -s reload`：重新加载配置
+
+- `oprenrest -s restart`：重启
 
 5、openresty的重载和重启
 
-openresty的工作方式是多进程，
+- openresty的工作方式是多进程，
 
-- openresty -s reload：重新加载配置并启动openresty，生成新的nginx进程，给master进程发送信息，让master杀死worker进程，并重新启动新一轮工作
+- `openresty -s reload`：重新加载配置并启动openresty，生成新的nginx进程，给master进程发送信息，让master杀死worker进程，并重新启动新一轮工作
 
-- openresty -s restart：给master进程发送信号，把原本暂停状态的worker进程重新启动
+- `openresty -s restart`：给master进程发送信号，把原本暂停状态的worker进程重新启动
 
 
 
@@ -582,11 +586,13 @@ http
 
 5、nginx反向代理
 
+（1）proxy_pass指令
+
 - nginx中有两个模块都有proxy_pass的指令
 
-- ngx_http_proxy_module的proxy_pass：在server段使用使用, 只需要提供域名或ip地址和端口
+- `ngx_http_proxy_module`的proxy_pass：在server段使用使用, 只需要提供域名或ip地址和端口
 
-- ngx_stream_proxy_module的proxy_pass：在location段，location中的if段，limit_except段中使用，处理需要提供域名或ip地址和端口外，还需要提供协议，如"http"或"https"，还有一个可选的uri可以配置
+- `ngx_stream_proxy_module`的proxy_pass：在location段，location中的if段，limit_except段中使用，处理需要提供域名或ip地址和端口外，还需要提供协议，如"http"或"https"，还有一个可选的uri可以配置
 
   ```
    location /testb {
@@ -594,18 +600,18 @@ http
       }
   ```
 
-**http_proxy_module中的proxy_pass：对上游服务器使用http/https进行反向代理**
+（2）http_proxy_module中的proxy_pass：对上游服务器使用http/https进行反向代理
 
-（1）模块指令：proxy_pass URL：
+- 模块指令：proxy_pass URL：
 
-- URL必须以http://或https://开头，接下来是域名，IP，unix socket地址，upstream，且可加端口（当location为正则表达式时，proxy_pass不能包含URI部分）
-- 当URL参数中携带URI与否，会导致向上游请求的URL不同，不携带URI，则直接转发；不携带URL，则根据location替换
-- URL参数可以携带变量
-- 更复杂的URL替换可以在location中添加rewrite break语句
+  - URL必须以http://或https://开头，接下来是域名，IP，unix socket地址，upstream，且可加端口（当location为正则表达式时，proxy_pass不能包含URI部分）
+  - 当URL参数中携带URI与否，会导致向上游请求的URL不同，不携带URI，则直接转发；不携带URL，则根据location替换
+  - URL参数可以携带变量
+  - 更复杂的URL替换可以在location中添加rewrite break语句
 
-proxy_method：修改请求方法
+（3）proxy_method：修改请求方法
 
-proxy_http_version 1.0/1.1：修改http版本，默认1.0
+（4）proxy_http_version 1.0/1.1：修改http版本，默认1.0
 
 
 

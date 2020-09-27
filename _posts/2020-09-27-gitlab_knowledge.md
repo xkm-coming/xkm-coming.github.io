@@ -75,12 +75,11 @@ vim /etc/hosts
 
 ```
 vim /etc/gitlab/gitlab.rb
-```
 
-将external_url后面的值改为：
+#将external_url后面的值改为：
 
-```
 http://gitlab.xkm.com
+
 ```
 
 7）重新配置并启动gitlab
@@ -307,6 +306,4 @@ git config --global user.email "xkm@192.168.29.138"
 
 ```
 git clone git@6b6cdb3c87df:yunwei/docs.git
-```
-git init
 ```
