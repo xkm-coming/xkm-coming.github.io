@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "shell"
+tags:
+- Jekyll
 date:   2020-09-24 18:52:18 +0800
 categories: jekyll update
 ---
