@@ -127,9 +127,9 @@ category: 云计算
 2-3）填写VPN信息
 
 
-![image](/Pictures/aliyun_pictures/17.png)
+![image](/Picture/aliyun_pictures/17.png)
 
-![image](/Pictures/aliyun_pictures/18.png)
+![image](/Picture/aliyun_pictures/18.png)
 
 2-4）点击确认
 
