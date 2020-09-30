@@ -5,16 +5,16 @@ date: 2020-09-03 19:20:23 +0900
 category: 云计算
 ---
 
-#### 一、熟悉阿里云产品
+ 一、熟悉阿里云产品
 
 
 1、ECS
 
-#1）认识ECS
+1）认识ECS
 
 - 阿里云ECS持续提供创新型服务器，解决多种业务需求
 
-#2）ECS架构
+2）ECS架构
 
 - 实例：等同于一台虚拟服务器，内含CPU、内存、操作系统、网络配置、磁盘等基础的计算组件
 
@@ -32,33 +32,33 @@ category: 云计算
 
 - 网络：分为专有网络和经典网络
 
-  ![image](Pictures/aliyun_pictures/42.png)
+  ![image](/Picture/aliyun_pictures/42.png)
 
-#3）创建ECS实例的操作
+3）创建ECS实例的操作
 
 3-1）前往实例创建页
 
-![image](Pictures/aliyun_pictures/40.png)
+![image](/Picture/aliyun_pictures/40.png)
 
-![image](Pictures/aliyun_pictures/41.png)
+![image](/Picture/aliyun_pictures/41.png)
 
 3-2）完成基础配置
 
-![image](Pictures/aliyun_pictures/43.png)
+![image](/Picture/aliyun_pictures/43.png)
 
-![image](Pictures/aliyun_pictures/44.png)
+![image](/Picture/aliyun_pictures/44.png)
 
-![image](Pictures/aliyun_pictures/45.png)
+![image](/Picture/aliyun_pictures/45.png)
 
 3-3）完成网络和安全组设置
 
-![image](Pictures/aliyun_pictures/46.png)
+![image](/Picture/aliyun_pictures/46.png)
 
 3-4）完成系统配置
 
-![image](Pictures/aliyun_pictures/47.png)
+![image](/Picture/aliyun_pictures/47.png)
 
-![image](Pictures/aliyun_pictures/48.png)
+![image](/Picture/aliyun_pictures/48.png)
 
 3-5）完成分组设置
 
@@ -66,11 +66,11 @@ category: 云计算
 
 3-7）查看ECS实例信息
 
-![image](Pictures/aliyun_pictures/49.png)
+![image](/Picture/aliyun_pictures/49.png)
 
-![image](Pictures/aliyun_pictures/50.png)
+![image](/Picture/aliyun_pictures/50.png)
 
-#4）管理ECS实例
+4）管理ECS实例
 
 - ECS实例的三种状态
   - 启动
@@ -87,23 +87,23 @@ category: 云计算
   - 加入安全组：一个实例可以加入多个安全组
   - 安全组配置：单击进入本实例安全组配置，也可以在此界面进行“替换安全组”、“加入安全组”操作
 
-  ![image](Pictures/aliyun_pictures/51.png)
+  ![image](/Picture/aliyun_pictures/51.png)
 
-#5）ECS连接的两种方式
+5）ECS连接的两种方式
 
 - 直接在阿里云上进行远程连接
 
-![image](Pictures/aliyun_pictures/56.png)
+![image](/Picture/aliyun_pictures/56.png)
 
 - 用远程连接工具连接，例如XShell、SecureCRT 
 
 > 利用公网IP进行远程连接
 
-![image](Pictures/aliyun_pictures/57.png)
+![image](/Picture/aliyun_pictures/57.png)
 
 2、专有网络
 
-#1）区分专有网络和经典网络
+1）区分专有网络和经典网络
 
 - 专有网络（vpc）：
   - 专有网络是自己独有的云上私有网络
@@ -114,7 +114,7 @@ category: 云计算
 - 经典网络：
   - 经典网络类型的云产品，统一部署在阿里云公共基础设施内，规划和管理由阿里云负责
 
-#2）创建专有网络的操作
+2）创建专有网络的操作
 
 2-1）登陆专有网络VPN控制台
 
@@ -134,30 +134,30 @@ category: 云计算
 
 3、网络与安全
 
-#1）认识安全组
+1）认识安全组
 
 - 一种虚拟防火墙，用于设置实例的网络访问控制，我们可以通过添加安全组规则，允许或禁止安全组内的ECS实例对公网或私网的访问
 
-  ![image](Pictures/aliyun_pictures/55.png)
+  ![image](/Picture/aliyun_pictures/55.png)
 
 2）创建安全组的操作
 
-- ![image](Pictures/aliyun_pictures/52.png)
+- ![image](/Picture/aliyun_pictures/52.png)
 
 3）创建安全组规则
 
-- ![image](Pictures/aliyun_pictures/53.png)
-- ![image](Pictures/aliyun_pictures/54.png)
+- ![image](/Picture/aliyun_pictures/53.png)
+- ![image](/Picture/aliyun_pictures/54.png)
 
 4、RDS
 
-#1）认识RDS
+1）认识RDS
 
 - 阿里云关系型数据库RDS是一种稳定可靠、可弹性伸缩的在线数据库服务
 - RDS支持MySQL、SQL Server、PostgreSQL、PPAS（Postgre Plus Advanced Server，高度兼容Oracle数据库）和MariaDB TX引擎
 - 提供了容灾、备份、恢复、监控、迁移等方面的全套解决方案
 
-#2）创建RDS实例的操作
+2）创建RDS实例的操作
 
 2-1）登录RDS管理控制台
 
@@ -167,11 +167,11 @@ category: 云计算
 
 2-4）在左侧导航栏中单击**数据库管理**
 
-![image](Pictures/aliyun_pictures/1.png)
+![image](/Picture/aliyun_pictures/1.png)
 
 2-5）单击创建**数据库**
 
-![image](Pictures/aliyun_pictures/2.png)
+![image](/Picture/aliyun_pictures/2.png)
 
 2-6）设置以下参数
 
@@ -195,7 +195,7 @@ category: 云计算
 | **规格**       | 通用型：具有独享的内存和I/O资源，而CPU和存储资源与同一服务器上的其他通用型实例共享 |
 |                | 独享型：CPU、内存、存储和I/O资源均为独享，性能比通用性更稳定 |
 
-#3）RDS账户类型
+3）RDS账户类型
 
 - 高可用账号：
   - 只能通过控制台或API创建和管理
@@ -209,7 +209,7 @@ category: 云计算
   - 需要手动给普通账号授予特定数据库的权限
   - 普通账号不能创建和管理其他账号，也不能断开其他账号的连接。
 
-#4）创建RDS账户
+4）创建RDS账户
 
 4-1）登RDS管理控制台
 
@@ -223,23 +223,23 @@ category: 云计算
 
 > 创建普通账号需要在创建完数据库的操作之后
 
-![image](Pictures/aliyun_pictures/4.png)
+![image](/Picture/aliyun_pictures/4.png)
 
 4-6）设置以下参数
 
-![image](Pictures/aliyun_pictures/5.png)
+![image](/Picture/aliyun_pictures/5.png)
 
-![image](Pictures/aliyun_pictures/6.png)
+![image](/Picture/aliyun_pictures/6.png)
 
-![image](Pictures/aliyun_pictures/7.png)
+![image](/Picture/aliyun_pictures/7.png)
 
 4-7）点击确认
 
-#5）认识RDS白名单
+5）认识RDS白名单
 
 - 允许外部设备访问该RDS实例
 
-#6）白名单的类型
+6）白名单的类型
 
 - IP白名单：
   - 通用白名单模式：名单中的IP地址既适用于经典网络，也适用于专有网络，具有风险，本打算允许专有网络的某个IP访问，但经典网中的同样IP也可以访问RDS	
@@ -248,7 +248,7 @@ category: 云计算
 
 - 安全组：虚拟防火墙，用于控制安全组中的ECS实例的出入流量，添加安全组后，该组的ECS实例可以访问RDS实例
 
-#7）白名单的设置，允许ECS实例连接上RDS实例
+7）白名单的设置，允许ECS实例连接上RDS实例
 
 7-1）登录RDS管理控制台
 
@@ -270,15 +270,15 @@ category: 云计算
 
   ①在RDS实例的**数据库连接**页面单击**切换为经典网络**
 
-  ![image](Pictures/aliyun_pictures/10.png)
+  ![image](/Picture/aliyun_pictures/10.png)
 
   ②查看ECS实例的VPC
 
-  ![image](Pictures/aliyun_pictures/11.png)
+  ![image](/Picture/aliyun_pictures/11.png)
 
   ③回到RDS数据库连接界面，切换完成后单击**切换为专有网络**，选择和ECS实例相同的VPC
 
-  ![image](Pictures/aliyun_pictures/10.png)
+  ![image](/Picture/aliyun_pictures/10.png)
 
   ④按照**ECS实例和RDS实例在相同专有网络VPC内**情况进行操作
 
@@ -288,26 +288,26 @@ category: 云计算
 
   ②填写分组名称和ECS实例的外网IP地址，然后单击**确定**
 
-  ![image](Pictures/aliyun_pictures/12.png)
+  ![image](/Picture/aliyun_pictures/12.png)
 
   ③RDS申请外网地址，供专网外的ECS连接
 
-  ![image](Pictures/aliyun_pictures/13.png)
+  ![image](/Picture/aliyun_pictures/13.png)
 
   ④ECS实例连接RDS实例
 
   ```
-  #下载数据库
+  下载数据库
   
   yum -y install mysql
   
-  #连接数据库
+  连接数据库
   
   mysql -h rm-bp16ykq798amd2v198o.mysql.rds.aliyuncs.com -u db_user -p
   ```
 
 
-#8）RDS数据备份的操作
+8）RDS数据备份的操作
 
 8-1）登录RDS管理控制台
 
@@ -317,21 +317,21 @@ category: 云计算
 
 8-4）在左侧导航栏中单击**备份恢复**
 
-![image](Pictures/aliyun_pictures/14.png)
+![image](/Picture/aliyun_pictures/14.png)
 
-![image](Pictures/aliyun_pictures/20.png)
+![image](/Picture/aliyun_pictures/20.png)
 
-#9）RDS数据恢复的操作
+9）RDS数据恢复的操作
 
-![image](Pictures/aliyun_pictures/19.png)
+![image](/Picture/aliyun_pictures/19.png)
 
 5、OSS
 
-#1）认识OSS
+1）认识OSS
 
 - 阿里云对象存储OSS（Object Storage Service）是阿里云提供的海量、安全、低成本、高可靠的云存储服务
 
-#2）OSS基本概念
+2）OSS基本概念
 
 | 基本概念                  | 说明                                                         |
 | ------------------------- | ------------------------------------------------------------ |
@@ -342,7 +342,7 @@ category: 云计算
 | 访问域名（Endpoint）      | OSS对外服务的访问域名，内外网的域名不同，不同地域的域名也不同 |
 | 访问密钥（AccessKey）     | OSS通过使用AccessKey Id和AccessKey Secret对称加密的方法来验证某个请求的发送者身份。AccessKey Id用于标识用户；AccessKey Secret是用户用于加密签名字符串和OSS用来验证签名字符串的密钥 |
 
-#3）OSS常见功能：
+3）OSS常见功能：
 
 - 上传、下载、删除文件
 
@@ -351,19 +351,19 @@ category: 云计算
 - 托管静态网页
 - 跨域资源共享
 
-#4）创建存储对象
+4）创建存储对象
 
 4-1）登录OSS管理控制台
 4-2）单击Bucket列表，之后单击创建Bucket
 
-![image](Pictures/aliyun_pictures/59.png)
+![image](/Picture/aliyun_pictures/59.png)
 
 4-3）在创建Bucket页面配置Bucket参数
-![image](Pictures/aliyun_pictures/60.png)
+![image](/Picture/aliyun_pictures/60.png)
 
-![image](Pictures/aliyun_pictures/61.png)
+![image](/Picture/aliyun_pictures/61.png)
 
-#5）删除存储对象
+5）删除存储对象
 
 5-1）登录OSS管理控制台
 
@@ -371,7 +371,7 @@ category: 云计算
 
 5-3）单击基础管理，下拉可找到“删除bucket”选项
 
-#6）上传文件
+6）上传文件
 
 6-1）登录OSS管理控制台
 
@@ -379,7 +379,7 @@ category: 云计算
 
 6-3）单击文件管理 > 上传文件
 
-![image](Pictures/aliyun_pictures/62.png)
+![image](/Picture/aliyun_pictures/62.png)
 
 6-4）在上传文件页面，设置上传文件的参数
 
@@ -392,17 +392,17 @@ category: 云计算
 |             | 公共读     | 可以对文件进行匿名读，对文件写操作需要进行身份验证 |
 |             | 公共读写   | 所有人都可以对文件进行读写操作                     |
 
-#7）删除文件
+7）删除文件
 
-![image](Pictures/aliyun_pictures/63.png)
+![image](/Picture/aliyun_pictures/63.png)
 
 6、Redis
 
-#1）认识Redis
+1）认识Redis
 
 - 云数据库Redis版（ApsaraDB for Redis）是兼容开源Redis协议标准、提供混合存储的数据库服务
 
-#2）架构
+2）架构
 
 | 架构类型           | 说明                                                         |
 | :----------------- | :----------------------------------------------------------- |
@@ -412,7 +412,7 @@ category: 云计算
 | Redis集群版-双副本 | 集群（Cluster）实例采用分布式架构，每个数据分片都支持主从高可用，能够自动进行容灾切换和故障迁移。集群版支持两种连接模式：代理模式和直连模式 |
 | Redis读写分离版    | 与标准版-双副本架构类似，读写分离实例采用主从（Master-Replica）架构提供高可用，主节点挂载只读副本（Read Replica）实现数据复制，支持读性能线性扩展 |
 
-#3）创建实例
+3）创建实例
 
 3-1）登录Redis管理控制台
 
@@ -422,21 +422,21 @@ category: 云计算
 
 3-4）选择参数
 
-![image](Pictures/aliyun_pictures/64.png)
+![image](/Picture/aliyun_pictures/64.png)
 
 3-5）确认订单
 
-#4）白名单设置
+4）白名单设置
 
 > 与mysql的白名单操作相似
 
 7、SLB
 
-#1）认识SLB
+1）认识SLB
 
 - SLB是对多台服务器进行流量分发的一种均衡服务，负载均衡实例是一个运行的负载均衡服务实体
 
-#2）创建SLB实例
+2）创建SLB实例
 
 2-1）登录负载均衡管理控制台
 
@@ -446,35 +446,35 @@ category: 云计算
 
 2-4）配置负载均衡实例
 
-![image](Pictures/aliyun_pictures/66.png)
+![image](/Picture/aliyun_pictures/66.png)
 
-![image](Pictures/aliyun_pictures/67.png)
+![image](/Picture/aliyun_pictures/67.png)
 
-#3）设置监听端口
+3）设置监听端口
 
 3-1）登录负载均衡管理控制台
 
 3-2）在实例管理页面，单击要配置监听的实例操作列的监听配置向导
 
-![image](Pictures/aliyun_pictures/68.png)
+![image](/Picture/aliyun_pictures/68.png)
 
-#4）配置后端服务器
+4）配置后端服务器
 
-![image](Pictures/aliyun_pictures/69.png)
+![image](/Picture/aliyun_pictures/69.png)
 
-![image](Pictures/aliyun_pictures/70.png)
+![image](/Picture/aliyun_pictures/70.png)
 
-![image](Pictures/aliyun_pictures/71.png)
+![image](/Picture/aliyun_pictures/71.png)
 
-#5）配置健康检查
+5）配置健康检查
 
 > 开启健康检查功能后，当后端某个ECS健康检查出现问题时，负载均衡服务会将请求转发到其它健康检查正常的ECS上，而当该ECS恢复正常运行时，负载均衡会自动恢复它的请求转发。
 
-#6）配置成功
+6）配置成功
 
-![image](Pictures/aliyun_pictures/72.png)
+![image](/Picture/aliyun_pictures/72.png)
 
-#### 二、HTTP
+ 二、HTTP
 
 
 1、认识HTTP
@@ -497,7 +497,7 @@ category: 云计算
 
 3、客户端请求报头结构
 
-![image](Pictures/aliyun_pictures/73.png)
+![image](/Picture/aliyun_pictures/73.png)
 
 4、请求行组成
 
@@ -514,15 +514,15 @@ category: 云计算
   
 - **请求路径**：协议://主机：端口/路径/参数？锚部分
 
-  > 例如：http://www.aspxfans.com:8080/news/index.asp?boardID=5&ID=24618&page=1#name
+  > 例如：http://www.aspxfans.com:8080/news/index.asp?boardID=5&ID=24618&page=1name
 
   - **协议部分**：该URL的协议部分为“http：”，这代表网页使用的是HTTP协议。在Internet中可以使用多种协议，如HTTP，FTP等等本例中使用的是HTTP协议。在"HTTP"后面的“//”为分隔符
   - **域名部分**：该URL的域名部分为“[www.aspxfans.com](https://links.jianshu.com/go?to=http%3A%2F%2Fwww.aspxfans.com)”。一个URL中，也可以使用IP地址作为域名使用
   - **端口部分**：跟在域名后面的是端口，域名和端口之间使用“:”作为分隔符。端口不是一个URL必须的部分，如果省略端口部分，将采用默认端口
   - **虚拟目录部分**：从域名后的第一个“/”开始到最后一个“/”为止，是虚拟目录部分。虚拟目录也不是一个URL必须的部分。本例中的虚拟目录是“/news/”
-  - **文件名部分**：从域名后的最后一个“/”开始到“？”为止，是文件名部分，如果没有“?“，则是从域名后的最后一个“/”开始到“#”为止，是文件部分，如果没有“？”和“#”，那么从域名后的最后一个“/”开始到结束，都是文件名部分。本例中的文件名是“index.asp”
-  - **锚部分**：从“#”开始到最后，都是锚部分。本例中的锚部分是“name”，代表网页中的一个位置，其右面的字符，就是该位置的标识符，浏览器读取这个URL后，会自动将“name”位置滚动至可视区域
-  - **参数部分**：从“？”开始到“#”为止之间的部分为参数部分，又称搜索部分、查询部分。本例中的参数部分为“boardID=5&ID=24618&page=1”，参数可以允许有多个参数，参数与参数之间用“&”作为分隔符
+  - **文件名部分**：从域名后的最后一个“/”开始到“？”为止，是文件名部分，如果没有“?“，则是从域名后的最后一个“/”开始到“”为止，是文件部分，如果没有“？”和“”，那么从域名后的最后一个“/”开始到结束，都是文件名部分。本例中的文件名是“index.asp”
+  - **锚部分**：从“”开始到最后，都是锚部分。本例中的锚部分是“name”，代表网页中的一个位置，其右面的字符，就是该位置的标识符，浏览器读取这个URL后，会自动将“name”位置滚动至可视区域
+  - **参数部分**：从“？”开始到“”为止之间的部分为参数部分，又称搜索部分、查询部分。本例中的参数部分为“boardID=5&ID=24618&page=1”，参数可以允许有多个参数，参数与参数之间用“&”作为分隔符
 
 - **协议版本**：定义http的版本号，有HTTP/1.0，HTTP/2.0，HTTP/3.0
 
@@ -557,18 +557,18 @@ category: 云计算
 
 4）释放连接TCP连接，若connection 模式为close，则服务器主动关闭TCP连接，客户端被动关闭连接，释放TCP连接；若connection 模式为keepalive，则该连接会保持一段时间，在该时间内可以继续接收请求
 
-#### 三、加密解密
+ 三、加密解密
 
 
 1、公钥密码体制
 
-#1）公钥密码体制分为三个部分：
+1）公钥密码体制分为三个部分：
 
 - 公钥
 - 私钥
 - 加密解密算法
 
-#2）加密解密过程如下：
+2）加密解密过程如下：
 
 - 加密：通过加密算法和公钥对内容(或者说明文)进行加密，得到密文。加密过程需要用到公钥
 
@@ -576,28 +576,28 @@ category: 云计算
 
 2、对称加密算法
 
-#1）概念：
+1）概念：
 
 - 在对称加密算法中，加密使用的密钥和解密使用的密钥是相同的
 
 3、非对称加密算法
 
-#1）概念：
+1）概念：
 
 - 在非对称加密算法中，加密使用的密钥和解密使用的密钥是不相同的。前面所说的公钥密码体制就是一种非对称加密算法，他的公钥和是私钥是不能相同的
 
 4、签名
 
-#1）概念：
+1）概念：
 
 - 就是在信息的后面再加上一段内容，可以证明信息没有被修改过
 
-#2）验证签名方式：
+2）验证签名方式：
 
 - **接收方生成签名**：一般是对信息做一个hash计算得到一个hash值，这个过程是不可逆的，也就是说无法通过hash值得出原来的信息内容。在把信息发送出去时，把这个hash值加密后做为一个签名和信息一起发出去
 - **接收方验证**：接收方在收到信息后，会重新计算信息的hash值，并和信息所附带的hash值(解密后)进行对比，如果一致，就说明信息的内容没有被修改过
 
-#3）生成数字签名的方式
+3）生成数字签名的方式
 
 > 一般来说，不直接对消息进行签名，而是对消息的哈希值进行签名
 
@@ -609,11 +609,11 @@ category: 云计算
 
 5、证书
 
-#1）概念：
+1）概念：
 
 - 证书是用来验证身份的凭证
 
-#2）一个证书包含具体内容：
+2）一个证书包含具体内容：
 
 - 证书的发布机构 
 
@@ -629,7 +629,7 @@ category: 云计算
 
 - 指纹以及指纹算法
 
-#3）服务端生成证书的方式：
+3）服务端生成证书的方式：
 
 > 私钥B是用于加密公钥A的，私钥B和公钥A并不是配对的
 
@@ -639,7 +639,7 @@ category: 云计算
 
 3-3）CA把公钥A，数字签名A，附加一些服务器信息整合在一起，生成证书，发回给服务器。
 
-#4）客户端验证证书的过程：
+4）客户端验证证书的过程：
 
 4-1）客户端从CA得到公钥
 
@@ -649,7 +649,7 @@ category: 云计算
 
 4-4）对比两个哈希值
 
-#### 四、HTTPS：
+ 四、HTTPS：
 
 
 1、概念：
@@ -684,7 +684,7 @@ category: 云计算
 
 6）客户端用密码解密后，对比两个哈希值是否一致，客户端验证一致后，说明服务端拥有的密码正确，之后可以用这个密码正常通话
 
-#### 五、IP绑定个人域名实验操作
+ 五、IP绑定个人域名实验操作
 
 
 1、Godaddy注册域名
@@ -693,11 +693,11 @@ category: 云计算
 
 2）单击域名注册
 
-![image](Pictures/aliyun_pictures/21.png)
+![image](/Picture/aliyun_pictures/21.png)
 
 3）输入想要注册的域名
 
-![image](Pictures/aliyun_pictures/22.png)
+![image](/Picture/aliyun_pictures/22.png)
 
 4）选择适合的域名进行结账
 
@@ -707,9 +707,9 @@ category: 云计算
 
 1）添加域名
 
-![image](Pictures/aliyun_pictures/23.png)
+![image](/Picture/aliyun_pictures/23.png)
 
-![image](Pictures/aliyun_pictures/24.png)
+![image](/Picture/aliyun_pictures/24.png)
 
 2）添加A记录
 
@@ -734,29 +734,29 @@ category: 云计算
 |              | 0              | 0表示关闭该记录的权重，但如果是在已设有权重记录的线路上再设一条权重为0的记录，该记录权重为线路的平均权重 |
 | **TTL**      | 600/3600/60    | 解析记录在 DNS 服务器缓存的生存时间，数值越小则生效越快      |
 
-![image](Pictures/aliyun_pictures/25.png)
+![image](/Picture/aliyun_pictures/25.png)
 
-![image](Pictures/aliyun_pictures/26.png)
+![image](/Picture/aliyun_pictures/26.png)
 
 3）修改NS记录，使用DNSPOD的域名服务器
 
 3-1）找到DNSPOD域名服务器的地址
 
-![image](Pictures/aliyun_pictures/30.png)
+![image](/Picture/aliyun_pictures/30.png)
 
 3-2）修改Godaddy域名服务器的地址
 
-![image](Pictures/aliyun_pictures/27.png)
+![image](/Picture/aliyun_pictures/27.png)
 
-![image](Pictures/aliyun_pictures/28.png)
+![image](/Picture/aliyun_pictures/28.png)
 
-![image](Pictures/aliyun_pictures/29.png)
+![image](/Picture/aliyun_pictures/29.png)
 
 4）刷新等待更新生效
 
 > 可以在虚拟机上ping域名，看解析出来的IP地址正不正确
 
-![image](Pictures/aliyun_pictures/31.png)
+![image](/Picture/aliyun_pictures/31.png)
 
 3、阿里云申请https证书
 
@@ -764,36 +764,36 @@ category: 云计算
 
 2）选购SSL证书
 
-![image](Pictures/aliyun_pictures/32.png)
+![image](/Picture/aliyun_pictures/32.png)
 
-![image](Pictures/aliyun_pictures/33.png)
+![image](/Picture/aliyun_pictures/33.png)
 
 3）申请证书
 
-![image](Pictures/aliyun_pictures/34.png)
+![image](/Picture/aliyun_pictures/34.png)
 
-![image](Pictures/aliyun_pictures/35.png)
+![image](/Picture/aliyun_pictures/35.png)
 
 4）下载证书
 
-![image](Pictures/aliyun_pictures/36.png)
+![image](/Picture/aliyun_pictures/36.png)
 
 4、openresty实现http到https的转发
 
 1）下载openresty
 
 ```
-#添加yum源
+添加yum源
 
 wget https://openresty.org/package/centos/openresty.repo 
 
 mv openresty.repo /etc/yum.repos.d/
 
-#更新yum首页
+更新yum首页
 
-sudo yum check-update
+	sudo yum check-update
 
-#下载openresty
+下载openresty
 
 yum install -y openresty
 ```
@@ -803,7 +803,7 @@ yum install -y openresty
 > /usr/local/openresty/nginx/conf目录下要放私钥和证书
 
 ```
-#更改私钥和证书的文件名
+更改私钥和证书的文件名
 
 cd /usr/local/openresty/nginx/conf
 
@@ -830,18 +830,18 @@ mv 4495148_xkmhub.xyz.pub cert.pub
                 root   html;
                 index  index.html index.htm;
                 rewrite ^(.*)$ https://${server_name}$1 permanent;
-                #https实现思路：当访问http://localhost:80时，重定向到httpS://localhost:443
+                https实现思路：当访问http://localhost:80时，重定向到httpS://localhost:443
             }
          }
     
         server {
-            listen       443 ssl;             #监听443端口
+            listen       443 ssl;             监听443端口
             server_name  xkmhub.xyz;
-            ssl on;                           #开启ssl
+            ssl on;                           开启ssl
            
-            #证书位置：与nginc.conf同级目录下
-            ssl_certificate      cert.pem;    #证书名称
-            ssl_certificate_key  cert.key;    #证书私钥
+            证书位置：与nginc.conf同级目录下
+            ssl_certificate      cert.pem;    证书名称
+            ssl_certificate_key  cert.key;    证书私钥
     
             ssl_session_cache    shared:SSL:1m;
             ssl_session_timeout  5m;
@@ -865,9 +865,9 @@ openresty -t
 
 5）修改安全组，配置新规则
 
-![image](Pictures/aliyun_pictures/37.png)
+![image](/Picture/aliyun_pictures/37.png)
 
-![image](Pictures/aliyun_pictures/38.png)
+![image](/Picture/aliyun_pictures/38.png)
 
 6）重启ECS实例
 
@@ -881,4 +881,4 @@ systemctl start openresty
 
 8）浏览器访问个人域名
 
-![image](Pictures/aliyun_pictures/39.png)
+![image](/Picture/aliyun_pictures/39.png)
